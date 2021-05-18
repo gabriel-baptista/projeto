@@ -62,17 +62,8 @@ class _FavoritesState extends State<Favorites> {
                     ],
                   ),
                 ),
-                ListView.builder(
-                  // não deixa o scroll dentro do ListView
-                  // contador de itens
-                  physics: NeverScrollableScrollPhysics(),
-                  shrinkWrap: true,
-                  itemCount: 10,
-                  // itemCount: _contadorRestaurante.length,
-                  itemBuilder: (_, index) {
-                    return ActivityItem();
-                  },
-                ),
+                //puxa os widgets dos restaurantes
+                ActivityItem(),
               ],
             ),
           ),

@@ -7,6 +7,7 @@ import 'package:projeto/pages/requestScreen.dart';
 import 'package:projeto/pages/userProfile.dart';
 import 'package:projeto/restaurant/homeRestaurant.dart';
 import 'package:projeto/restaurant/loginRestaurant.dart';
+import 'package:projeto/restaurant/profileRestaurant.dart';
 import 'package:projeto/restaurant/registerRestaurant.dart';
 
 void main() {
@@ -29,6 +30,7 @@ void main() {
         '/registerRestaurant': (BuildContext context) =>
             new RegisterRestaurant(),
         '/homeRestaurant': (BuildContext context) => new HomeRestaurant(),
+        '/profileRestaurant': (BuildContext context) => new ProfileRestaurant(),
       },
     ),
   );

@@ -49,7 +49,7 @@ class _HomeFoodBreakState extends State<HomeFoodBreak> {
                   height: 10,
                 ),
                 // botões de sugestões / favoritos e lista horizontal
-                // buildHistory(),
+                buildHistory(),
                 // card de Promoções
                 buildPromotion(),
                 SizedBox(
@@ -60,7 +60,7 @@ class _HomeFoodBreakState extends State<HomeFoodBreak> {
                   child: Row(
                     children: [
                       Text(
-                        'Restaurantes',
+                        'Onde pedir',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 15,
@@ -69,17 +69,8 @@ class _HomeFoodBreakState extends State<HomeFoodBreak> {
                     ],
                   ),
                 ),
-                ListView.builder(
-                  // não deixa o scroll dentro do ListView
-                  // contador de itens
-                  physics: NeverScrollableScrollPhysics(),
-                  shrinkWrap: true,
-                  itemCount: 10,
-                  // itemCount: _contadorRestaurante.length,
-                  itemBuilder: (_, index) {
-                    return ActivityItem();
-                  },
-                ),
+                // faz a listagem de restaurantes
+                ActivityItem(),
               ],
             ),
           ),
@@ -171,7 +162,7 @@ class _HomeFoodBreakState extends State<HomeFoodBreak> {
           child: Row(
             children: [
               Text(
-                'Escolher tipo de comida',
+                'O que pedir',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 15,

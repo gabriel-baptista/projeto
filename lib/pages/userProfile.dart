@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class UserProfile extends StatefulWidget {
@@ -35,6 +33,22 @@ class _UserProfileState extends State<UserProfile> {
               ),
               onPressed: () {},
             ),
+            SizedBox(
+              width: 10,
+            ),
+            IconButton(
+              icon: Icon(
+                Icons.logout,
+                color: Color.fromRGBO(215, 0, 0, 1),
+              ),
+              onPressed: () {
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    '/login', (Route<dynamic> route) => false);
+              },
+            ),
+            SizedBox(
+              width: 10,
+            )
           ],
         ),
         body: SafeArea(

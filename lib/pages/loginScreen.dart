@@ -21,9 +21,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
     if ((verificaUsuario == "123") && (verificaSenha == "123")) {
       setState(() {
-        // _textoAviso = "voce entrou";
         Navigator.of(context).popAndPushNamed('/home');
-        limparCampos();
       });
     } else if (verificaUsuario == null ||
         verificaSenha == null ||

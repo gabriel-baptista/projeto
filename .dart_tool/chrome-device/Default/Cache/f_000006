@@ -197,7 +197,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "height",
         [_Location_column]: 19,
-        [_Location_line]: 59,
+        [_Location_line]: 56,
         [_Location_file]: null
       });
     },
@@ -210,7 +210,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[15] || CT.C15,
         [_Location_name]: null,
         [_Location_column]: 17,
-        [_Location_line]: 58,
+        [_Location_line]: 55,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -229,7 +229,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "data",
         [_Location_column]: 25,
-        [_Location_line]: 66,
+        [_Location_line]: 63,
         [_Location_file]: null
       });
     },
@@ -239,7 +239,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "style",
         [_Location_column]: 25,
-        [_Location_line]: 67,
+        [_Location_line]: 64,
         [_Location_file]: null
       });
     },
@@ -252,7 +252,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[19] || CT.C19,
         [_Location_name]: null,
         [_Location_column]: 23,
-        [_Location_line]: 65,
+        [_Location_line]: 62,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -262,7 +262,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 21,
-        [_Location_line]: 64,
+        [_Location_line]: 61,
         [_Location_file]: null
       });
     },
@@ -275,7 +275,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[23] || CT.C23,
         [_Location_name]: null,
         [_Location_column]: 26,
-        [_Location_line]: 63,
+        [_Location_line]: 60,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -285,7 +285,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "padding",
         [_Location_column]: 19,
-        [_Location_line]: 62,
+        [_Location_line]: 59,
         [_Location_file]: null
       });
     },
@@ -295,7 +295,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 19,
-        [_Location_line]: 63,
+        [_Location_line]: 60,
         [_Location_file]: null
       });
     },
@@ -308,7 +308,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[26] || CT.C26,
         [_Location_name]: null,
         [_Location_column]: 17,
-        [_Location_line]: 61,
+        [_Location_line]: 58,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -321,7 +321,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[30] || CT.C30,
         [_Location_name]: null,
         [_Location_column]: 28,
-        [_Location_line]: 83,
+        [_Location_line]: 80,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -331,7 +331,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "physics",
         [_Location_column]: 19,
-        [_Location_line]: 78,
+        [_Location_line]: 75,
         [_Location_file]: null
       });
     },
@@ -341,7 +341,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "shrinkWrap",
         [_Location_column]: 19,
-        [_Location_line]: 79,
+        [_Location_line]: 76,
         [_Location_file]: null
       });
     },
@@ -351,7 +351,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "itemCount",
         [_Location_column]: 19,
-        [_Location_line]: 80,
+        [_Location_line]: 77,
         [_Location_file]: null
       });
     },
@@ -361,7 +361,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "itemBuilder",
         [_Location_column]: 19,
-        [_Location_line]: 82,
+        [_Location_line]: 79,
         [_Location_file]: null
       });
     },
@@ -374,7 +374,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[32] || CT.C32,
         [_Location_name]: null,
         [_Location_column]: 26,
-        [_Location_line]: 75,
+        [_Location_line]: 72,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -506,7 +506,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "floatingActionButtonLocation",
         [_Location_column]: 7,
-        [_Location_line]: 92,
+        [_Location_line]: 89,
         [_Location_file]: null
       });
     },
@@ -516,7 +516,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "floatingActionButton",
         [_Location_column]: 7,
-        [_Location_line]: 93,
+        [_Location_line]: 90,
         [_Location_file]: null
       });
     },
@@ -526,7 +526,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "bottomNavigationBar",
         [_Location_column]: 7,
-        [_Location_line]: 95,
+        [_Location_line]: 92,
         [_Location_file]: null
       });
     },
@@ -558,7 +558,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "height",
         [_Location_column]: 13,
-        [_Location_line]: 108,
+        [_Location_line]: 105,
         [_Location_file]: null
       });
     },
@@ -571,7 +571,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[59] || CT.C59,
         [_Location_name]: null,
         [_Location_column]: 11,
-        [_Location_line]: 107,
+        [_Location_line]: 104,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -590,7 +590,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "icon",
         [_Location_column]: 27,
-        [_Location_line]: 131,
+        [_Location_line]: 128,
         [_Location_file]: null
       });
     },
@@ -603,7 +603,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[63] || CT.C63,
         [_Location_name]: null,
         [_Location_column]: 19,
-        [_Location_line]: 130,
+        [_Location_line]: 127,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -613,7 +613,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "width",
         [_Location_column]: 21,
-        [_Location_line]: 134,
+        [_Location_line]: 131,
         [_Location_file]: null
       });
     },
@@ -626,7 +626,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[66] || CT.C66,
         [_Location_name]: null,
         [_Location_column]: 19,
-        [_Location_line]: 133,
+        [_Location_line]: 130,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -636,7 +636,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "data",
         [_Location_column]: 21,
-        [_Location_line]: 137,
+        [_Location_line]: 134,
         [_Location_file]: null
       });
     },
@@ -646,7 +646,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "style",
         [_Location_column]: 21,
-        [_Location_line]: 138,
+        [_Location_line]: 135,
         [_Location_file]: null
       });
     },
@@ -659,7 +659,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[69] || CT.C69,
         [_Location_name]: null,
         [_Location_column]: 19,
-        [_Location_line]: 136,
+        [_Location_line]: 133,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -669,7 +669,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 17,
-        [_Location_line]: 129,
+        [_Location_line]: 126,
         [_Location_file]: null
       });
     },
@@ -682,7 +682,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[73] || CT.C73,
         [_Location_name]: null,
         [_Location_column]: 22,
-        [_Location_line]: 128,
+        [_Location_line]: 125,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -692,7 +692,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "height",
         [_Location_column]: 15,
-        [_Location_line]: 118,
+        [_Location_line]: 115,
         [_Location_file]: null
       });
     },
@@ -702,7 +702,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "decoration",
         [_Location_column]: 15,
-        [_Location_line]: 119,
+        [_Location_line]: 116,
         [_Location_file]: null
       });
     },
@@ -712,7 +712,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "padding",
         [_Location_column]: 15,
-        [_Location_line]: 125,
+        [_Location_line]: 122,
         [_Location_file]: null
       });
     },
@@ -722,7 +722,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "margin",
         [_Location_column]: 15,
-        [_Location_line]: 126,
+        [_Location_line]: 123,
         [_Location_file]: null
       });
     },
@@ -732,7 +732,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 15,
-        [_Location_line]: 128,
+        [_Location_line]: 125,
         [_Location_file]: null
       });
     },
@@ -745,7 +745,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[76] || CT.C76,
         [_Location_name]: null,
         [_Location_column]: 20,
-        [_Location_line]: 117,
+        [_Location_line]: 114,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -755,7 +755,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "onTap",
         [_Location_column]: 13,
-        [_Location_line]: 113,
+        [_Location_line]: 110,
         [_Location_file]: null
       });
     },
@@ -765,7 +765,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 13,
-        [_Location_line]: 117,
+        [_Location_line]: 114,
         [_Location_file]: null
       });
     },
@@ -778,7 +778,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[83] || CT.C83,
         [_Location_name]: null,
         [_Location_column]: 11,
-        [_Location_line]: 112,
+        [_Location_line]: 109,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -788,7 +788,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 9,
-        [_Location_line]: 105,
+        [_Location_line]: 102,
         [_Location_file]: null
       });
     },
@@ -801,7 +801,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[87] || CT.C87,
         [_Location_name]: null,
         [_Location_column]: 14,
-        [_Location_line]: 104,
+        [_Location_line]: 101,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -811,7 +811,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "padding",
         [_Location_column]: 7,
-        [_Location_line]: 102,
+        [_Location_line]: 99,
         [_Location_file]: null
       });
     },
@@ -821,7 +821,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 7,
-        [_Location_line]: 104,
+        [_Location_line]: 101,
         [_Location_file]: null
       });
     },
@@ -834,7 +834,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[90] || CT.C90,
         [_Location_name]: null,
         [_Location_column]: 12,
-        [_Location_line]: 101,
+        [_Location_line]: 98,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -844,7 +844,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "data",
         [_Location_column]: 17,
-        [_Location_line]: 177,
+        [_Location_line]: 174,
         [_Location_file]: null
       });
     },
@@ -854,7 +854,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "style",
         [_Location_column]: 17,
-        [_Location_line]: 178,
+        [_Location_line]: 175,
         [_Location_file]: null
       });
     },
@@ -867,7 +867,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[94] || CT.C94,
         [_Location_name]: null,
         [_Location_column]: 15,
-        [_Location_line]: 176,
+        [_Location_line]: 173,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -877,7 +877,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 13,
-        [_Location_line]: 175,
+        [_Location_line]: 172,
         [_Location_file]: null
       });
     },
@@ -890,7 +890,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[98] || CT.C98,
         [_Location_name]: null,
         [_Location_column]: 18,
-        [_Location_line]: 174,
+        [_Location_line]: 171,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -900,7 +900,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "padding",
         [_Location_column]: 11,
-        [_Location_line]: 173,
+        [_Location_line]: 170,
         [_Location_file]: null
       });
     },
@@ -910,7 +910,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 11,
-        [_Location_line]: 174,
+        [_Location_line]: 171,
         [_Location_file]: null
       });
     },
@@ -923,7 +923,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[101] || CT.C101,
         [_Location_name]: null,
         [_Location_column]: 9,
-        [_Location_line]: 172,
+        [_Location_line]: 169,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -933,7 +933,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "height",
         [_Location_column]: 18,
-        [_Location_line]: 187,
+        [_Location_line]: 184,
         [_Location_file]: null
       });
     },
@@ -946,7 +946,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[105] || CT.C105,
         [_Location_name]: null,
         [_Location_column]: 9,
-        [_Location_line]: 187,
+        [_Location_line]: 184,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -965,7 +965,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[30] || CT.C30,
         [_Location_name]: null,
         [_Location_column]: 24,
-        [_Location_line]: 201,
+        [_Location_line]: 198,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -975,7 +975,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "scrollDirection",
         [_Location_column]: 15,
-        [_Location_line]: 197,
+        [_Location_line]: 194,
         [_Location_file]: null
       });
     },
@@ -985,7 +985,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "itemCount",
         [_Location_column]: 15,
-        [_Location_line]: 198,
+        [_Location_line]: 195,
         [_Location_file]: null
       });
     },
@@ -995,7 +995,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "itemBuilder",
         [_Location_column]: 15,
-        [_Location_line]: 199,
+        [_Location_line]: 196,
         [_Location_file]: null
       });
     },
@@ -1008,7 +1008,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[110] || CT.C110,
         [_Location_name]: null,
         [_Location_column]: 29,
-        [_Location_line]: 196,
+        [_Location_line]: 193,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1018,7 +1018,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "onNotification",
         [_Location_column]: 13,
-        [_Location_line]: 192,
+        [_Location_line]: 189,
         [_Location_file]: null
       });
     },
@@ -1028,7 +1028,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 13,
-        [_Location_line]: 196,
+        [_Location_line]: 193,
         [_Location_file]: null
       });
     },
@@ -1041,7 +1041,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[115] || CT.C115,
         [_Location_name]: null,
         [_Location_column]: 18,
-        [_Location_line]: 191,
+        [_Location_line]: 188,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1051,7 +1051,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "height",
         [_Location_column]: 11,
-        [_Location_line]: 189,
+        [_Location_line]: 186,
         [_Location_file]: null
       });
     },
@@ -1061,7 +1061,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "margin",
         [_Location_column]: 11,
-        [_Location_line]: 190,
+        [_Location_line]: 187,
         [_Location_file]: null
       });
     },
@@ -1071,7 +1071,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 11,
-        [_Location_line]: 191,
+        [_Location_line]: 188,
         [_Location_file]: null
       });
     },
@@ -1084,7 +1084,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[119] || CT.C119,
         [_Location_name]: null,
         [_Location_column]: 9,
-        [_Location_line]: 188,
+        [_Location_line]: 185,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1094,7 +1094,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 7,
-        [_Location_line]: 171,
+        [_Location_line]: 168,
         [_Location_file]: null
       });
     },
@@ -1107,7 +1107,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[124] || CT.C124,
         [_Location_name]: null,
         [_Location_column]: 12,
-        [_Location_line]: 170,
+        [_Location_line]: 167,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1135,7 +1135,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "icon",
         [_Location_column]: 23,
-        [_Location_line]: 222,
+        [_Location_line]: 219,
         [_Location_file]: null
       });
     },
@@ -1145,7 +1145,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "color",
         [_Location_column]: 17,
-        [_Location_line]: 223,
+        [_Location_line]: 220,
         [_Location_file]: null
       });
     },
@@ -1155,7 +1155,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "size",
         [_Location_column]: 17,
-        [_Location_line]: 224,
+        [_Location_line]: 221,
         [_Location_file]: null
       });
     },
@@ -1168,7 +1168,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[129] || CT.C129,
         [_Location_name]: null,
         [_Location_column]: 15,
-        [_Location_line]: 221,
+        [_Location_line]: 218,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1178,7 +1178,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "width",
         [_Location_column]: 17,
-        [_Location_line]: 227,
+        [_Location_line]: 224,
         [_Location_file]: null
       });
     },
@@ -1191,7 +1191,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[134] || CT.C134,
         [_Location_name]: null,
         [_Location_column]: 15,
-        [_Location_line]: 226,
+        [_Location_line]: 223,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1201,7 +1201,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "data",
         [_Location_column]: 24,
-        [_Location_line]: 232,
+        [_Location_line]: 229,
         [_Location_file]: null
       });
     },
@@ -1214,7 +1214,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[137] || CT.C137,
         [_Location_name]: null,
         [_Location_column]: 19,
-        [_Location_line]: 232,
+        [_Location_line]: 229,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1224,7 +1224,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "data",
         [_Location_column]: 21,
-        [_Location_line]: 234,
+        [_Location_line]: 231,
         [_Location_file]: null
       });
     },
@@ -1234,7 +1234,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "style",
         [_Location_column]: 21,
-        [_Location_line]: 235,
+        [_Location_line]: 232,
         [_Location_file]: null
       });
     },
@@ -1247,7 +1247,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[140] || CT.C140,
         [_Location_name]: null,
         [_Location_column]: 19,
-        [_Location_line]: 233,
+        [_Location_line]: 230,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1257,7 +1257,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "crossAxisAlignment",
         [_Location_column]: 17,
-        [_Location_line]: 230,
+        [_Location_line]: 227,
         [_Location_file]: null
       });
     },
@@ -1267,7 +1267,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 17,
-        [_Location_line]: 231,
+        [_Location_line]: 228,
         [_Location_file]: null
       });
     },
@@ -1280,7 +1280,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[144] || CT.C144,
         [_Location_name]: null,
         [_Location_column]: 15,
-        [_Location_line]: 229,
+        [_Location_line]: 226,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1290,7 +1290,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[30] || CT.C30,
         [_Location_name]: null,
         [_Location_column]: 24,
-        [_Location_line]: 245,
+        [_Location_line]: 242,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1300,7 +1300,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 17,
-        [_Location_line]: 245,
+        [_Location_line]: 242,
         [_Location_file]: null
       });
     },
@@ -1313,7 +1313,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[149] || CT.C149,
         [_Location_name]: null,
         [_Location_column]: 15,
-        [_Location_line]: 244,
+        [_Location_line]: 241,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1323,7 +1323,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "icon",
         [_Location_column]: 23,
-        [_Location_line]: 248,
+        [_Location_line]: 245,
         [_Location_file]: null
       });
     },
@@ -1333,7 +1333,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "size",
         [_Location_column]: 17,
-        [_Location_line]: 249,
+        [_Location_line]: 246,
         [_Location_file]: null
       });
     },
@@ -1343,7 +1343,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "color",
         [_Location_column]: 17,
-        [_Location_line]: 250,
+        [_Location_line]: 247,
         [_Location_file]: null
       });
     },
@@ -1356,7 +1356,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[152] || CT.C152,
         [_Location_name]: null,
         [_Location_column]: 15,
-        [_Location_line]: 247,
+        [_Location_line]: 244,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1366,7 +1366,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 13,
-        [_Location_line]: 220,
+        [_Location_line]: 217,
         [_Location_file]: null
       });
     },
@@ -1379,7 +1379,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[157] || CT.C157,
         [_Location_name]: null,
         [_Location_column]: 18,
-        [_Location_line]: 219,
+        [_Location_line]: 216,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1389,7 +1389,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "padding",
         [_Location_column]: 11,
-        [_Location_line]: 218,
+        [_Location_line]: 215,
         [_Location_file]: null
       });
     },
@@ -1399,7 +1399,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 11,
-        [_Location_line]: 219,
+        [_Location_line]: 216,
         [_Location_file]: null
       });
     },
@@ -1412,7 +1412,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[160] || CT.C160,
         [_Location_name]: null,
         [_Location_column]: 16,
-        [_Location_line]: 217,
+        [_Location_line]: 214,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1422,7 +1422,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "onTap",
         [_Location_column]: 9,
-        [_Location_line]: 216,
+        [_Location_line]: 213,
         [_Location_file]: null
       });
     },
@@ -1432,7 +1432,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 9,
-        [_Location_line]: 217,
+        [_Location_line]: 214,
         [_Location_file]: null
       });
     },
@@ -1445,7 +1445,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[164] || CT.C164,
         [_Location_name]: null,
         [_Location_column]: 14,
-        [_Location_line]: 215,
+        [_Location_line]: 212,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1455,7 +1455,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "elevation",
         [_Location_column]: 7,
-        [_Location_line]: 213,
+        [_Location_line]: 210,
         [_Location_file]: null
       });
     },
@@ -1465,7 +1465,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "margin",
         [_Location_column]: 7,
-        [_Location_line]: 214,
+        [_Location_line]: 211,
         [_Location_file]: null
       });
     },
@@ -1475,7 +1475,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 7,
-        [_Location_line]: 215,
+        [_Location_line]: 212,
         [_Location_file]: null
       });
     },
@@ -1488,7 +1488,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[168] || CT.C168,
         [_Location_name]: null,
         [_Location_column]: 12,
-        [_Location_line]: 212,
+        [_Location_line]: 209,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1498,7 +1498,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "icon",
         [_Location_column]: 35,
-        [_Location_line]: 277,
+        [_Location_line]: 274,
         [_Location_file]: null
       });
     },
@@ -1508,7 +1508,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "color",
         [_Location_column]: 29,
-        [_Location_line]: 278,
+        [_Location_line]: 275,
         [_Location_file]: null
       });
     },
@@ -1518,7 +1518,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "size",
         [_Location_column]: 29,
-        [_Location_line]: 279,
+        [_Location_line]: 276,
         [_Location_file]: null
       });
     },
@@ -1531,7 +1531,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[173] || CT.C173,
         [_Location_name]: null,
         [_Location_column]: 27,
-        [_Location_line]: 276,
+        [_Location_line]: 273,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1541,7 +1541,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "data",
         [_Location_column]: 29,
-        [_Location_line]: 282,
+        [_Location_line]: 279,
         [_Location_file]: null
       });
     },
@@ -1551,7 +1551,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "style",
         [_Location_column]: 29,
-        [_Location_line]: 283,
+        [_Location_line]: 280,
         [_Location_file]: null
       });
     },
@@ -1564,7 +1564,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[178] || CT.C178,
         [_Location_name]: null,
         [_Location_column]: 27,
-        [_Location_line]: 281,
+        [_Location_line]: 278,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1574,7 +1574,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 25,
-        [_Location_line]: 275,
+        [_Location_line]: 272,
         [_Location_file]: null
       });
     },
@@ -1587,7 +1587,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[182] || CT.C182,
         [_Location_name]: null,
         [_Location_column]: 30,
-        [_Location_line]: 274,
+        [_Location_line]: 271,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1597,7 +1597,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "height",
         [_Location_column]: 23,
-        [_Location_line]: 273,
+        [_Location_line]: 270,
         [_Location_file]: null
       });
     },
@@ -1607,7 +1607,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 23,
-        [_Location_line]: 274,
+        [_Location_line]: 271,
         [_Location_file]: null
       });
     },
@@ -1620,7 +1620,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[185] || CT.C185,
         [_Location_name]: null,
         [_Location_column]: 28,
-        [_Location_line]: 272,
+        [_Location_line]: 269,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1630,7 +1630,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "onTap",
         [_Location_column]: 21,
-        [_Location_line]: 271,
+        [_Location_line]: 268,
         [_Location_file]: null
       });
     },
@@ -1640,7 +1640,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 21,
-        [_Location_line]: 272,
+        [_Location_line]: 269,
         [_Location_file]: null
       });
     },
@@ -1653,7 +1653,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[189] || CT.C189,
         [_Location_name]: null,
         [_Location_column]: 26,
-        [_Location_line]: 270,
+        [_Location_line]: 267,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1663,7 +1663,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 19,
-        [_Location_line]: 270,
+        [_Location_line]: 267,
         [_Location_file]: null
       });
     },
@@ -1676,7 +1676,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[193] || CT.C193,
         [_Location_name]: null,
         [_Location_column]: 17,
-        [_Location_line]: 269,
+        [_Location_line]: 266,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1686,7 +1686,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "icon",
         [_Location_column]: 35,
-        [_Location_line]: 303,
+        [_Location_line]: 300,
         [_Location_file]: null
       });
     },
@@ -1696,7 +1696,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "color",
         [_Location_column]: 29,
-        [_Location_line]: 304,
+        [_Location_line]: 301,
         [_Location_file]: null
       });
     },
@@ -1706,7 +1706,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "size",
         [_Location_column]: 29,
-        [_Location_line]: 305,
+        [_Location_line]: 302,
         [_Location_file]: null
       });
     },
@@ -1719,7 +1719,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[196] || CT.C196,
         [_Location_name]: null,
         [_Location_column]: 27,
-        [_Location_line]: 302,
+        [_Location_line]: 299,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1729,7 +1729,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "data",
         [_Location_column]: 29,
-        [_Location_line]: 308,
+        [_Location_line]: 305,
         [_Location_file]: null
       });
     },
@@ -1739,7 +1739,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "style",
         [_Location_column]: 29,
-        [_Location_line]: 309,
+        [_Location_line]: 306,
         [_Location_file]: null
       });
     },
@@ -1752,7 +1752,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[201] || CT.C201,
         [_Location_name]: null,
         [_Location_column]: 27,
-        [_Location_line]: 307,
+        [_Location_line]: 304,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1762,7 +1762,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 25,
-        [_Location_line]: 301,
+        [_Location_line]: 298,
         [_Location_file]: null
       });
     },
@@ -1775,7 +1775,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[205] || CT.C205,
         [_Location_name]: null,
         [_Location_column]: 30,
-        [_Location_line]: 300,
+        [_Location_line]: 297,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1785,7 +1785,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "height",
         [_Location_column]: 23,
-        [_Location_line]: 299,
+        [_Location_line]: 296,
         [_Location_file]: null
       });
     },
@@ -1795,7 +1795,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 23,
-        [_Location_line]: 300,
+        [_Location_line]: 297,
         [_Location_file]: null
       });
     },
@@ -1808,7 +1808,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[208] || CT.C208,
         [_Location_name]: null,
         [_Location_column]: 28,
-        [_Location_line]: 298,
+        [_Location_line]: 295,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1818,7 +1818,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "onTap",
         [_Location_column]: 21,
-        [_Location_line]: 295,
+        [_Location_line]: 292,
         [_Location_file]: null
       });
     },
@@ -1828,7 +1828,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 21,
-        [_Location_line]: 298,
+        [_Location_line]: 295,
         [_Location_file]: null
       });
     },
@@ -1841,7 +1841,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[212] || CT.C212,
         [_Location_name]: null,
         [_Location_column]: 26,
-        [_Location_line]: 294,
+        [_Location_line]: 291,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1851,7 +1851,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 19,
-        [_Location_line]: 294,
+        [_Location_line]: 291,
         [_Location_file]: null
       });
     },
@@ -1864,7 +1864,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[216] || CT.C216,
         [_Location_name]: null,
         [_Location_column]: 17,
-        [_Location_line]: 293,
+        [_Location_line]: 290,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1874,7 +1874,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 15,
-        [_Location_line]: 268,
+        [_Location_line]: 265,
         [_Location_file]: null
       });
     },
@@ -1887,7 +1887,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[219] || CT.C219,
         [_Location_name]: null,
         [_Location_column]: 20,
-        [_Location_line]: 267,
+        [_Location_line]: 264,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1897,7 +1897,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "flex",
         [_Location_column]: 13,
-        [_Location_line]: 266,
+        [_Location_line]: 263,
         [_Location_file]: null
       });
     },
@@ -1907,7 +1907,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 13,
-        [_Location_line]: 267,
+        [_Location_line]: 264,
         [_Location_file]: null
       });
     },
@@ -1920,7 +1920,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[222] || CT.C222,
         [_Location_name]: null,
         [_Location_column]: 11,
-        [_Location_line]: 265,
+        [_Location_line]: 262,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1930,7 +1930,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[30] || CT.C30,
         [_Location_name]: null,
         [_Location_column]: 11,
-        [_Location_line]: 322,
+        [_Location_line]: 319,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1940,7 +1940,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "icon",
         [_Location_column]: 35,
-        [_Location_line]: 337,
+        [_Location_line]: 334,
         [_Location_file]: null
       });
     },
@@ -1950,7 +1950,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "color",
         [_Location_column]: 29,
-        [_Location_line]: 338,
+        [_Location_line]: 335,
         [_Location_file]: null
       });
     },
@@ -1960,7 +1960,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "size",
         [_Location_column]: 29,
-        [_Location_line]: 339,
+        [_Location_line]: 336,
         [_Location_file]: null
       });
     },
@@ -1973,7 +1973,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[227] || CT.C227,
         [_Location_name]: null,
         [_Location_column]: 27,
-        [_Location_line]: 336,
+        [_Location_line]: 333,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -1983,7 +1983,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "data",
         [_Location_column]: 29,
-        [_Location_line]: 342,
+        [_Location_line]: 339,
         [_Location_file]: null
       });
     },
@@ -1993,7 +1993,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "style",
         [_Location_column]: 29,
-        [_Location_line]: 343,
+        [_Location_line]: 340,
         [_Location_file]: null
       });
     },
@@ -2006,7 +2006,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[232] || CT.C232,
         [_Location_name]: null,
         [_Location_column]: 27,
-        [_Location_line]: 341,
+        [_Location_line]: 338,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2016,7 +2016,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 25,
-        [_Location_line]: 335,
+        [_Location_line]: 332,
         [_Location_file]: null
       });
     },
@@ -2029,7 +2029,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[236] || CT.C236,
         [_Location_name]: null,
         [_Location_column]: 30,
-        [_Location_line]: 334,
+        [_Location_line]: 331,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2039,7 +2039,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "height",
         [_Location_column]: 23,
-        [_Location_line]: 333,
+        [_Location_line]: 330,
         [_Location_file]: null
       });
     },
@@ -2049,7 +2049,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 23,
-        [_Location_line]: 334,
+        [_Location_line]: 331,
         [_Location_file]: null
       });
     },
@@ -2062,7 +2062,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[239] || CT.C239,
         [_Location_name]: null,
         [_Location_column]: 28,
-        [_Location_line]: 332,
+        [_Location_line]: 329,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2072,7 +2072,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "onTap",
         [_Location_column]: 21,
-        [_Location_line]: 329,
+        [_Location_line]: 326,
         [_Location_file]: null
       });
     },
@@ -2082,7 +2082,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 21,
-        [_Location_line]: 332,
+        [_Location_line]: 329,
         [_Location_file]: null
       });
     },
@@ -2095,7 +2095,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[243] || CT.C243,
         [_Location_name]: null,
         [_Location_column]: 26,
-        [_Location_line]: 328,
+        [_Location_line]: 325,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2105,7 +2105,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 19,
-        [_Location_line]: 328,
+        [_Location_line]: 325,
         [_Location_file]: null
       });
     },
@@ -2118,7 +2118,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[247] || CT.C247,
         [_Location_name]: null,
         [_Location_column]: 17,
-        [_Location_line]: 327,
+        [_Location_line]: 324,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2128,7 +2128,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "icon",
         [_Location_column]: 35,
-        [_Location_line]: 363,
+        [_Location_line]: 360,
         [_Location_file]: null
       });
     },
@@ -2138,7 +2138,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "color",
         [_Location_column]: 29,
-        [_Location_line]: 364,
+        [_Location_line]: 361,
         [_Location_file]: null
       });
     },
@@ -2148,7 +2148,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "size",
         [_Location_column]: 29,
-        [_Location_line]: 365,
+        [_Location_line]: 362,
         [_Location_file]: null
       });
     },
@@ -2161,7 +2161,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[250] || CT.C250,
         [_Location_name]: null,
         [_Location_column]: 27,
-        [_Location_line]: 362,
+        [_Location_line]: 359,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2171,7 +2171,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "data",
         [_Location_column]: 29,
-        [_Location_line]: 368,
+        [_Location_line]: 365,
         [_Location_file]: null
       });
     },
@@ -2181,7 +2181,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "style",
         [_Location_column]: 29,
-        [_Location_line]: 369,
+        [_Location_line]: 366,
         [_Location_file]: null
       });
     },
@@ -2194,7 +2194,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[255] || CT.C255,
         [_Location_name]: null,
         [_Location_column]: 27,
-        [_Location_line]: 367,
+        [_Location_line]: 364,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2204,7 +2204,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 25,
-        [_Location_line]: 361,
+        [_Location_line]: 358,
         [_Location_file]: null
       });
     },
@@ -2217,7 +2217,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[259] || CT.C259,
         [_Location_name]: null,
         [_Location_column]: 30,
-        [_Location_line]: 360,
+        [_Location_line]: 357,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2227,7 +2227,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "height",
         [_Location_column]: 23,
-        [_Location_line]: 359,
+        [_Location_line]: 356,
         [_Location_file]: null
       });
     },
@@ -2237,7 +2237,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 23,
-        [_Location_line]: 360,
+        [_Location_line]: 357,
         [_Location_file]: null
       });
     },
@@ -2250,7 +2250,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[262] || CT.C262,
         [_Location_name]: null,
         [_Location_column]: 28,
-        [_Location_line]: 358,
+        [_Location_line]: 355,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2260,7 +2260,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "onTap",
         [_Location_column]: 21,
-        [_Location_line]: 355,
+        [_Location_line]: 352,
         [_Location_file]: null
       });
     },
@@ -2270,7 +2270,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 21,
-        [_Location_line]: 358,
+        [_Location_line]: 355,
         [_Location_file]: null
       });
     },
@@ -2283,7 +2283,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[266] || CT.C266,
         [_Location_name]: null,
         [_Location_column]: 26,
-        [_Location_line]: 354,
+        [_Location_line]: 351,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2293,7 +2293,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 19,
-        [_Location_line]: 354,
+        [_Location_line]: 351,
         [_Location_file]: null
       });
     },
@@ -2306,7 +2306,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[270] || CT.C270,
         [_Location_name]: null,
         [_Location_column]: 17,
-        [_Location_line]: 353,
+        [_Location_line]: 350,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2316,7 +2316,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 15,
-        [_Location_line]: 326,
+        [_Location_line]: 323,
         [_Location_file]: null
       });
     },
@@ -2329,7 +2329,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[273] || CT.C273,
         [_Location_name]: null,
         [_Location_column]: 20,
-        [_Location_line]: 325,
+        [_Location_line]: 322,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2339,7 +2339,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "flex",
         [_Location_column]: 13,
-        [_Location_line]: 324,
+        [_Location_line]: 321,
         [_Location_file]: null
       });
     },
@@ -2349,7 +2349,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 13,
-        [_Location_line]: 325,
+        [_Location_line]: 322,
         [_Location_file]: null
       });
     },
@@ -2362,7 +2362,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[276] || CT.C276,
         [_Location_name]: null,
         [_Location_column]: 11,
-        [_Location_line]: 323,
+        [_Location_line]: 320,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2372,7 +2372,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 9,
-        [_Location_line]: 264,
+        [_Location_line]: 261,
         [_Location_file]: null
       });
     },
@@ -2385,7 +2385,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[280] || CT.C280,
         [_Location_name]: null,
         [_Location_column]: 14,
-        [_Location_line]: 263,
+        [_Location_line]: 260,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2395,7 +2395,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "height",
         [_Location_column]: 7,
-        [_Location_line]: 262,
+        [_Location_line]: 259,
         [_Location_file]: null
       });
     },
@@ -2405,7 +2405,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 7,
-        [_Location_line]: 263,
+        [_Location_line]: 260,
         [_Location_file]: null
       });
     },
@@ -2418,7 +2418,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[283] || CT.C283,
         [_Location_name]: null,
         [_Location_column]: 12,
-        [_Location_line]: 261,
+        [_Location_line]: 258,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2437,7 +2437,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "icon",
         [_Location_column]: 21,
-        [_Location_line]: 406,
+        [_Location_line]: 403,
         [_Location_file]: null
       });
     },
@@ -2447,7 +2447,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "color",
         [_Location_column]: 15,
-        [_Location_line]: 407,
+        [_Location_line]: 404,
         [_Location_file]: null
       });
     },
@@ -2460,7 +2460,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[288] || CT.C288,
         [_Location_name]: null,
         [_Location_column]: 20,
-        [_Location_line]: 405,
+        [_Location_line]: 402,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2470,7 +2470,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "height",
         [_Location_column]: 13,
-        [_Location_line]: 399,
+        [_Location_line]: 396,
         [_Location_file]: null
       });
     },
@@ -2480,7 +2480,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "width",
         [_Location_column]: 13,
-        [_Location_line]: 400,
+        [_Location_line]: 397,
         [_Location_file]: null
       });
     },
@@ -2490,7 +2490,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "decoration",
         [_Location_column]: 13,
-        [_Location_line]: 401,
+        [_Location_line]: 398,
         [_Location_file]: null
       });
     },
@@ -2500,7 +2500,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 13,
-        [_Location_line]: 405,
+        [_Location_line]: 402,
         [_Location_file]: null
       });
     },
@@ -2513,7 +2513,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[292] || CT.C292,
         [_Location_name]: null,
         [_Location_column]: 11,
-        [_Location_line]: 398,
+        [_Location_line]: 395,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2523,7 +2523,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "data",
         [_Location_column]: 13,
-        [_Location_line]: 411,
+        [_Location_line]: 408,
         [_Location_file]: null
       });
     },
@@ -2533,7 +2533,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "style",
         [_Location_column]: 13,
-        [_Location_line]: 412,
+        [_Location_line]: 409,
         [_Location_file]: null
       });
     },
@@ -2546,7 +2546,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[298] || CT.C298,
         [_Location_name]: null,
         [_Location_column]: 11,
-        [_Location_line]: 410,
+        [_Location_line]: 407,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2556,7 +2556,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "mainAxisAlignment",
         [_Location_column]: 9,
-        [_Location_line]: 396,
+        [_Location_line]: 393,
         [_Location_file]: null
       });
     },
@@ -2566,7 +2566,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 9,
-        [_Location_line]: 397,
+        [_Location_line]: 394,
         [_Location_file]: null
       });
     },
@@ -2579,7 +2579,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[302] || CT.C302,
         [_Location_name]: null,
         [_Location_column]: 14,
-        [_Location_line]: 395,
+        [_Location_line]: 392,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     },
@@ -2589,7 +2589,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "height",
         [_Location_column]: 7,
-        [_Location_line]: 390,
+        [_Location_line]: 387,
         [_Location_file]: null
       });
     },
@@ -2599,7 +2599,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "color",
         [_Location_column]: 7,
-        [_Location_line]: 391,
+        [_Location_line]: 388,
         [_Location_file]: null
       });
     },
@@ -2609,7 +2609,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "padding",
         [_Location_column]: 7,
-        [_Location_line]: 392,
+        [_Location_line]: 389,
         [_Location_file]: null
       });
     },
@@ -2619,7 +2619,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 7,
-        [_Location_line]: 395,
+        [_Location_line]: 392,
         [_Location_file]: null
       });
     },
@@ -2632,7 +2632,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
         [_Location_parameterLocations]: C[306] || CT.C306,
         [_Location_name]: null,
         [_Location_column]: 12,
-        [_Location_line]: 389,
+        [_Location_line]: 386,
         [_Location_file]: "file:///C:/Testes/projeto/lib/pages/homeFoodBreak.dart"
       });
     }
@@ -2674,7 +2674,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
     }
     buildSearchBar(context) {
       return new basic.Padding.new({padding: C[57] || CT.C57, child: new basic.Column.new({children: T.JSArrayOfWidgetL().of([new basic.SizedBox.new({height: 20.0, $creationLocationd_0dea112b090073317d4: C[58] || CT.C58}), new gesture_detector.GestureDetector.new({onTap: dart.fn(() => {
-                core.print("on tap");
+                core.print("On tap");
               }, T.VoidToNull()), child: new container.Container.new({height: 45.0, decoration: new box_decoration.BoxDecoration.new({border: box_border.Border.all({color: colors.Colors.black38}), borderRadius: new border_radius.BorderRadius.circular(50.0)}), padding: C[61] || CT.C61, margin: C[61] || CT.C61, child: new basic.Row.new({children: T.JSArrayOfWidgetL().of([new icon.Icon.new(icons.Icons.search, {$creationLocationd_0dea112b090073317d4: C[62] || CT.C62}), new basic.SizedBox.new({width: 10.0, $creationLocationd_0dea112b090073317d4: C[65] || CT.C65}), new text.Text.new("Pesquise um restaurante aqui", {style: new text_style.TextStyle.new({fontSize: 18.0}), $creationLocationd_0dea112b090073317d4: C[68] || CT.C68})]), $creationLocationd_0dea112b090073317d4: C[72] || CT.C72}), $creationLocationd_0dea112b090073317d4: C[75] || CT.C75}), $creationLocationd_0dea112b090073317d4: C[82] || CT.C82})]), $creationLocationd_0dea112b090073317d4: C[86] || CT.C86}), $creationLocationd_0dea112b090073317d4: C[89] || CT.C89});
     }
     buildHistory() {
@@ -2721,7 +2721,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/f
   dart.trackLibraries("packages/projeto/pages/homeFoodBreak.dart", {
     "package:projeto/pages/homeFoodBreak.dart": homeFoodBreak
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["homeFoodBreak.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;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","file":"../../../../packages/projeto/pages/homeFoodBreak.dart.lib.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["homeFoodBreak.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;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","file":"../../../../packages/projeto/pages/homeFoodBreak.dart.lib.js"}');
   // Exports:
   return {
     pages__homeFoodBreak: homeFoodBreak
