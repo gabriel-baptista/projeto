@@ -46,12 +46,12 @@ class _LoginScreenState extends State<LoginScreen> {
       body: SafeArea(
         child: Container(
           child: SingleChildScrollView(
-            padding: EdgeInsets.fromLTRB(32, 0, 32, 32),
+            padding: EdgeInsets.fromLTRB(32, 25, 32, 32),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 Padding(
-                  padding: EdgeInsets.only(bottom: 31),
+                  padding: EdgeInsets.only(bottom: 15),
                   child: Image.asset(
                     "img/NovoLogoFoodBreak.png",
                     height: 250,
@@ -59,7 +59,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 // criando o textfield usuário
                 Padding(
-                  padding: EdgeInsets.fromLTRB(0, 12, 0, 20),
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
                   child: TextField(
                     // seleciona o tipo de teclado que o usuário utiliará
                     keyboardType: TextInputType.number,
