@@ -58,6 +58,14 @@ flutter:
     - img/RestaurantLogo.jpg
     - img/lanche.jpg
     - img/pizza.jpg
+    - img/restaurante.jpg
+    # imagens das comidas
+    - img/coquinha.jpg
+    - img/lanchaoGG.jpg
+    - img/lanxinha.jpg
+    - img/mclanche-feliz.jpg
+    - img/renatao.jpg
+    - img/sandubao.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

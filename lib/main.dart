@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:projeto/pages/favorites.dart';
 import 'package:projeto/pages/homeFoodBreak.dart';
 import 'package:projeto/pages/loginScreen.dart';
+import 'package:projeto/pages/menuFoodScreen.dart';
 import 'package:projeto/pages/registerScreen.dart';
 import 'package:projeto/pages/requestScreen.dart';
 import 'package:projeto/pages/userProfile.dart';
@@ -31,6 +32,7 @@ void main() {
             new RegisterRestaurant(),
         '/homeRestaurant': (BuildContext context) => new HomeRestaurant(),
         '/profileRestaurant': (BuildContext context) => new ProfileRestaurant(),
+        "/menuFood": (BuildContext context) => new MenuFood(),
       },
     ),
   );

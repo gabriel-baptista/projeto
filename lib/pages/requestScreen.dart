@@ -76,8 +76,8 @@ class _RequestScreenState extends State<RequestScreen> {
         ),
       ),
       // botão flutuante que fica no meio da barra de navegação inferior
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: buildFloatButtonBottombar(),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      // floatingActionButton: buildFloatButtonBottombar(),
       // Barra de navegção inferior
       bottomNavigationBar: buildBottomBar(),
     );
@@ -148,7 +148,6 @@ class _RequestScreenState extends State<RequestScreen> {
               ],
             ),
           ),
-          Spacer(),
           Expanded(
             flex: 2,
             child: Row(

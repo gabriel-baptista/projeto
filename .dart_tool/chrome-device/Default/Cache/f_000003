@@ -19,15 +19,15 @@ define("main_module.bootstrap", ["web_entrypoint.dart", "dart_sdk"], function(ap
          main();
       });
     }
-    window.$dartAppId = "+7f+YykshrXPRPJc5X14CQ==";
+    window.$dartAppId = "2WMMejos4O3hAwtnyB9/6A==";
 window.$dartReloadConfiguration = "ReloadConfiguration.none";
 window.$dartModuleStrategy = "require-js";
 window.$loadModuleConfig = require;
 window.$dwdsVersion = "7.1.1";
-window.$dwdsDevHandlerPath = "http://localhost:58320/$dwdsSseHandler";
+window.$dwdsDevHandlerPath = "http://localhost:60962/$dwdsSseHandler";
 window.$dartEntrypointPath = "main_module.bootstrap.js";
 window.$requireLoader.forceLoadModule("dwds/src/injected/client");
-window.$dartExtensionUri = "http://127.0.0.1:58322/$debug";
+window.$dartExtensionUri = "http://127.0.0.1:60964/$debug";
 
   } else {
     if(window.$dartMainExecuted){
@@ -439,16 +439,21 @@ let modulePaths = {
  "packages/flutter/src/material/app.dart": "packages/flutter/src/material/app.dart.lib",
  "packages/flutter/src/material/animated_icons.dart": "packages/flutter/src/material/animated_icons.dart.lib",
  "packages/flutter/src/material/about.dart": "packages/flutter/src/material/about.dart.lib",
+ "packages/projeto/restaurant/profileRestaurant.dart": "packages/projeto/restaurant/profileRestaurant.dart.lib",
  "packages/projeto/restaurant/loginRestaurant.dart": "packages/projeto/restaurant/loginRestaurant.dart.lib",
  "packages/projeto/restaurant/homeRestaurant.dart": "packages/projeto/restaurant/homeRestaurant.dart.lib",
  "packages/projeto/pages/userProfile.dart": "packages/projeto/pages/userProfile.dart.lib",
  "packages/projeto/pages/requestScreen.dart": "packages/projeto/pages/requestScreen.dart.lib",
  "packages/projeto/widgets/state_activity_item.dart": "packages/projeto/widgets/state_activity_item.dart.lib",
  "packages/projeto/pages/registerScreen.dart": "packages/projeto/pages/registerScreen.dart.lib",
+ "packages/projeto/pages/menuFoodScreen.dart": "packages/projeto/pages/menuFoodScreen.dart.lib",
+ "packages/projeto/widgets/menuFood_item.dart": "packages/projeto/widgets/menuFood_item.dart.lib",
+ "packages/projeto/widgets/food_list_widget.dart": "packages/projeto/widgets/food_list_widget.dart.lib",
  "packages/projeto/pages/loginScreen.dart": "packages/projeto/pages/loginScreen.dart.lib",
  "packages/projeto/pages/homeFoodBreak.dart": "packages/projeto/pages/homeFoodBreak.dart.lib",
  "packages/projeto/widgets/history.widget.dart": "packages/projeto/widgets/history.widget.dart.lib",
  "packages/projeto/widgets/activity_item.dart": "packages/projeto/widgets/activity_item.dart.lib",
+ "packages/projeto/widgets/restaurant_list_widget.dart": "packages/projeto/widgets/restaurant_list_widget.dart.lib",
  "packages/projeto/pages/favorites.dart": "packages/projeto/pages/favorites.dart.lib"
 };
 let moduleNames = {
@@ -811,16 +816,21 @@ let moduleNames = {
  "packages/flutter/src/material/app.dart.lib": "packages/flutter/src/material/app.dart",
  "packages/flutter/src/material/animated_icons.dart.lib": "packages/flutter/src/material/animated_icons.dart",
  "packages/flutter/src/material/about.dart.lib": "packages/flutter/src/material/about.dart",
+ "packages/projeto/restaurant/profileRestaurant.dart.lib": "packages/projeto/restaurant/profileRestaurant.dart",
  "packages/projeto/restaurant/loginRestaurant.dart.lib": "packages/projeto/restaurant/loginRestaurant.dart",
  "packages/projeto/restaurant/homeRestaurant.dart.lib": "packages/projeto/restaurant/homeRestaurant.dart",
  "packages/projeto/pages/userProfile.dart.lib": "packages/projeto/pages/userProfile.dart",
  "packages/projeto/pages/requestScreen.dart.lib": "packages/projeto/pages/requestScreen.dart",
  "packages/projeto/widgets/state_activity_item.dart.lib": "packages/projeto/widgets/state_activity_item.dart",
  "packages/projeto/pages/registerScreen.dart.lib": "packages/projeto/pages/registerScreen.dart",
+ "packages/projeto/pages/menuFoodScreen.dart.lib": "packages/projeto/pages/menuFoodScreen.dart",
+ "packages/projeto/widgets/menuFood_item.dart.lib": "packages/projeto/widgets/menuFood_item.dart",
+ "packages/projeto/widgets/food_list_widget.dart.lib": "packages/projeto/widgets/food_list_widget.dart",
  "packages/projeto/pages/loginScreen.dart.lib": "packages/projeto/pages/loginScreen.dart",
  "packages/projeto/pages/homeFoodBreak.dart.lib": "packages/projeto/pages/homeFoodBreak.dart",
  "packages/projeto/widgets/history.widget.dart.lib": "packages/projeto/widgets/history.widget.dart",
  "packages/projeto/widgets/activity_item.dart.lib": "packages/projeto/widgets/activity_item.dart",
+ "packages/projeto/widgets/restaurant_list_widget.dart.lib": "packages/projeto/widgets/restaurant_list_widget.dart",
  "packages/projeto/pages/favorites.dart.lib": "packages/projeto/pages/favorites.dart"
 };
 if(!window.$requireLoader) {

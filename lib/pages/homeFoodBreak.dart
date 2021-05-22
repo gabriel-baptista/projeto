@@ -77,8 +77,8 @@ class _HomeFoodBreakState extends State<HomeFoodBreak> {
         ),
       ),
       // botão flutuante que fica no meio da barra de navegação inferior
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: buildFloatButtonBottombar(),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      // floatingActionButton: buildFloatButtonBottombar(),
       // Barra de navegção inferior
       bottomNavigationBar: buildBottomBar(context),
     );
@@ -307,7 +307,6 @@ class _HomeFoodBreakState extends State<HomeFoodBreak> {
               ],
             ),
           ),
-          Spacer(),
           Expanded(
             flex: 2,
             child: Row(
@@ -396,7 +395,7 @@ class _HomeFoodBreakState extends State<HomeFoodBreak> {
             ),
           ),
           Text(
-            'Pagar',
+            'Carterira',
             style: TextStyle(
               color: Color.fromRGBO(215, 0, 0, 1),
             ),

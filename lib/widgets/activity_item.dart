@@ -52,7 +52,9 @@ class _ActivityItemState extends State<ActivityItem> {
 
         return Card(
           child: InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pushNamed("/menuFood");
+            },
             child: Padding(
               padding: const EdgeInsets.all(15),
               child: Column(

@@ -54,7 +54,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   padding: EdgeInsets.only(bottom: 31),
                   child: Image.asset(
                     "img/NovoLogoFoodBreak.png",
-                    //"img/LogoFoodBreak.png",
                     height: 250,
                   ),
                 ),
