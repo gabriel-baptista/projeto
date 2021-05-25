@@ -38,8 +38,16 @@ class _ActivityItemState extends State<ActivityItem> {
     ),
   ];
 
+  void addRestaurant() {
+    setState(() {
+      listaRestaurantes.insert(
+          0, RestaurantList("gabriel", "baptista", "oliveira"));
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
+    addRestaurant();
     // constrói o widget dos restaurantes
     return ListView.builder(
       // não deixa o scroll dentro do ListView
