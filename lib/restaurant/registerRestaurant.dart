@@ -12,23 +12,23 @@ class _RegisterRestaurantState extends State<RegisterRestaurant> {
   TextEditingController _controllerCNPJ = TextEditingController();
   TextEditingController _controllerSenhaRestaurant = TextEditingController();
   TextEditingController _controllerEnderecoRestaurant = TextEditingController();
-  TextEditingController _controllerCidadeRestaurant = TextEditingController();
+  TextEditingController _controllerDescricaoRestaurant = TextEditingController();
   String _textoAviso = "";
 
   void _verificaCampos() {
-    String verificaNomeUsuario = _controllerNomeRestaurant.text;
-    String verificaCelularUsuario = _controllerCelularRestaurant.text;
-    String verificaCPF = _controllerCNPJ.text;
-    String verificaSenhaUsuario = _controllerSenhaRestaurant.text;
-    String verificaEdereco = _controllerEnderecoRestaurant.text;
-    String verificaCidade = _controllerCidadeRestaurant.text;
+    String nome = _controllerNomeRestaurant.text;
+    String celular = _controllerCelularRestaurant.text;
+    String cnpj = _controllerCNPJ.text;
+    String senha = _controllerSenhaRestaurant.text;
+    String endereco = _controllerEnderecoRestaurant.text;
+    String descricao = _controllerDescricaoRestaurant.text;
 
-    if ((verificaNomeUsuario == "") ||
-        (verificaCelularUsuario == "") ||
-        (verificaCPF == "") ||
-        (verificaSenhaUsuario == "") ||
-        (verificaEdereco == "") ||
-        (verificaCidade == "")) {
+    if ((nome == "") ||
+        (celular == "") ||
+        (cnpj == "") ||
+        (senha == "") ||
+        (endereco == "") ||
+        (descricao == "")) {
       setState(() {
         _textoAviso =
             "Pode ser que você esqueceu de preencher algum campo, por favor preencha todos";
@@ -175,7 +175,7 @@ class _RegisterRestaurantState extends State<RegisterRestaurant> {
                                 fontSize: 22,
                               ),
                               // pega o que o usuário digitou no campo data de nascimento
-                              controller: _controllerCidadeRestaurant,
+                              controller: _controllerDescricaoRestaurant,
                             ),
                           ),
                         ],

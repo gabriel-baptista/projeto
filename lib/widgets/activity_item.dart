@@ -12,36 +12,49 @@ class _ActivityItemState extends State<ActivityItem> {
   List<RestaurantList> listaRestaurantes = [
     // chama a classe RestaurantList
     RestaurantList(
-      "Pizzaria do Seu Zé",
-      "Especializado em pizzas do Seu Zé",
-      "18:30 - 00:00",
-    ),
+      "00000000000001",
+      "Bar do Zé",
+      "Rua do bar do Zé",
+      "08:00 - 20:00",
+      "Temos um pouco de tudo",
+      "(12) 99899-9090"),
+
     RestaurantList(
-      "McDonald's",
-      "Dê-me o seu rim e lhe daremos um lanche ruim ;)",
-      "18:30 - 00:00",
-    ),
+      "00000000000002",
+      "Bruno's Butchery",
+      "Rua dos goleiros",
+      "08:00 - 18:00",
+      "Especialista em pequenas fatias",
+      "(12) 99899-9090"),
+
     RestaurantList(
-      "Tio da esquina",
-      "Especializado churrasco de gato",
-      "18:30 - 00:00",
-    ),
+      "00000000000003",
+      "Adega da Agata Adaga",
+      "Praça",
+      "08:00 - 20:00",
+      "Vinhos da melhor qualidade",
+      "(12) 99899-9090"),
+
     RestaurantList(
-      "Lanchão muito louco",
-      "Especializado lanches diferenciados",
-      "18:30 - 00:00",
-    ),
-    RestaurantList(
-      "Renato's Lanches",
-      "Venha comer o Renatão de 4",
-      "18:30 - 00:00",
-    ),
+      "00000000000004",
+      "Bar do Zé",
+      "Rua do bar do Zé",
+      "08:00 - 20:00",
+      "Temos um pouco de tudo",
+      "(12) 99899-9090"),
+
   ];
 
   void addRestaurant() {
     setState(() {
       listaRestaurantes.insert(
-          0, RestaurantList("gabriel", "baptista", "oliveira"));
+        0, RestaurantList(
+          "00000000000005",
+          "Bar do Zé",
+          "Rua do bar do Zé",
+          "08:00 - 20:00",
+          "Temos um pouco de tudo",
+          "(12) 99899-9090"));
     });
   }
 
