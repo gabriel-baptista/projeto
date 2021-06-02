@@ -4,10 +4,10 @@ import 'restaurant_list_widget.dart';
 
 class ActivityItem extends StatefulWidget {
   @override
-  _ActivityItemState createState() => _ActivityItemState();
+  ActivityItemState createState() => ActivityItemState();
 }
 
-class _ActivityItemState extends State<ActivityItem> {
+class ActivityItemState extends State<ActivityItem> {
   // cria um vetor com o que vai ser exibido nos cards
   List<RestaurantList> listaRestaurantes = [
     // chama a classe RestaurantList

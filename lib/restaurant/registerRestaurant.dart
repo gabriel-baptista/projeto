@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:projeto/widgets/activity_item.dart';
 
 class RegisterRestaurant extends StatefulWidget {
   @override
@@ -42,6 +43,8 @@ class _RegisterRestaurantState extends State<RegisterRestaurant> {
 
   @override
   Widget build(BuildContext context) {
+
+    ActivityItemState act_item = new ActivityItemState();
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -333,7 +336,7 @@ class _RegisterRestaurantState extends State<RegisterRestaurant> {
                             ),
                           ),
                           // faz uma ação se o botão for pressionado
-                          onPressed: _verificaCampos,
+                          onPressed: act_item.addRestaurant, 
                         ),
                       )
                     ],
