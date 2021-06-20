@@ -47,12 +47,12 @@ class _LoginRestaurantState extends State<LoginRestaurant> {
       body: SafeArea(
         child: Container(
           child: SingleChildScrollView(
-            padding: EdgeInsets.fromLTRB(32, 0, 32, 32),
+            padding: EdgeInsets.fromLTRB(32, 25, 32, 32),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 Padding(
-                  padding: EdgeInsets.only(bottom: 31),
+                  padding: EdgeInsets.only(bottom: 10),
                   child: Image.asset(
                     "img/NovoLogoFoodBreak.png",
                     //"img/LogoFoodBreak.png",
@@ -61,19 +61,14 @@ class _LoginRestaurantState extends State<LoginRestaurant> {
                 ),
                 // criando o textfield usuário
                 Padding(
-                  padding: EdgeInsets.fromLTRB(0, 12, 0, 20),
-                  child: TextField(
-                    // seleciona o tipo de teclado que o usuário utiliará
+                  padding: const EdgeInsets.only(bottom: 15),
+                  child: TextFormField(
                     keyboardType: TextInputType.number,
-                    // náo deixa o usu[ario digitar mais que 11 numeros
                     maxLength: 14,
                     maxLengthEnforcement: MaxLengthEnforcement.enforced,
-                    // decorando o textfield
+                    cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
                     decoration: InputDecoration(
-                      // texto que aparece antes do usuário digitar
-                      hintText: "CNPJ",
-                      hintStyle: TextStyle(color: Colors.grey.shade600),
-                      // mudar a borda do textfield se selecionado
+                      labelText: 'CNPJ',
                       focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(
                           color: Color.fromRGBO(215, 0, 0, 0.75),
@@ -83,27 +78,21 @@ class _LoginRestaurantState extends State<LoginRestaurant> {
                     style: TextStyle(
                       fontSize: 28,
                     ),
-                    // pega o que o usuário digitou no textfield
                     controller: _controllerRestaurant,
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(bottom: 20),
-                  child: TextField(
+                  padding: const EdgeInsets.only(bottom: 15),
+                  child: TextFormField(
                     keyboardType: TextInputType.text,
                     obscureText: true,
-                    // obscuringCharacter: "*",
+                    cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
                     decoration: InputDecoration(
-                      hintText: "Senha",
-                      hintStyle: TextStyle(color: Colors.grey.shade600),
+                      labelText: 'Senha',
                       focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(
                           color: Color.fromRGBO(215, 0, 0, 0.75),
                         ),
-                      ),
-                      suffixIcon: Icon(
-                        Icons.visibility,
-                        color: Colors.grey.shade500,
                       ),
                     ),
                     style: TextStyle(

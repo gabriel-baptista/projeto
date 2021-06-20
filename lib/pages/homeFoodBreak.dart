@@ -1,19 +1,16 @@
-// import 'dart:js';
+//  tela principal do ususario
+
 import 'package:flutter/material.dart';
-// import 'package:projeto/pages/favorites.dart';
-import 'package:projeto/widgets/activity_item.dart';
-// import 'package:projeto/widgets/bottom_menu.widget.dart';
-// import 'package:projeto/widgets/button_tab.widget.dart';
+import 'package:projeto/provider/data_restaurants.dart';
 import 'package:projeto/widgets/history.widget.dart';
+import 'package:projeto/widgets/restaurant_list.dart';
+import 'package:provider/provider.dart';
 
-class HomeFoodBreak extends StatefulWidget {
-  @override
-  _HomeFoodBreakState createState() => _HomeFoodBreakState();
-}
-
-class _HomeFoodBreakState extends State<HomeFoodBreak> {
+class HomeFoodBreak extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final DataRestaurants restaurants = Provider.of(context);
+
     return Scaffold(
       // criando a appbar
       appBar: AppBar(
@@ -32,47 +29,51 @@ class _HomeFoodBreakState extends State<HomeFoodBreak> {
         backgroundColor: Color.fromRGBO(250, 250, 250, 1),
         elevation: 0,
       ),
-      // corpo do app
       body: SafeArea(
-        // desabilita o efeito que aparece quando rola tudo pra cima ou tudo pra baixo
         child: NotificationListener<OverscrollIndicatorNotification>(
           onNotification: (notification) {
             notification.disallowGlow();
             return true;
           },
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                buildSearchBar(context),
-                // espaçamneto
-                SizedBox(
-                  height: 10,
-                ),
-                // botões de sugestões / favoritos e lista horizontal
-                buildHistory(),
-                // card de Promoções
-                buildPromotion(),
-                SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 15),
-                  child: Row(
-                    children: [
-                      Text(
-                        'Onde pedir',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 15,
-                        ),
+          child: Column(
+            children: [
+              // buildSearchBar(context),
+              // espaçamneto
+              SizedBox(
+                height: 10,
+              ),
+              // botões de sugestões / favoritos e lista horizontal
+              // buildHistory(),
+              // card de Promoções
+              // buildPromotion(),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 15),
+                child: Row(
+                  children: [
+                    Text(
+                      'Onde pedir',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
                       ),
-                    ],
+                    ),
+                  ],
+                ),
+              ),
+              // faz a listagem de restaurantes
+              Flexible(
+                child: ListView.builder(
+                  scrollDirection: Axis.vertical,
+                  itemCount: restaurants.count,
+                  itemBuilder: (context, i) => RestaurantList(
+                    restaurants.byIndex(i),
                   ),
                 ),
-                // faz a listagem de restaurantes
-                ActivityItem(),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),

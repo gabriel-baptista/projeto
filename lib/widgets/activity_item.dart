@@ -1,8 +1,14 @@
+// essa tela faz cria os cards dos restaurantes
+
 import 'package:flutter/material.dart';
 import 'package:projeto/widgets/restaurant_list_widget.dart';
 import 'restaurant_list_widget.dart';
 
 class ActivityItem extends StatefulWidget {
+  String nome;
+
+  ActivityItem({this.nome});
+
   @override
   ActivityItemState createState() => ActivityItemState();
 }
@@ -17,7 +23,8 @@ class ActivityItemState extends State<ActivityItem> {
       "Rua do bar do Zé",
       "08:00 - 20:00",
       "Temos um pouco de tudo",
-      "(12) 99899-9090"),
+      "(12) 99899-9090",
+    ),
 
     RestaurantList(
       "00000000000002",
@@ -25,7 +32,8 @@ class ActivityItemState extends State<ActivityItem> {
       "Rua dos goleiros",
       "08:00 - 18:00",
       "Especialista em pequenas fatias",
-      "(12) 99899-9090"),
+      "(12) 99899-9090",
+    ),
 
     RestaurantList(
       "00000000000003",
@@ -33,7 +41,8 @@ class ActivityItemState extends State<ActivityItem> {
       "Praça",
       "08:00 - 20:00",
       "Vinhos da melhor qualidade",
-      "(12) 99899-9090"),
+      "(12) 99899-9090",
+    ),
 
     RestaurantList(
       "00000000000004",
@@ -41,20 +50,39 @@ class ActivityItemState extends State<ActivityItem> {
       "Rua do bar do Zé",
       "08:00 - 20:00",
       "Temos um pouco de tudo",
-      "(12) 99899-9090"),
-
+      "(12) 99899-9090",
+    ),
   ];
+
+  // void addRestaurant() {
+  //   setState(() {
+  //     listaRestaurantes.insert(
+  //       0,
+  //       RestaurantList(
+  //         "00000000000005",
+  //         "teste",
+  //         "Rua do bar do Zé",
+  //         "08:00 - 20:00",
+  //         "Temos um pouco de tudo",
+  //         "(12) 99899-9090",
+  //       ),
+  //     );
+  //   });
+  // }
 
   void addRestaurant() {
     setState(() {
       listaRestaurantes.insert(
-        0, RestaurantList(
+        0,
+        RestaurantList(
           "00000000000005",
-          "Bar do Zé",
+          widget.nome,
           "Rua do bar do Zé",
           "08:00 - 20:00",
           "Temos um pouco de tudo",
-          "(12) 99899-9090"));
+          "(12) 99899-9090",
+        ),
+      );
     });
   }
 

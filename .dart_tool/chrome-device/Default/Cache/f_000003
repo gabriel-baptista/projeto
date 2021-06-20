@@ -19,15 +19,15 @@ define("main_module.bootstrap", ["web_entrypoint.dart", "dart_sdk"], function(ap
          main();
       });
     }
-    window.$dartAppId = "aDiRq8CrIxOg8Q8A8hUXfA==";
+    window.$dartAppId = "YhWISr3oCdTv0LEkSsAdHA==";
 window.$dartReloadConfiguration = "ReloadConfiguration.none";
 window.$dartModuleStrategy = "require-js";
 window.$loadModuleConfig = require;
 window.$dwdsVersion = "7.1.1";
-window.$dwdsDevHandlerPath = "http://localhost:54962/$dwdsSseHandler";
+window.$dwdsDevHandlerPath = "http://localhost:58910/$dwdsSseHandler";
 window.$dartEntrypointPath = "main_module.bootstrap.js";
 window.$requireLoader.forceLoadModule("dwds/src/injected/client");
-window.$dartExtensionUri = "http://127.0.0.1:54964/$debug";
+window.$dartExtensionUri = "http://127.0.0.1:58912/$debug";
 
   } else {
     if(window.$dartMainExecuted){
@@ -83,9 +83,18 @@ let modulePaths = {
  "web_entrypoint.dart": "web_entrypoint.dart.lib",
  "packages/projeto/main.dart": "packages/projeto/main.dart.lib",
  "packages/projeto/restaurant/registerRestaurant.dart": "packages/projeto/restaurant/registerRestaurant.dart.lib",
- "packages/flutter/services.dart": "packages/flutter/services.dart.lib",
- "packages/flutter/src/services/text_input.dart": "packages/flutter/src/services/text_input.dart.lib",
- "packages/flutter/src/services/text_editing.dart": "packages/flutter/src/services/text_editing.dart.lib",
+ "packages/projeto/widgets/activity_item.dart": "packages/projeto/widgets/activity_item.dart.lib",
+ "packages/projeto/widgets/restaurant_list_widget.dart": "packages/projeto/widgets/restaurant_list_widget.dart.lib",
+ "packages/flutter/material.dart": "packages/flutter/material.dart.lib",
+ "packages/flutter/widgets.dart": "packages/flutter/widgets.dart.lib",
+ "packages/flutter/src/widgets/will_pop_scope.dart": "packages/flutter/src/widgets/will_pop_scope.dart.lib",
+ "packages/flutter/src/widgets/widget_span.dart": "packages/flutter/src/widgets/widget_span.dart.lib",
+ "packages/flutter/rendering.dart": "packages/flutter/rendering.dart.lib",
+ "packages/flutter/src/rendering/wrap.dart": "packages/flutter/src/rendering/wrap.dart.lib",
+ "packages/flutter/src/rendering/layer.dart": "packages/flutter/src/rendering/layer.dart.lib",
+ "packages/flutter/painting.dart": "packages/flutter/painting.dart.lib",
+ "packages/flutter/src/painting/strut_style.dart": "packages/flutter/src/painting/strut_style.dart.lib",
+ "packages/flutter/src/painting/basic_types.dart": "packages/flutter/src/painting/basic_types.dart.lib",
  "packages/flutter/foundation.dart": "packages/flutter/foundation.dart.lib",
  "packages/flutter/src/foundation/unicode.dart": "packages/flutter/src/foundation/unicode.dart.lib",
  "packages/flutter/src/foundation/synchronous_future.dart": "packages/flutter/src/foundation/synchronous_future.dart.lib",
@@ -112,6 +121,11 @@ let modulePaths = {
  "packages/flutter/src/foundation/_bitfield_web.dart": "packages/flutter/src/foundation/_bitfield_web.dart.lib",
  "packages/flutter/src/foundation/binding.dart": "packages/flutter/src/foundation/binding.dart.lib",
  "packages/flutter/src/foundation/annotations.dart": "packages/flutter/src/foundation/annotations.dart.lib",
+ "packages/flutter/src/painting/colors.dart": "packages/flutter/src/painting/colors.dart.lib",
+ "packages/flutter/src/painting/placeholder_span.dart": "packages/flutter/src/painting/placeholder_span.dart.lib",
+ "packages/flutter/services.dart": "packages/flutter/services.dart.lib",
+ "packages/flutter/src/services/text_input.dart": "packages/flutter/src/services/text_input.dart.lib",
+ "packages/flutter/src/services/text_editing.dart": "packages/flutter/src/services/text_editing.dart.lib",
  "packages/flutter/src/services/system_chrome.dart": "packages/flutter/src/services/system_chrome.dart.lib",
  "packages/flutter/src/services/system_channels.dart": "packages/flutter/src/services/system_channels.dart.lib",
  "packages/flutter/scheduler.dart": "packages/flutter/scheduler.dart.lib",
@@ -180,18 +194,6 @@ let modulePaths = {
  "packages/flutter/src/services/font_loader.dart": "packages/flutter/src/services/font_loader.dart.lib",
  "packages/flutter/src/services/deferred_component.dart": "packages/flutter/src/services/deferred_component.dart.lib",
  "packages/flutter/src/services/clipboard.dart": "packages/flutter/src/services/clipboard.dart.lib",
- "packages/flutter/material.dart": "packages/flutter/material.dart.lib",
- "packages/flutter/widgets.dart": "packages/flutter/widgets.dart.lib",
- "packages/flutter/src/widgets/will_pop_scope.dart": "packages/flutter/src/widgets/will_pop_scope.dart.lib",
- "packages/flutter/src/widgets/widget_span.dart": "packages/flutter/src/widgets/widget_span.dart.lib",
- "packages/flutter/rendering.dart": "packages/flutter/rendering.dart.lib",
- "packages/flutter/src/rendering/wrap.dart": "packages/flutter/src/rendering/wrap.dart.lib",
- "packages/flutter/src/rendering/layer.dart": "packages/flutter/src/rendering/layer.dart.lib",
- "packages/flutter/painting.dart": "packages/flutter/painting.dart.lib",
- "packages/flutter/src/painting/strut_style.dart": "packages/flutter/src/painting/strut_style.dart.lib",
- "packages/flutter/src/painting/basic_types.dart": "packages/flutter/src/painting/basic_types.dart.lib",
- "packages/flutter/src/painting/colors.dart": "packages/flutter/src/painting/colors.dart.lib",
- "packages/flutter/src/painting/placeholder_span.dart": "packages/flutter/src/painting/placeholder_span.dart.lib",
  "packages/flutter/src/painting/stadium_border.dart": "packages/flutter/src/painting/stadium_border.dart.lib",
  "packages/flutter/src/painting/rounded_rectangle_border.dart": "packages/flutter/src/painting/rounded_rectangle_border.dart.lib",
  "packages/flutter/src/painting/edge_insets.dart": "packages/flutter/src/painting/edge_insets.dart.lib",
@@ -452,17 +454,24 @@ let modulePaths = {
  "packages/projeto/pages/loginScreen.dart": "packages/projeto/pages/loginScreen.dart.lib",
  "packages/projeto/pages/homeFoodBreak.dart": "packages/projeto/pages/homeFoodBreak.dart.lib",
  "packages/projeto/widgets/history.widget.dart": "packages/projeto/widgets/history.widget.dart.lib",
- "packages/projeto/widgets/activity_item.dart": "packages/projeto/widgets/activity_item.dart.lib",
- "packages/projeto/widgets/restaurant_list_widget.dart": "packages/projeto/widgets/restaurant_list_widget.dart.lib",
  "packages/projeto/pages/favorites.dart": "packages/projeto/pages/favorites.dart.lib"
 };
 let moduleNames = {
  "web_entrypoint.dart.lib": "web_entrypoint.dart",
  "packages/projeto/main.dart.lib": "packages/projeto/main.dart",
  "packages/projeto/restaurant/registerRestaurant.dart.lib": "packages/projeto/restaurant/registerRestaurant.dart",
- "packages/flutter/services.dart.lib": "packages/flutter/services.dart",
- "packages/flutter/src/services/text_input.dart.lib": "packages/flutter/src/services/text_input.dart",
- "packages/flutter/src/services/text_editing.dart.lib": "packages/flutter/src/services/text_editing.dart",
+ "packages/projeto/widgets/activity_item.dart.lib": "packages/projeto/widgets/activity_item.dart",
+ "packages/projeto/widgets/restaurant_list_widget.dart.lib": "packages/projeto/widgets/restaurant_list_widget.dart",
+ "packages/flutter/material.dart.lib": "packages/flutter/material.dart",
+ "packages/flutter/widgets.dart.lib": "packages/flutter/widgets.dart",
+ "packages/flutter/src/widgets/will_pop_scope.dart.lib": "packages/flutter/src/widgets/will_pop_scope.dart",
+ "packages/flutter/src/widgets/widget_span.dart.lib": "packages/flutter/src/widgets/widget_span.dart",
+ "packages/flutter/rendering.dart.lib": "packages/flutter/rendering.dart",
+ "packages/flutter/src/rendering/wrap.dart.lib": "packages/flutter/src/rendering/wrap.dart",
+ "packages/flutter/src/rendering/layer.dart.lib": "packages/flutter/src/rendering/layer.dart",
+ "packages/flutter/painting.dart.lib": "packages/flutter/painting.dart",
+ "packages/flutter/src/painting/strut_style.dart.lib": "packages/flutter/src/painting/strut_style.dart",
+ "packages/flutter/src/painting/basic_types.dart.lib": "packages/flutter/src/painting/basic_types.dart",
  "packages/flutter/foundation.dart.lib": "packages/flutter/foundation.dart",
  "packages/flutter/src/foundation/unicode.dart.lib": "packages/flutter/src/foundation/unicode.dart",
  "packages/flutter/src/foundation/synchronous_future.dart.lib": "packages/flutter/src/foundation/synchronous_future.dart",
@@ -489,6 +498,11 @@ let moduleNames = {
  "packages/flutter/src/foundation/_bitfield_web.dart.lib": "packages/flutter/src/foundation/_bitfield_web.dart",
  "packages/flutter/src/foundation/binding.dart.lib": "packages/flutter/src/foundation/binding.dart",
  "packages/flutter/src/foundation/annotations.dart.lib": "packages/flutter/src/foundation/annotations.dart",
+ "packages/flutter/src/painting/colors.dart.lib": "packages/flutter/src/painting/colors.dart",
+ "packages/flutter/src/painting/placeholder_span.dart.lib": "packages/flutter/src/painting/placeholder_span.dart",
+ "packages/flutter/services.dart.lib": "packages/flutter/services.dart",
+ "packages/flutter/src/services/text_input.dart.lib": "packages/flutter/src/services/text_input.dart",
+ "packages/flutter/src/services/text_editing.dart.lib": "packages/flutter/src/services/text_editing.dart",
  "packages/flutter/src/services/system_chrome.dart.lib": "packages/flutter/src/services/system_chrome.dart",
  "packages/flutter/src/services/system_channels.dart.lib": "packages/flutter/src/services/system_channels.dart",
  "packages/flutter/scheduler.dart.lib": "packages/flutter/scheduler.dart",
@@ -557,18 +571,6 @@ let moduleNames = {
  "packages/flutter/src/services/font_loader.dart.lib": "packages/flutter/src/services/font_loader.dart",
  "packages/flutter/src/services/deferred_component.dart.lib": "packages/flutter/src/services/deferred_component.dart",
  "packages/flutter/src/services/clipboard.dart.lib": "packages/flutter/src/services/clipboard.dart",
- "packages/flutter/material.dart.lib": "packages/flutter/material.dart",
- "packages/flutter/widgets.dart.lib": "packages/flutter/widgets.dart",
- "packages/flutter/src/widgets/will_pop_scope.dart.lib": "packages/flutter/src/widgets/will_pop_scope.dart",
- "packages/flutter/src/widgets/widget_span.dart.lib": "packages/flutter/src/widgets/widget_span.dart",
- "packages/flutter/rendering.dart.lib": "packages/flutter/rendering.dart",
- "packages/flutter/src/rendering/wrap.dart.lib": "packages/flutter/src/rendering/wrap.dart",
- "packages/flutter/src/rendering/layer.dart.lib": "packages/flutter/src/rendering/layer.dart",
- "packages/flutter/painting.dart.lib": "packages/flutter/painting.dart",
- "packages/flutter/src/painting/strut_style.dart.lib": "packages/flutter/src/painting/strut_style.dart",
- "packages/flutter/src/painting/basic_types.dart.lib": "packages/flutter/src/painting/basic_types.dart",
- "packages/flutter/src/painting/colors.dart.lib": "packages/flutter/src/painting/colors.dart",
- "packages/flutter/src/painting/placeholder_span.dart.lib": "packages/flutter/src/painting/placeholder_span.dart",
  "packages/flutter/src/painting/stadium_border.dart.lib": "packages/flutter/src/painting/stadium_border.dart",
  "packages/flutter/src/painting/rounded_rectangle_border.dart.lib": "packages/flutter/src/painting/rounded_rectangle_border.dart",
  "packages/flutter/src/painting/edge_insets.dart.lib": "packages/flutter/src/painting/edge_insets.dart",
@@ -829,8 +831,6 @@ let moduleNames = {
  "packages/projeto/pages/loginScreen.dart.lib": "packages/projeto/pages/loginScreen.dart",
  "packages/projeto/pages/homeFoodBreak.dart.lib": "packages/projeto/pages/homeFoodBreak.dart",
  "packages/projeto/widgets/history.widget.dart.lib": "packages/projeto/widgets/history.widget.dart",
- "packages/projeto/widgets/activity_item.dart.lib": "packages/projeto/widgets/activity_item.dart",
- "packages/projeto/widgets/restaurant_list_widget.dart.lib": "packages/projeto/widgets/restaurant_list_widget.dart",
  "packages/projeto/pages/favorites.dart.lib": "packages/projeto/pages/favorites.dart"
 };
 if(!window.$requireLoader) {

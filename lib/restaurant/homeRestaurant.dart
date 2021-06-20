@@ -124,8 +124,9 @@ class _HomeRestaurantState extends State<HomeRestaurant> {
                               borderRadius: BorderRadius.circular(18),
                             ),
                           ),
-                          onPressed:
-                              () {}, // faz um ação se o botão for pressionado
+                          onPressed: () {
+                            Navigator.of(context).pushNamed('/menuRestaurant');
+                          }, // faz um ação se o botão for pressionado
                         ),
                       ),
                     ],

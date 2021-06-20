@@ -18,12 +18,12 @@ class _MenuFoodItemState extends State<MenuFoodItem> {
     ),
     FoodList(
       "MC Lanche Feliz",
-      "lanchinho que te deixa feliz por apenas um preço de um rim",
+      "preço de um rim",
       "R\$ 15.000,00",
       "img/mclanche-feliz.jpg",
     ),
     FoodList(
-      "BIG LANCHÃO EXTRA GRANDE GG",
+      "BIG LANCHÃO",
       "Mata fome e você de colesterol",
       "R\$ 75,00",
       "img/lanchaoGG.jpg",
@@ -81,17 +81,21 @@ class _MenuFoodItemState extends State<MenuFoodItem> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Row(
+                          Wrap(
                             children: [
-                              Text.rich(
-                                TextSpan(
-                                  // vai pegar o nome do restaurante na classe FoodList
-                                  text: foodList.nomeComida,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20,
+                              Row(
+                                children: [
+                                  Text.rich(
+                                    TextSpan(
+                                      // vai pegar o nome do restaurante na classe FoodList
+                                      text: foodList.nomeComida,
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                      ),
+                                    ),
                                   ),
-                                ),
+                                ],
                               ),
                             ],
                           ),
