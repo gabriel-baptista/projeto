@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'package:projeto/models/modelRestaurant.dart';
 import 'package:projeto/provider/data_restaurants.dart';
+import 'package:projeto/restaurant/profileRestaurant.dart';
 import 'package:provider/provider.dart';
 
 class RegisterRestaurant extends StatefulWidget {
@@ -13,6 +14,34 @@ class RegisterRestaurant extends StatefulWidget {
 }
 
 class _RegisterRestaurantState extends State<RegisterRestaurant> {
+  void passarDados() {
+    String nome, cnpj, descricao, endereco, celular, imagem, senha;
+    setState(() {
+      cnpj = _formData['CNPJ'];
+      nome = _formData['nameRestaurant'];
+      descricao = _formData['descriptionRestaurant'];
+      endereco = _formData['enderecoRestaurant'];
+      celular = _formData['cellRestaurant'];
+      senha = _formData['passwordRestaurant'];
+      imagem = _formData['imgRestaurant'];
+
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => ProfileRestaurant(
+            cnpj: cnpj,
+            nome: nome,
+            descricao: descricao,
+            endereco: endereco,
+            celular: celular,
+            imagem: imagem,
+            senha: senha,
+          ),
+        ),
+      );
+    });
+  }
+
   // TextEditingController _controllerNomeRestaurant = TextEditingController();
   // TextEditingController _controllerCelularRestaurant = TextEditingController();
   // TextEditingController _controllerCNPJ = TextEditingController();
@@ -125,6 +154,7 @@ class _RegisterRestaurantState extends State<RegisterRestaurant> {
                             Padding(
                               padding: const EdgeInsets.only(bottom: 0),
                               child: TextFormField(
+                                keyboardType: TextInputType.number,
                                 cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
                                 decoration: InputDecoration(
                                   labelText: 'CNPJ',
@@ -157,6 +187,7 @@ class _RegisterRestaurantState extends State<RegisterRestaurant> {
                             Padding(
                               padding: const EdgeInsets.only(bottom: 15),
                               child: TextFormField(
+                                keyboardType: TextInputType.text,
                                 cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
                                 decoration: InputDecoration(
                                   labelText: 'Nome do Restaurante',
@@ -173,6 +204,7 @@ class _RegisterRestaurantState extends State<RegisterRestaurant> {
                             Padding(
                               padding: const EdgeInsets.only(bottom: 15),
                               child: TextFormField(
+                                keyboardType: TextInputType.text,
                                 cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
                                 decoration: InputDecoration(
                                   labelText: 'Descrição',
@@ -190,6 +222,7 @@ class _RegisterRestaurantState extends State<RegisterRestaurant> {
                             Padding(
                               padding: const EdgeInsets.only(bottom: 15),
                               child: TextFormField(
+                                keyboardType: TextInputType.streetAddress,
                                 cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
                                 decoration: InputDecoration(
                                   labelText: 'Endereço',
@@ -206,6 +239,7 @@ class _RegisterRestaurantState extends State<RegisterRestaurant> {
                             Padding(
                               padding: const EdgeInsets.only(bottom: 0),
                               child: TextFormField(
+                                keyboardType: TextInputType.number,
                                 cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
                                 decoration: InputDecoration(
                                   labelText: 'Celular',
@@ -238,6 +272,7 @@ class _RegisterRestaurantState extends State<RegisterRestaurant> {
                             Padding(
                               padding: const EdgeInsets.only(bottom: 15),
                               child: TextFormField(
+                                keyboardType: TextInputType.text,
                                 cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
                                 decoration: InputDecoration(
                                   labelText: 'Imagem',
@@ -254,6 +289,7 @@ class _RegisterRestaurantState extends State<RegisterRestaurant> {
                             Padding(
                               padding: const EdgeInsets.only(bottom: 15),
                               child: TextFormField(
+                                keyboardType: TextInputType.text,
                                 obscureText: true,
                                 cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
                                 decoration: InputDecoration(
@@ -555,8 +591,10 @@ class _RegisterRestaurantState extends State<RegisterRestaurant> {
                                   imgRestaurant: _formData['imgRestaurant'],
                                 ),
                               );
-                              Navigator.of(context)
-                                  .pushNamed('/profileRestaurant');
+                              passarDados();
+                              // nome = _formData['cnpj'];
+                              // Navigator.of(context)
+                              //     .pushNamed('/profileRestaurant');
                             }
                           },
                         ),

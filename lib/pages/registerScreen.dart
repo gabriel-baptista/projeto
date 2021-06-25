@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:projeto/pages/userProfile.dart';
 
 class RegisterScreen extends StatefulWidget {
   @override
@@ -12,12 +13,40 @@ class _RegisterScreenState extends State<RegisterScreen> {
   TextEditingController _controllerCelularUsuario = TextEditingController();
   TextEditingController _controllerCPF = TextEditingController();
   TextEditingController _controllerEndereco = TextEditingController();
+  TextEditingController _controllerImagem = TextEditingController();
   TextEditingController _controllerSenhaUsuario = TextEditingController();
   TextEditingController _controllerConfirmarSenhaUsuario =
       TextEditingController();
   String _textoAviso = "";
 
+  void passarDados() {
+    String nome, cpf, endereco, celular, imagem, senha;
+    setState(() {
+      cpf = _controllerCPF.text;
+      nome = _controllerNomeUsuario.text;
+      endereco = _controllerEndereco.text;
+      celular = _controllerCelularUsuario.text;
+      senha = _controllerSenhaUsuario.text;
+      imagem = _controllerImagem.text;
+
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => UserProfile(
+            cpf: cpf,
+            nome: nome,
+            endereco: endereco,
+            celular: celular,
+            imagem: imagem,
+            senha: senha,
+          ),
+        ),
+      );
+    });
+  }
+
   void _verificaCampos() {
+    String nome, cpf, endereco, celular, imagem, senha;
     String verificaNomeUsuario = _controllerNomeUsuario.text;
     String verificaDataNascimento = _controllerDataNascimento.text;
     String verificaCelularUsuario = _controllerCelularUsuario.text;
@@ -44,180 +73,215 @@ class _RegisterScreenState extends State<RegisterScreen> {
       });
     } else {
       setState(() {
-        _textoAviso = "Cadastro feito com sucesso";
+        // _textoAviso = "Cadastro feito com sucesso";
+        cpf = _controllerCPF.text;
+        nome = _controllerNomeUsuario.text;
+        endereco = _controllerEndereco.text;
+        celular = _controllerCelularUsuario.text;
+        senha = _controllerSenhaUsuario.text;
+        imagem = _controllerImagem.text;
+
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => UserProfile(
+              cpf: cpf,
+              nome: nome,
+              endereco: endereco,
+              celular: celular,
+              imagem: imagem,
+              senha: senha,
+            ),
+          ),
+        );
       });
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          iconTheme: IconThemeData(
-            color: Color.fromRGBO(215, 0, 0, 1),
-          ),
-          title: Text(
-            "Registrar",
-            style: TextStyle(
-              fontSize: 32,
-              fontWeight: FontWeight.bold,
-              color: Color.fromRGBO(0, 0, 0, 1),
-            ),
-          ),
-          centerTitle: true,
-          backgroundColor: Color.fromRGBO(255, 255, 255, 1),
-          elevation: 0,
+    return Scaffold(
+      appBar: AppBar(
+        iconTheme: IconThemeData(
+          color: Color.fromRGBO(215, 0, 0, 1),
         ),
-        body: SafeArea(
-          child: NotificationListener<OverscrollIndicatorNotification>(
-            onNotification: (notification) {
-              notification.disallowGlow();
-              return true;
-            },
-            child: SingleChildScrollView(
-              child: Container(
-                height: MediaQuery.of(context).size.height * 0.89,
-                color: Color.fromRGBO(255, 255, 255, 1),
-                child: SingleChildScrollView(
-                  padding: EdgeInsets.fromLTRB(25, 5, 25, 10),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: <Widget>[
-                      Form(
-                        // key: _form,
-                        child: Column(
-                          children: <Widget>[
-                            Padding(
-                              padding: const EdgeInsets.only(bottom: 15),
-                              child: TextFormField(
-                                keyboardType: TextInputType.text,
-                                cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
-                                decoration: InputDecoration(
-                                  labelText: 'Nome Completo',
-                                  focusColor: Color.fromRGBO(215, 0, 0, 0.75),
-                                  focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color: Color.fromRGBO(215, 0, 0, 0.75),
-                                    ),
+        title: Text(
+          "Registrar",
+          style: TextStyle(
+            fontSize: 32,
+            fontWeight: FontWeight.bold,
+            color: Color.fromRGBO(0, 0, 0, 1),
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Color.fromRGBO(255, 255, 255, 1),
+        elevation: 0,
+      ),
+      body: SafeArea(
+        child: NotificationListener<OverscrollIndicatorNotification>(
+          onNotification: (notification) {
+            notification.disallowGlow();
+            return true;
+          },
+          child: SingleChildScrollView(
+            child: Container(
+              height: MediaQuery.of(context).size.height * 1,
+              color: Color.fromRGBO(255, 255, 255, 1),
+              child: SingleChildScrollView(
+                padding: EdgeInsets.fromLTRB(25, 5, 25, 10),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: <Widget>[
+                    Form(
+                      // key: _form,
+                      child: Column(
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 15),
+                            child: TextFormField(
+                              keyboardType: TextInputType.text,
+                              cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
+                              decoration: InputDecoration(
+                                labelText: 'Nome Completo',
+                                focusColor: Color.fromRGBO(215, 0, 0, 0.75),
+                                focusedBorder: UnderlineInputBorder(
+                                  borderSide: BorderSide(
+                                    color: Color.fromRGBO(215, 0, 0, 0.75),
                                   ),
                                 ),
-                                controller: _controllerNomeUsuario,
                               ),
+                              controller: _controllerNomeUsuario,
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(bottom: 15),
-                              child: TextFormField(
-                                keyboardType: TextInputType.number,
-                                cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
-                                maxLength: 11,
-                                maxLengthEnforcement:
-                                    MaxLengthEnforcement.enforced,
-                                decoration: InputDecoration(
-                                  labelText: 'CPF',
-                                  focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color: Color.fromRGBO(215, 0, 0, 0.75),
-                                    ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 15),
+                            child: TextFormField(
+                              keyboardType: TextInputType.number,
+                              cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
+                              maxLength: 11,
+                              maxLengthEnforcement:
+                                  MaxLengthEnforcement.enforced,
+                              decoration: InputDecoration(
+                                labelText: 'CPF',
+                                focusedBorder: UnderlineInputBorder(
+                                  borderSide: BorderSide(
+                                    color: Color.fromRGBO(215, 0, 0, 0.75),
                                   ),
                                 ),
-                                controller: _controllerCPF,
                               ),
+                              controller: _controllerCPF,
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(bottom: 15),
-                              child: TextFormField(
-                                keyboardType: TextInputType.datetime,
-                                cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
-                                maxLength: 8,
-                                maxLengthEnforcement:
-                                    MaxLengthEnforcement.enforced,
-                                decoration: InputDecoration(
-                                  labelText: 'Data de Nascimento',
-                                  focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color: Color.fromRGBO(215, 0, 0, 0.75),
-                                    ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 15),
+                            child: TextFormField(
+                              keyboardType: TextInputType.datetime,
+                              cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
+                              maxLength: 8,
+                              maxLengthEnforcement:
+                                  MaxLengthEnforcement.enforced,
+                              decoration: InputDecoration(
+                                labelText: 'Data de Nascimento',
+                                focusedBorder: UnderlineInputBorder(
+                                  borderSide: BorderSide(
+                                    color: Color.fromRGBO(215, 0, 0, 0.75),
                                   ),
                                 ),
-                                controller: _controllerDataNascimento,
                               ),
+                              controller: _controllerDataNascimento,
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(bottom: 15),
-                              child: TextFormField(
-                                keyboardType: TextInputType.streetAddress,
-                                cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
-                                decoration: InputDecoration(
-                                  labelText: 'Endereço',
-                                  focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color: Color.fromRGBO(215, 0, 0, 0.75),
-                                    ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 15),
+                            child: TextFormField(
+                              keyboardType: TextInputType.streetAddress,
+                              cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
+                              decoration: InputDecoration(
+                                labelText: 'Endereço',
+                                focusedBorder: UnderlineInputBorder(
+                                  borderSide: BorderSide(
+                                    color: Color.fromRGBO(215, 0, 0, 0.75),
                                   ),
                                 ),
-                                controller: _controllerEndereco,
                               ),
+                              controller: _controllerEndereco,
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(bottom: 15),
-                              child: TextFormField(
-                                keyboardType: TextInputType.number,
-                                cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
-                                maxLength: 11,
-                                maxLengthEnforcement:
-                                    MaxLengthEnforcement.enforced,
-                                decoration: InputDecoration(
-                                  labelText: 'Celular',
-                                  focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color: Color.fromRGBO(215, 0, 0, 0.75),
-                                    ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 15),
+                            child: TextFormField(
+                              keyboardType: TextInputType.number,
+                              cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
+                              maxLength: 11,
+                              maxLengthEnforcement:
+                                  MaxLengthEnforcement.enforced,
+                              decoration: InputDecoration(
+                                labelText: 'Celular',
+                                focusedBorder: UnderlineInputBorder(
+                                  borderSide: BorderSide(
+                                    color: Color.fromRGBO(215, 0, 0, 0.75),
                                   ),
                                 ),
-                                controller: _controllerCelularUsuario,
                               ),
+                              controller: _controllerCelularUsuario,
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(bottom: 15),
-                              child: TextFormField(
-                                keyboardType: TextInputType.text,
-                                obscureText: true,
-                                cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
-                                decoration: InputDecoration(
-                                  labelText: 'Senha',
-                                  focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color: Color.fromRGBO(215, 0, 0, 0.75),
-                                    ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 15),
+                            child: TextFormField(
+                              keyboardType: TextInputType.streetAddress,
+                              cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
+                              decoration: InputDecoration(
+                                labelText: 'Imagem',
+                                focusedBorder: UnderlineInputBorder(
+                                  borderSide: BorderSide(
+                                    color: Color.fromRGBO(215, 0, 0, 0.75),
                                   ),
                                 ),
-                                controller: _controllerSenhaUsuario,
                               ),
+                              controller: _controllerImagem,
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(bottom: 15),
-                              child: TextFormField(
-                                keyboardType: TextInputType.text,
-                                obscureText: true,
-                                cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
-                                decoration: InputDecoration(
-                                  labelText: 'Confirmar Senha',
-                                  focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color: Color.fromRGBO(215, 0, 0, 0.75),
-                                    ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 15),
+                            child: TextFormField(
+                              keyboardType: TextInputType.text,
+                              obscureText: true,
+                              cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
+                              decoration: InputDecoration(
+                                labelText: 'Senha',
+                                focusedBorder: UnderlineInputBorder(
+                                  borderSide: BorderSide(
+                                    color: Color.fromRGBO(215, 0, 0, 0.75),
                                   ),
                                 ),
-                                controller: _controllerConfirmarSenhaUsuario,
                               ),
+                              controller: _controllerSenhaUsuario,
                             ),
-                          ],
-                        ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 15),
+                            child: TextFormField(
+                              keyboardType: TextInputType.text,
+                              obscureText: true,
+                              cursorColor: Color.fromRGBO(215, 0, 0, 0.75),
+                              decoration: InputDecoration(
+                                labelText: 'Confirmar Senha',
+                                focusedBorder: UnderlineInputBorder(
+                                  borderSide: BorderSide(
+                                    color: Color.fromRGBO(215, 0, 0, 0.75),
+                                  ),
+                                ),
+                              ),
+                              controller: _controllerConfirmarSenhaUsuario,
+                            ),
+                          ),
+                        ],
                       ),
+                    ),
 
-                      // icone do campo nome
-                      /*Row(
+                    // icone do campo nome
+                    /*Row(
                         children: <Widget>[
                           Padding(
                             padding: EdgeInsets.fromLTRB(0, 10, 10, 0),
@@ -503,49 +567,48 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           ),
                         ],
                       ),*/
-                      // caso aconteça algum erro, o app irá mostrar esse padding com um aviso ao usuário
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(0, 5, 0, 30),
+                    // caso aconteça algum erro, o app irá mostrar esse padding com um aviso ao usuário
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(0, 5, 0, 30),
+                      child: Text(
+                        _textoAviso,
+                        style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.bold,
+                            color: Color.fromRGBO(215, 0, 0, 0.75)),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 0,
+                    ),
+                    Card(
+                      color: Colors.transparent,
+                      shadowColor: Colors.transparent,
+                      // da uma elevação no card
+                      elevation: 3,
+                      // cria um botao
+                      child: ElevatedButton(
                         child: Text(
-                          _textoAviso,
+                          "Pronto",
                           style: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.bold,
-                              color: Color.fromRGBO(215, 0, 0, 0.75)),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 0,
-                      ),
-                      Card(
-                        color: Colors.transparent,
-                        shadowColor: Colors.transparent,
-                        // da uma elevação no card
-                        elevation: 3,
-                        // cria um botao
-                        child: ElevatedButton(
-                          child: Text(
-                            "Pronto",
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                              color: Color.fromRGBO(255, 255, 255, 1),
-                            ),
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Color.fromRGBO(255, 255, 255, 1),
                           ),
-                          // estiliza o botão
-                          style: ElevatedButton.styleFrom(
-                            primary: Color.fromRGBO(215, 0, 0, 1),
-                            padding: EdgeInsets.all(20),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18),
-                            ),
-                          ),
-                          // faz uma ação se o botão for pressionado
-                          onPressed: _verificaCampos,
                         ),
-                      )
-                    ],
-                  ),
+                        // estiliza o botão
+                        style: ElevatedButton.styleFrom(
+                          primary: Color.fromRGBO(215, 0, 0, 1),
+                          padding: EdgeInsets.all(20),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(18),
+                          ),
+                        ),
+                        // faz uma ação se o botão for pressionado
+                        onPressed: _verificaCampos,
+                      ),
+                    )
+                  ],
                 ),
               ),
             ),

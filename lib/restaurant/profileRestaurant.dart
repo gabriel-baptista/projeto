@@ -1,13 +1,46 @@
 import 'package:flutter/material.dart';
 
 class ProfileRestaurant extends StatelessWidget {
+  String nome, cnpj, descricao, endereco, celular, imagem, senha;
+
+  ProfileRestaurant(
+      {this.nome,
+      this.cnpj,
+      this.descricao,
+      this.endereco,
+      this.celular,
+      this.imagem,
+      this.senha});
+
   @override
   Widget build(BuildContext context) {
+    final imagemRestaurante = imagem == null || imagem.isEmpty
+        ? CircleAvatar(
+            radius: 100,
+            child: Icon(
+              Icons.fastfood_rounded,
+              size: 80,
+            ),
+          )
+        : Column(
+            children: [
+              CircleAvatar(
+                backgroundColor: Colors.transparent,
+                radius: 100,
+                child: ClipOval(
+                  child: Image.network(
+                    imagem,
+                    fit: BoxFit.fill,
+                  ),
+                ),
+              ),
+            ],
+          );
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
           iconTheme: IconThemeData(
-            color: Color.fromRGBO(215, 0, 0, 1),
+            color: Colors.transparent,
           ),
           title: Text(
             "Perfil",
@@ -18,19 +51,18 @@ class ProfileRestaurant extends StatelessWidget {
             ),
           ),
           centerTitle: true,
-          backgroundColor: Color.fromRGBO(250, 250, 250, 1),
+          backgroundColor: Color.fromRGBO(255, 255, 255, 1),
           elevation: 0,
+          leading: IconButton(
+            icon: Icon(
+              Icons.home_rounded,
+              color: Color.fromRGBO(215, 0, 0, 1),
+            ),
+            onPressed: () {
+              Navigator.of(context).pushNamed('/home');
+            },
+          ),
           actions: <Widget>[
-            IconButton(
-              icon: Icon(
-                Icons.mode_rounded,
-                color: Color.fromRGBO(215, 0, 0, 1),
-              ),
-              onPressed: () {},
-            ),
-            SizedBox(
-              width: 10,
-            ),
             IconButton(
               icon: Icon(
                 Icons.logout,
@@ -55,7 +87,7 @@ class ProfileRestaurant extends StatelessWidget {
             },
             child: SingleChildScrollView(
               child: Container(
-                color: Color.fromRGBO(255, 255, 255, 1),
+                // color: Color.fromRGBO(255, 255, 255, 1),
                 child: SingleChildScrollView(
                   padding: EdgeInsets.fromLTRB(25, 55, 25, 50),
                   child: Column(
@@ -65,17 +97,22 @@ class ProfileRestaurant extends StatelessWidget {
                       Row(
                         children: [
                           Spacer(),
-                          CircleAvatar(
-                            backgroundColor: Colors.transparent,
-                            radius: 70,
-                            child: ClipOval(
-                              child: Image.asset(
-                                // "img/user_photo.jpeg",
-                                "img/robsday.jpg",
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ),
+                          imagemRestaurante,
+                          // CircleAvatar(
+                          // backgroundColor: Colors.transparent,
+                          // radius: 70,
+                          // child: Icon(
+                          //   Icons.fastfood_rounded,
+                          // size: 40,
+                          // ),
+                          // child: ClipOval(
+                          // child: Image.asset(
+                          //   // "img/user_photo.jpeg",
+                          //   "img/robsday.jpg",
+                          //   fit: BoxFit.fill,
+                          // ),
+                          // ),
+                          // ),
                           Spacer(),
                         ],
                       ),
@@ -96,7 +133,8 @@ class ProfileRestaurant extends StatelessWidget {
                             child: TextField(
                               enabled: false,
                               decoration: InputDecoration(
-                                hintText: "ROBS Restaurante",
+                                // hintText: "ROBS Restaurante",
+                                hintText: nome,
                                 hintStyle: TextStyle(
                                   color: Colors.black,
                                 ),
@@ -124,7 +162,8 @@ class ProfileRestaurant extends StatelessWidget {
                             child: TextField(
                               enabled: false,
                               decoration: InputDecoration(
-                                hintText: "Rua Capitão Neco, Centro - 151",
+                                // hintText: "Rua Capitão Neco, Centro - 151",
+                                hintText: endereco,
                                 hintStyle: TextStyle(
                                   color: Colors.black,
                                 ),
@@ -136,13 +175,16 @@ class ProfileRestaurant extends StatelessWidget {
                           ),
                         ],
                       ),
+                      SizedBox(
+                        height: 25,
+                      ),
+                      // campo de descrição do restaurante
                       Row(
                         children: [
                           Padding(
                             padding: EdgeInsets.fromLTRB(0, 0, 10, 10),
                             child: Icon(
-                              Icons.home_rounded,
-                              color: Colors.transparent,
+                              Icons.description_rounded,
                               size: 40,
                             ),
                           ),
@@ -150,7 +192,7 @@ class ProfileRestaurant extends StatelessWidget {
                             child: TextField(
                               enabled: false,
                               decoration: InputDecoration(
-                                hintText: "Cruzeiro-SP",
+                                hintText: descricao,
                                 hintStyle: TextStyle(
                                   color: Colors.black,
                                 ),
@@ -161,6 +203,9 @@ class ProfileRestaurant extends StatelessWidget {
                             ),
                           ),
                         ],
+                      ),
+                      SizedBox(
+                        height: 25,
                       ),
                       // campo telefone
                       Row(
@@ -177,7 +222,8 @@ class ProfileRestaurant extends StatelessWidget {
                               keyboardType: TextInputType.number,
                               decoration: InputDecoration(
                                 enabled: false,
-                                hintText: "(11) 123456789",
+                                // hintText: "(11) 123456789",
+                                hintText: celular,
                                 hintStyle: TextStyle(
                                   color: Colors.black,
                                 ),
@@ -206,7 +252,7 @@ class ProfileRestaurant extends StatelessWidget {
                             child: TextField(
                               enabled: false,
                               decoration: InputDecoration(
-                                hintText: "12345678912345",
+                                hintText: cnpj,
                                 hintStyle: TextStyle(
                                   color: Colors.black,
                                 ),

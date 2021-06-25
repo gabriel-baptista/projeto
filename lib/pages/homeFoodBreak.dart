@@ -25,6 +25,21 @@ class HomeFoodBreak extends StatelessWidget {
             color: Color.fromRGBO(215, 0, 0, 1),
           ),
         ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+              Icons.logout,
+              color: Color.fromRGBO(215, 0, 0, 1),
+            ),
+            onPressed: () {
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                  '/login', (Route<dynamic> route) => false);
+            },
+          ),
+          SizedBox(
+            width: 10,
+          )
+        ],
         centerTitle: true,
         backgroundColor: Color.fromRGBO(250, 250, 250, 1),
         elevation: 0,
