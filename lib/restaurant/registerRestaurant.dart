@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'package:projeto/models/modelRestaurant.dart';
 import 'package:projeto/provider/data_restaurants.dart';
-import 'package:projeto/restaurant/profileRestaurant.dart';
+// import 'package:projeto/restaurant/profileRestaurant.dart';
 import 'package:provider/provider.dart';
 
 class RegisterRestaurant extends StatefulWidget {
@@ -14,33 +14,33 @@ class RegisterRestaurant extends StatefulWidget {
 }
 
 class _RegisterRestaurantState extends State<RegisterRestaurant> {
-  void passarDados() {
-    String nome, cnpj, descricao, endereco, celular, imagem, senha;
-    setState(() {
-      cnpj = _formData['CNPJ'];
-      nome = _formData['nameRestaurant'];
-      descricao = _formData['descriptionRestaurant'];
-      endereco = _formData['enderecoRestaurant'];
-      celular = _formData['cellRestaurant'];
-      senha = _formData['passwordRestaurant'];
-      imagem = _formData['imgRestaurant'];
+  // void passarDados() {
+  //   String nome, cnpj, descricao, endereco, celular, imagem, senha;
+  //   setState(() {
+  //     cnpj = _formData['CNPJ'];
+  //     nome = _formData['nameRestaurant'];
+  //     descricao = _formData['descriptionRestaurant'];
+  //     endereco = _formData['enderecoRestaurant'];
+  //     celular = _formData['cellRestaurant'];
+  //     senha = _formData['passwordRestaurant'];
+  //     imagem = _formData['imgRestaurant'];
 
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => ProfileRestaurant(
-            cnpj: cnpj,
-            nome: nome,
-            descricao: descricao,
-            endereco: endereco,
-            celular: celular,
-            imagem: imagem,
-            senha: senha,
-          ),
-        ),
-      );
-    });
-  }
+  //     Navigator.push(
+  //       context,
+  //       MaterialPageRoute(
+  //         builder: (context) => ProfileRestaurant(
+  //           cnpj: cnpj,
+  //           nome: nome,
+  //           descricao: descricao,
+  //           endereco: endereco,
+  //           celular: celular,
+  //           imagem: imagem,
+  //           senha: senha,
+  //         ),
+  //       ),
+  //     );
+  //   });
+  // }
 
   // TextEditingController _controllerNomeRestaurant = TextEditingController();
   // TextEditingController _controllerCelularRestaurant = TextEditingController();
@@ -579,7 +579,7 @@ class _RegisterRestaurantState extends State<RegisterRestaurant> {
                                       listen: false)
                                   .put(
                                 ModelRestaurant(
-                                  cnpj: _formData['cnpj'],
+                                  cnpj: _formData['CNPJ'],
                                   nameRestaurant: _formData['nameRestaurant'],
                                   descriptionRestaurant:
                                       _formData['descriptionRestaurant'],
@@ -591,10 +591,9 @@ class _RegisterRestaurantState extends State<RegisterRestaurant> {
                                   imgRestaurant: _formData['imgRestaurant'],
                                 ),
                               );
-                              passarDados();
-                              // nome = _formData['cnpj'];
-                              // Navigator.of(context)
-                              //     .pushNamed('/profileRestaurant');
+                              // passarDados();
+                              Navigator.of(context)
+                                  .pushNamed('/homeRestaurant');
                             }
                           },
                         ),

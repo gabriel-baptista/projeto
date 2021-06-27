@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:projeto/models/modelMenu.dart';
 import 'package:projeto/pages/favorites.dart';
 import 'package:projeto/pages/homeFoodBreak.dart';
 import 'package:projeto/pages/loginScreen.dart';
@@ -9,6 +8,7 @@ import 'package:projeto/pages/requestScreen.dart';
 import 'package:projeto/pages/userProfile.dart';
 import 'package:projeto/provider/data_menu.dart';
 import 'package:projeto/provider/data_restaurants.dart';
+import 'package:projeto/provider/users.dart';
 import 'package:projeto/restaurant/foodForm.dart';
 import 'package:projeto/restaurant/homeRestaurant.dart';
 import 'package:projeto/restaurant/loginRestaurant.dart';
@@ -28,6 +28,9 @@ void main() {
         ),
         ChangeNotifierProvider(
           create: (ctx) => DataMenu(),
+        ),
+        ChangeNotifierProvider(
+          create: (ctx) => Users(),
         ),
       ],
       child: MaterialApp(
@@ -61,6 +64,7 @@ void main() {
           '/foodForm': (BuildContext context) => new FoodForm(),
 
           AppRoutes.FOOD_FORM: (_) => FoodForm(),
+          // AppRoutes.USER_FORM: (_) => UserForm(),
         },
       ),
     ),

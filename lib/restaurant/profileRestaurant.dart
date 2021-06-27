@@ -1,12 +1,62 @@
 import 'package:flutter/material.dart';
+// import 'package:projeto/models/modelRestaurant.dart';
+import 'package:projeto/provider/data_restaurants.dart';
+import 'package:projeto/widgets/restaurantTile.dart';
+import 'package:provider/provider.dart';
 
 class ProfileRestaurant extends StatelessWidget {
-  String nome, cnpj, descricao, endereco, celular, imagem, senha;
+  @override
+  Widget build(BuildContext context) {
+    final DataRestaurants dataRestaurants = Provider.of(context);
+    return Scaffold(
+      appBar: AppBar(
+        iconTheme: IconThemeData(
+          color: Color.fromRGBO(215, 0, 0, 1),
+        ),
+        title: Text(
+          "Perfil",
+          style: TextStyle(
+            fontSize: 32,
+            fontWeight: FontWeight.bold,
+            color: Color.fromRGBO(215, 0, 0, 1),
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Color.fromRGBO(255, 255, 255, 1),
+        elevation: 0,
+        actions: <Widget>[
+          SizedBox(
+            width: 10,
+          ),
+          IconButton(
+            icon: Icon(
+              Icons.logout,
+              color: Color.fromRGBO(215, 0, 0, 1),
+            ),
+            onPressed: () {
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                  '/login', (Route<dynamic> route) => false);
+            },
+          ),
+          SizedBox(
+            width: 10,
+          )
+        ],
+      ),
+      body: ListView.builder(
+        itemCount: 1,
+        itemBuilder: (ctx, i) => RestaurantTile(dataRestaurants.byIndex(i)),
+      ),
+    );
+  }
+}
 
-  ProfileRestaurant(
+/*class UserProfile extends StatelessWidget {
+  String nome, cpf, endereco, celular, imagem, senha;
+
+  UserProfile(
       {this.nome,
-      this.cnpj,
-      this.descricao,
+      this.cpf,
       this.endereco,
       this.celular,
       this.imagem,
@@ -50,9 +100,6 @@ class ProfileRestaurant extends StatelessWidget {
               color: Color.fromRGBO(215, 0, 0, 1),
             ),
           ),
-          centerTitle: true,
-          backgroundColor: Color.fromRGBO(255, 255, 255, 1),
-          elevation: 0,
           leading: IconButton(
             icon: Icon(
               Icons.home_rounded,
@@ -62,7 +109,13 @@ class ProfileRestaurant extends StatelessWidget {
               Navigator.of(context).pushNamed('/home');
             },
           ),
+          centerTitle: true,
+          backgroundColor: Color.fromRGBO(255, 255, 255, 1),
+          elevation: 0,
           actions: <Widget>[
+            SizedBox(
+              width: 10,
+            ),
             IconButton(
               icon: Icon(
                 Icons.logout,
@@ -178,35 +231,6 @@ class ProfileRestaurant extends StatelessWidget {
                       SizedBox(
                         height: 25,
                       ),
-                      // campo de descrição do restaurante
-                      Row(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(0, 0, 10, 10),
-                            child: Icon(
-                              Icons.description_rounded,
-                              size: 40,
-                            ),
-                          ),
-                          Flexible(
-                            child: TextField(
-                              enabled: false,
-                              decoration: InputDecoration(
-                                hintText: descricao,
-                                hintStyle: TextStyle(
-                                  color: Colors.black,
-                                ),
-                              ),
-                              style: TextStyle(
-                                fontSize: 22,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 25,
-                      ),
                       // campo telefone
                       Row(
                         children: [
@@ -252,7 +276,7 @@ class ProfileRestaurant extends StatelessWidget {
                             child: TextField(
                               enabled: false,
                               decoration: InputDecoration(
-                                hintText: cnpj,
+                                hintText: cpf,
                                 hintStyle: TextStyle(
                                   color: Colors.black,
                                 ),
@@ -274,14 +298,14 @@ class ProfileRestaurant extends StatelessWidget {
       ),
     );
   }
-}
+}*/
 
-/*class ProfileRestaurant extends StatefulWidget {
+/*class UserProfile extends StatefulWidget {
   @override
-  _ProfileRestaurantState createState() => _ProfileRestaurantState();
+  _UserProfileState createState() => _UserProfileState();
 }
 
-class _ProfileRestaurantState extends State<ProfileRestaurant> {
+class _UserProfileState extends State<UserProfile> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -365,25 +389,51 @@ class _ProfileRestaurantState extends State<ProfileRestaurant> {
                       ),
                       // icone do campo nome
                       Row(
-                        children: [
+                        children: <Widget>[
                           Padding(
-                            padding: EdgeInsets.fromLTRB(0, 0, 10, 10),
+                            padding: EdgeInsets.fromLTRB(0, 10, 10, 0),
                             child: Icon(
-                              Icons.account_circle_rounded,
+                              Icons.account_circle_outlined,
                               size: 40,
+                              semanticLabel: "Perfil do Usuário",
                             ),
                           ),
+                          // campo nome
                           Flexible(
-                            child: TextField(
-                              enabled: false,
-                              decoration: InputDecoration(
-                                hintText: "ROBS Restaurante",
-                                hintStyle: TextStyle(
-                                  color: Colors.black,
+                            child: Container(
+                              child: TextField(
+                                enabled: false,
+                                keyboardType: TextInputType.text,
+                                decoration: InputDecoration(
+                                  hintText: "Gabriel",
+                                  hintStyle: TextStyle(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                                style: TextStyle(
+                                  fontSize: 22,
                                 ),
                               ),
-                              style: TextStyle(
-                                fontSize: 22,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 25,
+                          ),
+                          // campo sobrenome
+                          Flexible(
+                            child: Container(
+                              child: TextField(
+                                enabled: false,
+                                keyboardType: TextInputType.text,
+                                decoration: InputDecoration(
+                                  hintText: "Baptista",
+                                  hintStyle: TextStyle(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                                style: TextStyle(
+                                  fontSize: 22,
+                                ),
                               ),
                             ),
                           ),
@@ -443,6 +493,39 @@ class _ProfileRestaurantState extends State<ProfileRestaurant> {
                           ),
                         ],
                       ),
+                      SizedBox(
+                        height: 25,
+                      ),
+                      // campo data de nascimento
+                      Row(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(0, 0, 10, 10),
+                            child: Icon(
+                              Icons.calendar_today_outlined,
+                              size: 40,
+                            ),
+                          ),
+                          Flexible(
+                            child: TextField(
+                              enabled: false,
+                              keyboardType: TextInputType.datetime,
+                              decoration: InputDecoration(
+                                hintText: "06/03/2002",
+                                hintStyle: TextStyle(
+                                  color: Colors.black,
+                                ),
+                              ),
+                              style: TextStyle(
+                                fontSize: 22,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 25,
+                      ),
                       // campo telefone
                       Row(
                         children: [
@@ -487,7 +570,7 @@ class _ProfileRestaurantState extends State<ProfileRestaurant> {
                             child: TextField(
                               enabled: false,
                               decoration: InputDecoration(
-                                hintText: "12345678912345",
+                                hintText: "12345678911",
                                 hintStyle: TextStyle(
                                   color: Colors.black,
                                 ),
@@ -506,6 +589,172 @@ class _ProfileRestaurantState extends State<ProfileRestaurant> {
             ),
           ),
         ),
+        // botão flutuante que fica no meio da barra de navegação inferior
+        // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        // floatingActionButton: buildFloatButtonBottombar(),
+        // Barra de navegção inferior
+        bottomNavigationBar: buildBottomBar(),
+      ),
+    );
+  }
+
+  Widget buildBottomBar() {
+    // construindo a barra de navegação inferior
+    return Container(
+      height: 50,
+      child: Row(
+        children: [
+          Expanded(
+            flex: 2,
+            child: Row(
+              children: [
+                Expanded(
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: Container(
+                      height: 80,
+                      child: Column(
+                        children: [
+                          Icon(
+                            Icons.food_bank_rounded,
+                            color: Colors.grey.shade700,
+                            size: 32,
+                          ),
+                          Text(
+                            "Início",
+                            style: TextStyle(
+                              fontSize: 12.8,
+                              color: Colors.grey.shade700,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.of(context).popAndPushNamed('/favorites');
+                    },
+                    child: Container(
+                      height: 80,
+                      child: Column(
+                        children: [
+                          Icon(
+                            Icons.favorite_border_rounded,
+                            color: Colors.grey.shade700,
+                            size: 32,
+                          ),
+                          Text(
+                            "Favoritos",
+                            style: TextStyle(
+                              fontSize: 12.8,
+                              color: Colors.grey.shade700,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Row(
+              children: [
+                Expanded(
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.of(context).popAndPushNamed('/requests');
+                    },
+                    child: Container(
+                      height: 80,
+                      child: Column(
+                        children: [
+                          Icon(
+                            Icons.receipt_long_outlined,
+                            color: Colors.grey.shade700,
+                            size: 32,
+                          ),
+                          Text(
+                            "Pedidos",
+                            style: TextStyle(
+                              fontSize: 12.8,
+                              color: Colors.grey.shade700,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: InkWell(
+                    onTap: () {},
+                    child: Container(
+                      height: 80,
+                      child: Column(
+                        children: [
+                          Icon(
+                            Icons.account_circle_rounded,
+                            color: Color.fromRGBO(215, 0, 0, 1),
+                            size: 32,
+                          ),
+                          Text(
+                            "Perfil",
+                            style: TextStyle(
+                              fontSize: 12.8,
+                              color: Color.fromRGBO(215, 0, 0, 1),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget buildFloatButtonBottombar() {
+    // constrói o botão flutuante da menu inferior
+    return Container(
+      height: 100,
+      color: Colors.transparent,
+      padding: const EdgeInsets.only(
+        bottom: 10,
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          Container(
+            height: 40,
+            width: 40,
+            decoration: BoxDecoration(
+              color: Color.fromRGBO(215, 0, 0, 1),
+              shape: BoxShape.circle,
+            ),
+            child: Icon(
+              Icons.attach_money,
+              color: Colors.white,
+            ),
+          ),
+          Text(
+            'Pagar',
+            style: TextStyle(
+              color: Color.fromRGBO(215, 0, 0, 1),
+            ),
+          ),
+        ],
       ),
     );
   }
