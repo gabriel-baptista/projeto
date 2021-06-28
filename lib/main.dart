@@ -19,7 +19,6 @@ import 'package:projeto/widgets/routes.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  // runApp(MyApp());
   runApp(
     MultiProvider(
       providers: [
@@ -40,9 +39,6 @@ void main() {
           primarySwatch: Colors.red,
           // primaryColor: Color.fromRGBO(215, 0, 0, 0.75),
         ),
-        // home: RegisterScreen(),
-        // home: HomeFoodBreak(),
-        // home: Favorites(),
         routes: <String, WidgetBuilder>{
           // rotas cliente
           '/login': (BuildContext context) => new LoginScreen(),
@@ -64,7 +60,6 @@ void main() {
           '/foodForm': (BuildContext context) => new FoodForm(),
 
           AppRoutes.FOOD_FORM: (_) => FoodForm(),
-          // AppRoutes.USER_FORM: (_) => UserForm(),
         },
       ),
     ),

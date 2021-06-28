@@ -1,11 +1,7 @@
-// crud
-// Users  = DataRestaurants
+//  Metódos de insert, update and remove dos clientes
 
 import 'dart:math';
-
 import 'package:flutter/material.dart';
-// import 'package:projeto/data/dummy_food.dart';
-// import 'package:projeto/data/dummy_users.dart';
 import 'package:projeto/models/user.dart';
 
 class Users with ChangeNotifier {

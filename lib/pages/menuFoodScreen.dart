@@ -1,8 +1,7 @@
+// cria tela de menu do restaurante
+
 import 'package:flutter/material.dart';
-// import 'package:projeto/models/modelMenu.dart';
 import 'package:projeto/provider/data_menu.dart';
-// import 'package:projeto/widgets/menuFood_item.dart';
-// import 'package:projeto/widgets/menuList.dart';
 import 'package:projeto/widgets/menuListUser.dart';
 import 'package:provider/provider.dart';
 

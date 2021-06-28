@@ -1,8 +1,7 @@
+// criando a tela de restaurantes favoritos do usuario
+
 import 'package:flutter/material.dart';
 import 'package:projeto/widgets/activity_item.dart';
-// import 'package:projeto/widgets/bottom_menu.widget.dart';
-// import 'package:projeto/widgets/button_tab.widget.dart';
-// import 'package:projeto/widgets/history.widget.dart';
 
 class Favorites extends StatefulWidget {
   @override

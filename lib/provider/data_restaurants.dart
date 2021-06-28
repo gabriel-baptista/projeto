@@ -1,12 +1,9 @@
-// crud
+//  Metódos de insert, update and remove dos restaurantes
 
-// import 'dart:math';
 import 'package:flutter/material.dart';
-// import 'package:projeto/data/dummy_restaurants.dart';
 import 'package:projeto/models/modelRestaurant.dart';
 
 class DataRestaurants with ChangeNotifier {
-  // final Map<String, ModelRestaurant> _restaurants = {...DUMMY_RESTAURANTS};
   final Map<String, ModelRestaurant> _restaurants = {};
 
   // pega os dados dos restautantes

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:projeto/widgets/restaurant_list_widget.dart';
 import 'restaurant_list_widget.dart';
 
+// ignore: must_be_immutable
 class ActivityItem extends StatefulWidget {
   String nome;
 
@@ -53,22 +54,6 @@ class ActivityItemState extends State<ActivityItem> {
       "(12) 99899-9090",
     ),
   ];
-
-  // void addRestaurant() {
-  //   setState(() {
-  //     listaRestaurantes.insert(
-  //       0,
-  //       RestaurantList(
-  //         "00000000000005",
-  //         "teste",
-  //         "Rua do bar do Zé",
-  //         "08:00 - 20:00",
-  //         "Temos um pouco de tudo",
-  //         "(12) 99899-9090",
-  //       ),
-  //     );
-  //   });
-  // }
 
   void addRestaurant() {
     setState(() {

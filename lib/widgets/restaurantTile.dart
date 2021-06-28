@@ -1,6 +1,7 @@
+// cria a listagem dos restaurantes
+
 import 'package:flutter/material.dart';
 import 'package:projeto/models/modelRestaurant.dart';
-// import 'package:projeto/models/user.dart';
 
 class RestaurantTile extends StatelessWidget {
   final ModelRestaurant modelRestaurant;
@@ -51,21 +52,6 @@ class RestaurantTile extends StatelessWidget {
                     children: [
                       Spacer(),
                       avatar,
-                      // CircleAvatar(
-                      // backgroundColor: Colors.transparent,
-                      // radius: 70,
-                      // child: Icon(
-                      //   Icons.fastfood_rounded,
-                      // size: 40,
-                      // ),
-                      // child: ClipOval(
-                      // child: Image.asset(
-                      //   // "img/user_photo.jpeg",
-                      //   "img/robsday.jpg",
-                      //   fit: BoxFit.fill,
-                      // ),
-                      // ),
-                      // ),
                       Spacer(),
                     ],
                   ),

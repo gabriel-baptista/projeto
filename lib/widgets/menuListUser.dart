@@ -30,7 +30,6 @@ class MenuListUser extends StatelessWidget {
               ),
             ],
           );
-    // : CircleAvatar(backgroundImage: NetworkImage(modelMenu.imgFood));
     return Card(
       child: Padding(
         padding: const EdgeInsets.fromLTRB(15, 15, 15, 15),

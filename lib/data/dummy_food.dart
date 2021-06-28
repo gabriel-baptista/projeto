@@ -1,3 +1,5 @@
+// dados falsos de pratos
+
 import 'package:projeto/models/modelMenu.dart';
 
 const DUMMY_FOOD = {

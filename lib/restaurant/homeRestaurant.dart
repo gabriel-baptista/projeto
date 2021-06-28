@@ -1,3 +1,5 @@
+// tela inicial do restaurante
+
 import 'package:flutter/material.dart';
 
 class HomeRestaurant extends StatefulWidget {

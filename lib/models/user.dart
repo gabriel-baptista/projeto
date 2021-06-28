@@ -1,5 +1,4 @@
-// armazena os dados
-// import 'package:flutter/material.dart';
+// armazena os dados de cada cliente
 
 class User {
   final String cpf;

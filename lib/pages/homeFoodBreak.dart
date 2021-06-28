@@ -1,4 +1,4 @@
-//  tela principal do ususario
+//  tela principal do usuario
 
 import 'package:flutter/material.dart';
 import 'package:projeto/provider/data_restaurants.dart';

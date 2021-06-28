@@ -33,7 +33,6 @@ class MenuList extends StatelessWidget {
               ),
             ],
           );
-    // : CircleAvatar(backgroundImage: NetworkImage(modelMenu.imgFood));
     return Card(
       child: Padding(
         padding: const EdgeInsets.fromLTRB(15, 15, 15, 15),
@@ -43,18 +42,6 @@ class MenuList extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    // Column(
-                    //   children: [
-                    //     CircleAvatar(
-                    //       backgroundColor: Colors.transparent,
-                    //       radius: 40,
-                    //       child: Image.asset(
-                    //         "img/RestaurantLogo.jpg",
-                    //         fit: BoxFit.fill,
-                    //       ),
-                    //     ),
-                    //   ],
-                    // ),
                     foodImg,
                     SizedBox(
                       width: 15,
@@ -160,62 +147,5 @@ class MenuList extends StatelessWidget {
         ),
       ),
     );
-
-    /*ListTile(
-      leading: avatar,
-      title: Text(modelMenu.nameFood),
-      subtitle: Text(modelMenu.descriptionFood),
-      isThreeLine: true,
-      trailing: Container(
-        width: 100,
-        child: Row(
-          children: <Widget>[
-            IconButton(
-              icon: Icon(
-                Icons.edit,
-              ),
-              color: Colors.orange,
-              onPressed: () {
-                Navigator.of(context).pushNamed(
-                  AppRoutes.FOOD_FORM,
-                  arguments: modelMenu,
-                );
-              },
-            ),
-            IconButton(
-              icon: Icon(
-                Icons.delete,
-              ),
-              color: Colors.red,
-              onPressed: () {
-                showDialog(
-                  context: context,
-                  builder: (ctx) => AlertDialog(
-                    title: Text("Excluir Usuário"),
-                    content: Text("Tem certeza?"),
-                    actions: <Widget>[
-                      TextButton(
-                        child: Text("Não"),
-                        onPressed: () {
-                          Navigator.of(context).pop();
-                        },
-                      ),
-                      TextButton(
-                        child: Text("Sim"),
-                        onPressed: () {
-                          Provider.of<DataMenu>(context, listen: false)
-                              .remove(modelMenu);
-                          Navigator.of(context).pop();
-                        },
-                      ),
-                    ],
-                  ),
-                );
-              },
-            ),
-          ],
-        ),
-      ),
-    );*/
   }
 }

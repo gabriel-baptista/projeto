@@ -19,15 +19,15 @@ define("main_module.bootstrap", ["web_entrypoint.dart", "dart_sdk"], function(ap
          main();
       });
     }
-    window.$dartAppId = "YhWISr3oCdTv0LEkSsAdHA==";
+    window.$dartAppId = "EPLfI/wC5GWvJyo8QtUjXw==";
 window.$dartReloadConfiguration = "ReloadConfiguration.none";
 window.$dartModuleStrategy = "require-js";
 window.$loadModuleConfig = require;
 window.$dwdsVersion = "7.1.1";
-window.$dwdsDevHandlerPath = "http://localhost:58910/$dwdsSseHandler";
+window.$dwdsDevHandlerPath = "http://localhost:60988/$dwdsSseHandler";
 window.$dartEntrypointPath = "main_module.bootstrap.js";
 window.$requireLoader.forceLoadModule("dwds/src/injected/client");
-window.$dartExtensionUri = "http://127.0.0.1:58912/$debug";
+window.$dartExtensionUri = "http://127.0.0.1:60990/$debug";
 
   } else {
     if(window.$dartMainExecuted){
@@ -82,10 +82,10 @@ var baseUrl = (function () {
 let modulePaths = {
  "web_entrypoint.dart": "web_entrypoint.dart.lib",
  "packages/projeto/main.dart": "packages/projeto/main.dart.lib",
- "packages/projeto/restaurant/registerRestaurant.dart": "packages/projeto/restaurant/registerRestaurant.dart.lib",
- "packages/projeto/widgets/activity_item.dart": "packages/projeto/widgets/activity_item.dart.lib",
- "packages/projeto/widgets/restaurant_list_widget.dart": "packages/projeto/widgets/restaurant_list_widget.dart.lib",
- "packages/flutter/material.dart": "packages/flutter/material.dart.lib",
+ "packages/provider/provider.dart": "packages/provider/provider.dart.lib",
+ "packages/provider/src/value_listenable_provider.dart": "packages/provider/src/value_listenable_provider.dart.lib",
+ "packages/provider/src/provider.dart": "packages/provider/src/provider.dart.lib",
+ "packages/provider/src/reassemble_handler.dart": "packages/provider/src/reassemble_handler.dart.lib",
  "packages/flutter/widgets.dart": "packages/flutter/widgets.dart.lib",
  "packages/flutter/src/widgets/will_pop_scope.dart": "packages/flutter/src/widgets/will_pop_scope.dart.lib",
  "packages/flutter/src/widgets/widget_span.dart": "packages/flutter/src/widgets/widget_span.dart.lib",
@@ -334,6 +334,8 @@ let modulePaths = {
  "packages/flutter/src/widgets/animated_size.dart": "packages/flutter/src/widgets/animated_size.dart.lib",
  "packages/flutter/src/widgets/animated_list.dart": "packages/flutter/src/widgets/animated_list.dart.lib",
  "packages/flutter/src/widgets/animated_cross_fade.dart": "packages/flutter/src/widgets/animated_cross_fade.dart.lib",
+ "packages/nested/nested.dart": "packages/nested/nested.dart.lib",
+ "packages/flutter/material.dart": "packages/flutter/material.dart.lib",
  "packages/flutter/src/material/user_accounts_drawer_header.dart": "packages/flutter/src/material/user_accounts_drawer_header.dart.lib",
  "packages/flutter/src/material/icon_button.dart": "packages/flutter/src/material/icon_button.dart.lib",
  "packages/flutter/src/material/typography.dart": "packages/flutter/src/material/typography.dart.lib",
@@ -441,28 +443,48 @@ let modulePaths = {
  "packages/flutter/src/material/app.dart": "packages/flutter/src/material/app.dart.lib",
  "packages/flutter/src/material/animated_icons.dart": "packages/flutter/src/material/animated_icons.dart.lib",
  "packages/flutter/src/material/about.dart": "packages/flutter/src/material/about.dart.lib",
+ "packages/provider/src/selector.dart": "packages/provider/src/selector.dart.lib",
+ "packages/provider/src/proxy_provider.dart": "packages/provider/src/proxy_provider.dart.lib",
+ "packages/provider/src/listenable_provider.dart": "packages/provider/src/listenable_provider.dart.lib",
+ "packages/provider/src/async_provider.dart": "packages/provider/src/async_provider.dart.lib",
+ "packages/projeto/widgets/routes.dart": "packages/projeto/widgets/routes.dart.lib",
+ "packages/projeto/restaurant/registerRestaurant.dart": "packages/projeto/restaurant/registerRestaurant.dart.lib",
+ "packages/projeto/provider/data_restaurants.dart": "packages/projeto/provider/data_restaurants.dart.lib",
+ "packages/projeto/models/modelRestaurant.dart": "packages/projeto/models/modelRestaurant.dart.lib",
  "packages/projeto/restaurant/profileRestaurant.dart": "packages/projeto/restaurant/profileRestaurant.dart.lib",
+ "packages/projeto/widgets/restaurantTile.dart": "packages/projeto/widgets/restaurantTile.dart.lib",
+ "packages/projeto/restaurant/menuRestaurant.dart": "packages/projeto/restaurant/menuRestaurant.dart.lib",
+ "packages/projeto/provider/data_menu.dart": "packages/projeto/provider/data_menu.dart.lib",
+ "packages/projeto/models/modelMenu.dart": "packages/projeto/models/modelMenu.dart.lib",
+ "packages/projeto/data/dummy_food.dart": "packages/projeto/data/dummy_food.dart.lib",
+ "packages/projeto/widgets/menuList.dart": "packages/projeto/widgets/menuList.dart.lib",
  "packages/projeto/restaurant/loginRestaurant.dart": "packages/projeto/restaurant/loginRestaurant.dart.lib",
  "packages/projeto/restaurant/homeRestaurant.dart": "packages/projeto/restaurant/homeRestaurant.dart.lib",
+ "packages/projeto/restaurant/foodForm.dart": "packages/projeto/restaurant/foodForm.dart.lib",
+ "packages/projeto/provider/users.dart": "packages/projeto/provider/users.dart.lib",
+ "packages/projeto/models/user.dart": "packages/projeto/models/user.dart.lib",
  "packages/projeto/pages/userProfile.dart": "packages/projeto/pages/userProfile.dart.lib",
+ "packages/projeto/widgets/userTile.dart": "packages/projeto/widgets/userTile.dart.lib",
  "packages/projeto/pages/requestScreen.dart": "packages/projeto/pages/requestScreen.dart.lib",
  "packages/projeto/widgets/state_activity_item.dart": "packages/projeto/widgets/state_activity_item.dart.lib",
  "packages/projeto/pages/registerScreen.dart": "packages/projeto/pages/registerScreen.dart.lib",
  "packages/projeto/pages/menuFoodScreen.dart": "packages/projeto/pages/menuFoodScreen.dart.lib",
- "packages/projeto/widgets/menuFood_item.dart": "packages/projeto/widgets/menuFood_item.dart.lib",
- "packages/projeto/widgets/food_list_widget.dart": "packages/projeto/widgets/food_list_widget.dart.lib",
+ "packages/projeto/widgets/menuListUser.dart": "packages/projeto/widgets/menuListUser.dart.lib",
  "packages/projeto/pages/loginScreen.dart": "packages/projeto/pages/loginScreen.dart.lib",
  "packages/projeto/pages/homeFoodBreak.dart": "packages/projeto/pages/homeFoodBreak.dart.lib",
+ "packages/projeto/widgets/restaurant_list.dart": "packages/projeto/widgets/restaurant_list.dart.lib",
  "packages/projeto/widgets/history.widget.dart": "packages/projeto/widgets/history.widget.dart.lib",
- "packages/projeto/pages/favorites.dart": "packages/projeto/pages/favorites.dart.lib"
+ "packages/projeto/pages/favorites.dart": "packages/projeto/pages/favorites.dart.lib",
+ "packages/projeto/widgets/activity_item.dart": "packages/projeto/widgets/activity_item.dart.lib",
+ "packages/projeto/widgets/restaurant_list_widget.dart": "packages/projeto/widgets/restaurant_list_widget.dart.lib"
 };
 let moduleNames = {
  "web_entrypoint.dart.lib": "web_entrypoint.dart",
  "packages/projeto/main.dart.lib": "packages/projeto/main.dart",
- "packages/projeto/restaurant/registerRestaurant.dart.lib": "packages/projeto/restaurant/registerRestaurant.dart",
- "packages/projeto/widgets/activity_item.dart.lib": "packages/projeto/widgets/activity_item.dart",
- "packages/projeto/widgets/restaurant_list_widget.dart.lib": "packages/projeto/widgets/restaurant_list_widget.dart",
- "packages/flutter/material.dart.lib": "packages/flutter/material.dart",
+ "packages/provider/provider.dart.lib": "packages/provider/provider.dart",
+ "packages/provider/src/value_listenable_provider.dart.lib": "packages/provider/src/value_listenable_provider.dart",
+ "packages/provider/src/provider.dart.lib": "packages/provider/src/provider.dart",
+ "packages/provider/src/reassemble_handler.dart.lib": "packages/provider/src/reassemble_handler.dart",
  "packages/flutter/widgets.dart.lib": "packages/flutter/widgets.dart",
  "packages/flutter/src/widgets/will_pop_scope.dart.lib": "packages/flutter/src/widgets/will_pop_scope.dart",
  "packages/flutter/src/widgets/widget_span.dart.lib": "packages/flutter/src/widgets/widget_span.dart",
@@ -711,6 +733,8 @@ let moduleNames = {
  "packages/flutter/src/widgets/animated_size.dart.lib": "packages/flutter/src/widgets/animated_size.dart",
  "packages/flutter/src/widgets/animated_list.dart.lib": "packages/flutter/src/widgets/animated_list.dart",
  "packages/flutter/src/widgets/animated_cross_fade.dart.lib": "packages/flutter/src/widgets/animated_cross_fade.dart",
+ "packages/nested/nested.dart.lib": "packages/nested/nested.dart",
+ "packages/flutter/material.dart.lib": "packages/flutter/material.dart",
  "packages/flutter/src/material/user_accounts_drawer_header.dart.lib": "packages/flutter/src/material/user_accounts_drawer_header.dart",
  "packages/flutter/src/material/icon_button.dart.lib": "packages/flutter/src/material/icon_button.dart",
  "packages/flutter/src/material/typography.dart.lib": "packages/flutter/src/material/typography.dart",
@@ -818,20 +842,40 @@ let moduleNames = {
  "packages/flutter/src/material/app.dart.lib": "packages/flutter/src/material/app.dart",
  "packages/flutter/src/material/animated_icons.dart.lib": "packages/flutter/src/material/animated_icons.dart",
  "packages/flutter/src/material/about.dart.lib": "packages/flutter/src/material/about.dart",
+ "packages/provider/src/selector.dart.lib": "packages/provider/src/selector.dart",
+ "packages/provider/src/proxy_provider.dart.lib": "packages/provider/src/proxy_provider.dart",
+ "packages/provider/src/listenable_provider.dart.lib": "packages/provider/src/listenable_provider.dart",
+ "packages/provider/src/async_provider.dart.lib": "packages/provider/src/async_provider.dart",
+ "packages/projeto/widgets/routes.dart.lib": "packages/projeto/widgets/routes.dart",
+ "packages/projeto/restaurant/registerRestaurant.dart.lib": "packages/projeto/restaurant/registerRestaurant.dart",
+ "packages/projeto/provider/data_restaurants.dart.lib": "packages/projeto/provider/data_restaurants.dart",
+ "packages/projeto/models/modelRestaurant.dart.lib": "packages/projeto/models/modelRestaurant.dart",
  "packages/projeto/restaurant/profileRestaurant.dart.lib": "packages/projeto/restaurant/profileRestaurant.dart",
+ "packages/projeto/widgets/restaurantTile.dart.lib": "packages/projeto/widgets/restaurantTile.dart",
+ "packages/projeto/restaurant/menuRestaurant.dart.lib": "packages/projeto/restaurant/menuRestaurant.dart",
+ "packages/projeto/provider/data_menu.dart.lib": "packages/projeto/provider/data_menu.dart",
+ "packages/projeto/models/modelMenu.dart.lib": "packages/projeto/models/modelMenu.dart",
+ "packages/projeto/data/dummy_food.dart.lib": "packages/projeto/data/dummy_food.dart",
+ "packages/projeto/widgets/menuList.dart.lib": "packages/projeto/widgets/menuList.dart",
  "packages/projeto/restaurant/loginRestaurant.dart.lib": "packages/projeto/restaurant/loginRestaurant.dart",
  "packages/projeto/restaurant/homeRestaurant.dart.lib": "packages/projeto/restaurant/homeRestaurant.dart",
+ "packages/projeto/restaurant/foodForm.dart.lib": "packages/projeto/restaurant/foodForm.dart",
+ "packages/projeto/provider/users.dart.lib": "packages/projeto/provider/users.dart",
+ "packages/projeto/models/user.dart.lib": "packages/projeto/models/user.dart",
  "packages/projeto/pages/userProfile.dart.lib": "packages/projeto/pages/userProfile.dart",
+ "packages/projeto/widgets/userTile.dart.lib": "packages/projeto/widgets/userTile.dart",
  "packages/projeto/pages/requestScreen.dart.lib": "packages/projeto/pages/requestScreen.dart",
  "packages/projeto/widgets/state_activity_item.dart.lib": "packages/projeto/widgets/state_activity_item.dart",
  "packages/projeto/pages/registerScreen.dart.lib": "packages/projeto/pages/registerScreen.dart",
  "packages/projeto/pages/menuFoodScreen.dart.lib": "packages/projeto/pages/menuFoodScreen.dart",
- "packages/projeto/widgets/menuFood_item.dart.lib": "packages/projeto/widgets/menuFood_item.dart",
- "packages/projeto/widgets/food_list_widget.dart.lib": "packages/projeto/widgets/food_list_widget.dart",
+ "packages/projeto/widgets/menuListUser.dart.lib": "packages/projeto/widgets/menuListUser.dart",
  "packages/projeto/pages/loginScreen.dart.lib": "packages/projeto/pages/loginScreen.dart",
  "packages/projeto/pages/homeFoodBreak.dart.lib": "packages/projeto/pages/homeFoodBreak.dart",
+ "packages/projeto/widgets/restaurant_list.dart.lib": "packages/projeto/widgets/restaurant_list.dart",
  "packages/projeto/widgets/history.widget.dart.lib": "packages/projeto/widgets/history.widget.dart",
- "packages/projeto/pages/favorites.dart.lib": "packages/projeto/pages/favorites.dart"
+ "packages/projeto/pages/favorites.dart.lib": "packages/projeto/pages/favorites.dart",
+ "packages/projeto/widgets/activity_item.dart.lib": "packages/projeto/widgets/activity_item.dart",
+ "packages/projeto/widgets/restaurant_list_widget.dart.lib": "packages/projeto/widgets/restaurant_list_widget.dart"
 };
 if(!window.$requireLoader) {
    window.$requireLoader = {

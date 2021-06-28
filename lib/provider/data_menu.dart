@@ -1,3 +1,5 @@
+//  Metódos de insert, update and remove dos pratos do restaurante
+
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:projeto/data/dummy_food.dart';

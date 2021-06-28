@@ -100,15 +100,15 @@ class StateActivityItem extends StatelessWidget {
                     ),
                   ),
                   Spacer(),
-                  Icon(
-                    Icons.visibility_off_rounded,
-                    color: Colors.grey.shade500,
-                  ),
+                  // Icon(
+                  //   Icons.visibility_off_rounded,
+                  //   color: Colors.grey.shade500,
+                  // ),
                   // esse icone aparece se o state que o restaurante mandar for == visualizado
-                  // Icon(
-                  //   Icons.visibility_rounded,
-                  //   color: Color.fromRGBO(215, 0, 0, 1),
-                  // ),
+                  Icon(
+                    Icons.visibility_rounded,
+                    color: Color.fromRGBO(215, 0, 0, 1),
+                  ),
                   SizedBox(
                     width: 5,
                   ),
@@ -116,15 +116,15 @@ class StateActivityItem extends StatelessWidget {
                     '- - - - -',
                     style: TextStyle(color: Colors.grey.shade500),
                   ),
-                  Icon(
-                    Icons.access_time,
-                    color: Colors.grey.shade500,
-                  ),
+                  // Icon(
+                  //   Icons.access_time,
+                  //   color: Colors.grey.shade500,
+                  // ),
                   // esse icone aparece se o state que o restaurante mandar for == preparando
-                  // Icon(
-                  //   Icons.access_time_rounded,
-                  //   color: Color.fromRGBO(230, 210, 0, 1),
-                  // ),
+                  Icon(
+                    Icons.access_time_rounded,
+                    color: Color.fromRGBO(230, 210, 0, 1),
+                  ),
                   Text(
                     '- - - - -',
                     style: TextStyle(color: Colors.grey.shade500),
@@ -132,15 +132,15 @@ class StateActivityItem extends StatelessWidget {
                   SizedBox(
                     width: 5,
                   ),
-                  Icon(
-                    Icons.check_circle_outline_rounded,
-                    color: Colors.grey.shade500,
-                  ),
-                  // esse icone vai aparecer quando o state que o restaurante mudar for == encaminhado
                   // Icon(
-                  //   Icons.check_circle_rounded,
-                  //   color: Color.fromRGBO(0, 200, 0, 1),
-                  // )
+                  //   Icons.check_circle_outline_rounded,
+                  //   color: Colors.grey.shade500,
+                  // ),
+                  // esse icone vai aparecer quando o state que o restaurante mudar for == encaminhado
+                  Icon(
+                    Icons.check_circle_rounded,
+                    color: Color.fromRGBO(0, 200, 0, 1),
+                  ),
                   SizedBox(
                     width: 10,
                   )

@@ -11,20 +11,14 @@ class _MenuFoodItemState extends State<MenuFoodItem> {
   List<FoodList> listaComida = [
     // chama a classe FoodList
     FoodList(
-      "Renatão",
-      "Venha comer o Renatão de 4",
-      "R\$ 50,00",
-      "img/renatao.jpg",
-    ),
-    FoodList(
       "MC Lanche Feliz",
-      "preço de um rim",
+      "lanche",
       "R\$ 15.000,00",
       "img/mclanche-feliz.jpg",
     ),
     FoodList(
       "BIG LANCHÃO",
-      "Mata fome e você de colesterol",
+      "Mata fome",
       "R\$ 75,00",
       "img/lanchaoGG.jpg",
     ),

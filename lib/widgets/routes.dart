@@ -1,4 +1,4 @@
-// import 'package:projeto/restaurant/foodForm.dart';
+// rotas
 
 class AppRoutes {
   static const FOOD_FORM = 'food-form';

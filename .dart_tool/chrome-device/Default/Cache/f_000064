@@ -1,52 +1,28 @@
-define(['dart_sdk', 'packages/flutter/src/foundation/debug.dart', 'packages/flutter/src/scheduler/binding.dart'], (function load__packages__flutter__src__painting__image_stream_dart(dart_sdk, packages__flutter__src__foundation__debug$46dart, packages__flutter__src__scheduler__binding$46dart) {
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/widgets/will_pop_scope.dart'], (function load__packages__flutter__src__widgets__form_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__widgets__will_pop_scope$46dart) {
   'use strict';
   const core = dart_sdk.core;
-  const ui = dart_sdk.ui;
-  const _interceptors = dart_sdk._interceptors;
-  const _internal = dart_sdk._internal;
   const async = dart_sdk.async;
+  const collection = dart_sdk.collection;
+  const _internal = dart_sdk._internal;
   const dart = dart_sdk.dart;
   const dartx = dart_sdk.dartx;
-  const debug = packages__flutter__src__foundation__debug$46dart.src__foundation__debug;
-  const diagnostics = packages__flutter__src__foundation__debug$46dart.src__foundation__diagnostics;
-  const assertions = packages__flutter__src__foundation__debug$46dart.src__foundation__assertions;
-  const binding = packages__flutter__src__scheduler__binding$46dart.src__scheduler__binding;
-  var image_stream = Object.create(dart.library);
-  var $length = dartx.length;
-  var $runtimeType = dartx.runtimeType;
-  var $forEach = dartx.forEach;
-  var $add = dartx.add;
-  var $_get = dartx._get;
-  var $removeAt = dartx.removeAt;
-  var $isNotEmpty = dartx.isNotEmpty;
-  var $isEmpty = dartx.isEmpty;
-  var $toList = dartx.toList;
-  var $clear = dartx.clear;
-  var $remove = dartx.remove;
-  var $map = dartx.map;
-  var $whereType = dartx.whereType;
-  var $truncate = dartx.truncate;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const will_pop_scope = packages__flutter__src__widgets__will_pop_scope$46dart.src__widgets__will_pop_scope;
+  var form = Object.create(dart.library);
+  var $any = dartx.any;
   dart._checkModuleNullSafetyMode(false);
-  var T = {
-    JSArrayOfImageStreamListener: () => (T.JSArrayOfImageStreamListener = dart.constFn(_interceptors.JSArray$(image_stream.ImageStreamListener)))(),
-    ObjectFlagPropertyOfImageStreamCompleter: () => (T.ObjectFlagPropertyOfImageStreamCompleter = dart.constFn(diagnostics.ObjectFlagProperty$(image_stream.ImageStreamCompleter)))(),
-    ListOfImageStreamListener: () => (T.ListOfImageStreamListener = dart.constFn(core.List$(image_stream.ImageStreamListener)))(),
-    ObjectFlagPropertyOfListOfImageStreamListener: () => (T.ObjectFlagPropertyOfListOfImageStreamListener = dart.constFn(diagnostics.ObjectFlagProperty$(T.ListOfImageStreamListener())))(),
-    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
-    JSArrayOfVoidTovoid: () => (T.JSArrayOfVoidTovoid = dart.constFn(_interceptors.JSArray$(T.VoidTovoid())))(),
-    StackTraceN: () => (T.StackTraceN = dart.constFn(dart.nullable(core.StackTrace)))(),
-    ObjectAndStackTraceNTovoid: () => (T.ObjectAndStackTraceNTovoid = dart.constFn(dart.fnType(dart.void, [core.Object, T.StackTraceN()])))(),
-    ObjectAndStackTraceNToNvoid: () => (T.ObjectAndStackTraceNToNvoid = dart.constFn(dart.nullable(T.ObjectAndStackTraceNTovoid())))(),
-    ImageStreamListenerToFn: () => (T.ImageStreamListenerToFn = dart.constFn(dart.fnType(T.ObjectAndStackTraceNToNvoid(), [image_stream.ImageStreamListener])))(),
-    ImageChunkEventTovoid: () => (T.ImageChunkEventTovoid = dart.constFn(dart.fnType(dart.void, [image_stream.ImageChunkEvent])))(),
-    ImageChunkEventToNvoid: () => (T.ImageChunkEventToNvoid = dart.constFn(dart.nullable(T.ImageChunkEventTovoid())))(),
-    ImageStreamListenerToFn$1: () => (T.ImageStreamListenerToFn$1 = dart.constFn(dart.fnType(T.ImageChunkEventToNvoid(), [image_stream.ImageStreamListener])))(),
-    DiagnosticsPropertyOfImageInfo: () => (T.DiagnosticsPropertyOfImageInfo = dart.constFn(diagnostics.DiagnosticsProperty$(image_stream.ImageInfo)))(),
-    ObjectAndStackTraceToNull: () => (T.ObjectAndStackTraceToNull = dart.constFn(dart.fnType(core.Null, [core.Object, core.StackTrace])))()
+  var T$ = {
+    LinkedHashSetOfFormFieldState: () => (T$.LinkedHashSetOfFormFieldState = dart.constFn(collection.LinkedHashSet$(form.FormFieldState)))(),
+    FormFieldStateTobool: () => (T$.FormFieldStateTobool = dart.constFn(dart.fnType(core.bool, [form.FormFieldState])))(),
+    VoidTovoid: () => (T$.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
+    _LocationL: () => (T$._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    StringN: () => (T$.StringN = dart.constFn(dart.nullable(core.String)))(),
+    AutovalidateModeL: () => (T$.AutovalidateModeL = dart.constFn(dart.legacy(form.AutovalidateMode)))()
   };
   var T$Eval = Object.assign({
     _: () => T$Eval
-  }, T);
+  }, T$);
   var S = {
     _: () => S
   };
@@ -56,726 +32,644 @@ define(['dart_sdk', 'packages/flutter/src/foundation/debug.dart', 'packages/flut
   const CT = Object.create({
     _: () => (C, CT)
   });
-  var C = [];
+  dart.defineLazy(CT, {
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: form.AutovalidateMode.prototype,
+        [_name$]: "AutovalidateMode.always",
+        index: 1
+      });
+    },
+    get C1() {
+      return C[1] = dart.const({
+        __proto__: form.AutovalidateMode.prototype,
+        [_name$]: "AutovalidateMode.onUserInteraction",
+        index: 2
+      });
+    },
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: form.AutovalidateMode.prototype,
+        [_name$]: "AutovalidateMode.disabled",
+        index: 0
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "formState",
+        [_Location_column]: 9,
+        [_Location_line]: 211,
+        [_Location_file]: null
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "generation",
+        [_Location_column]: 9,
+        [_Location_line]: 212,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 213,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5, C[6] || CT.C6, C[7] || CT.C7], T$._LocationL());
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 210,
+        [_Location_file]: "file:///C:/flutter/packages/flutter/lib/src/widgets/form.dart"
+      });
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onWillPop",
+        [_Location_column]: 7,
+        [_Location_line]: 209,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 210,
+        [_Location_file]: null
+      });
+    },
+    get C9() {
+      return C[9] = dart.constList([C[10] || CT.C10, C[11] || CT.C11], T$._LocationL());
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 208,
+        [_Location_file]: "file:///C:/flutter/packages/flutter/lib/src/widgets/form.dart"
+      });
+    },
+    get C12() {
+      return C[12] = dart.constList([C[2] || CT.C2, C[0] || CT.C0, C[1] || CT.C1], T$.AutovalidateModeL());
+    }
+  }, false);
+  var C = Array(13).fill(void 0);
   var I = [
-    "file:///C:/flutter/packages/flutter/lib/src/painting/image_stream.dart",
-    "package:flutter/src/painting/image_stream.dart"
+    "file:///C:/flutter/packages/flutter/lib/src/widgets/form.dart",
+    "package:flutter/src/widgets/form.dart"
   ];
-  var image$ = dart.privateName(image_stream, "ImageInfo.image");
-  var scale$ = dart.privateName(image_stream, "ImageInfo.scale");
-  var debugLabel$ = dart.privateName(image_stream, "ImageInfo.debugLabel");
-  image_stream.ImageInfo = class ImageInfo extends core.Object {
-    get image() {
-      return this[image$];
+  var child$ = dart.privateName(form, "Form.child");
+  var onWillPop$ = dart.privateName(form, "Form.onWillPop");
+  var onChanged$ = dart.privateName(form, "Form.onChanged");
+  var autovalidateMode$ = dart.privateName(form, "Form.autovalidateMode");
+  var autovalidate$ = dart.privateName(form, "Form.autovalidate");
+  var _formState = dart.privateName(form, "_formState");
+  form.Form = class Form extends framework.StatefulWidget {
+    get child() {
+      return this[child$];
     }
-    set image(value) {
-      super.image = value;
+    set child(value) {
+      super.child = value;
     }
-    get scale() {
-      return this[scale$];
+    get onWillPop() {
+      return this[onWillPop$];
     }
-    set scale(value) {
-      super.scale = value;
+    set onWillPop(value) {
+      super.onWillPop = value;
     }
-    get debugLabel() {
-      return this[debugLabel$];
+    get onChanged() {
+      return this[onChanged$];
     }
-    set debugLabel(value) {
-      super.debugLabel = value;
+    set onChanged(value) {
+      super.onChanged = value;
     }
-    clone() {
-      return new image_stream.ImageInfo.new({image: this.image.clone(), scale: this.scale, debugLabel: this.debugLabel});
+    get autovalidateMode() {
+      return this[autovalidateMode$];
     }
-    isCloneOf(other) {
-      if (other == null) dart.nullFailed(I[0], 88, 28, "other");
-      return dart.test(other.image.isCloneOf(this.image)) && this.scale == this.scale && other.debugLabel == this.debugLabel;
+    set autovalidateMode(value) {
+      super.autovalidateMode = value;
     }
-    dispose() {
-      let t0, t0$;
-      if (!(dart.notNull((t0$ = (t0 = this.image.debugGetOpenHandleStackTraces(), t0 == null ? null : t0[$length]), t0$ == null ? 1 : t0$)) > 0)) dart.assertFailed(null, I[0], 122, 12, "(image.debugGetOpenHandleStackTraces()?.length ?? 1) > 0");
-      this.image.dispose();
+    get autovalidate() {
+      return this[autovalidate$];
     }
-    toString() {
-      return (this.debugLabel != null ? dart.str(this.debugLabel) + " " : "") + dart.str(this.image) + " @ " + dart.str(debug.debugFormatDouble(this.scale)) + "x";
+    set autovalidate(value) {
+      super.autovalidate = value;
     }
-    get hashCode() {
-      return ui.hashValues(this.image, this.scale, this.debugLabel);
-    }
-    _equals(other) {
-      if (other == null) return false;
-      if (!dart.equals(dart.runtimeType(other), this[$runtimeType])) return false;
-      return image_stream.ImageInfo.is(other) && dart.equals(other.image, this.image) && other.scale == this.scale && other.debugLabel == this.debugLabel;
-    }
-  };
-  (image_stream.ImageInfo.new = function(opts) {
-    let image = opts && 'image' in opts ? opts.image : null;
-    if (image == null) dart.nullFailed(I[0], 27, 35, "image");
-    let scale = opts && 'scale' in opts ? opts.scale : 1;
-    if (scale == null) dart.nullFailed(I[0], 27, 47, "scale");
-    let debugLabel = opts && 'debugLabel' in opts ? opts.debugLabel : null;
-    this[image$] = image;
-    this[scale$] = scale;
-    this[debugLabel$] = debugLabel;
-    if (!(image != null)) dart.assertFailed(null, I[0], 28, 14, "image != null");
-    if (!(scale != null)) dart.assertFailed(null, I[0], 29, 14, "scale != null");
-    ;
-  }).prototype = image_stream.ImageInfo.prototype;
-  dart.addTypeTests(image_stream.ImageInfo);
-  dart.addTypeCaches(image_stream.ImageInfo);
-  dart.setMethodSignature(image_stream.ImageInfo, () => ({
-    __proto__: dart.getMethods(image_stream.ImageInfo.__proto__),
-    clone: dart.fnType(image_stream.ImageInfo, []),
-    isCloneOf: dart.fnType(core.bool, [image_stream.ImageInfo]),
-    dispose: dart.fnType(dart.void, [])
-  }));
-  dart.setLibraryUri(image_stream.ImageInfo, I[1]);
-  dart.setFieldSignature(image_stream.ImageInfo, () => ({
-    __proto__: dart.getFields(image_stream.ImageInfo.__proto__),
-    image: dart.finalFieldType(ui.Image),
-    scale: dart.finalFieldType(core.double),
-    debugLabel: dart.finalFieldType(dart.nullable(core.String))
-  }));
-  dart.defineExtensionMethods(image_stream.ImageInfo, ['toString', '_equals']);
-  dart.defineExtensionAccessors(image_stream.ImageInfo, ['hashCode']);
-  var onImage$ = dart.privateName(image_stream, "ImageStreamListener.onImage");
-  var onChunk$ = dart.privateName(image_stream, "ImageStreamListener.onChunk");
-  var onError$ = dart.privateName(image_stream, "ImageStreamListener.onError");
-  image_stream.ImageStreamListener = class ImageStreamListener extends core.Object {
-    get onImage() {
-      return this[onImage$];
-    }
-    set onImage(value) {
-      super.onImage = value;
-    }
-    get onChunk() {
-      return this[onChunk$];
-    }
-    set onChunk(value) {
-      super.onChunk = value;
-    }
-    get onError() {
-      return this[onError$];
-    }
-    set onError(value) {
-      super.onError = value;
-    }
-    get hashCode() {
-      return ui.hashValues(this.onImage, this.onChunk, this.onError);
-    }
-    _equals(other) {
-      if (other == null) return false;
-      if (!dart.equals(dart.runtimeType(other), this[$runtimeType])) return false;
-      return image_stream.ImageStreamListener.is(other) && dart.equals(other.onImage, this.onImage) && dart.equals(other.onChunk, this.onChunk) && dart.equals(other.onError, this.onError);
-    }
-  };
-  (image_stream.ImageStreamListener.new = function(onImage, opts) {
-    if (onImage == null) dart.nullFailed(I[0], 159, 10, "onImage");
-    let onChunk = opts && 'onChunk' in opts ? opts.onChunk : null;
-    let onError = opts && 'onError' in opts ? opts.onError : null;
-    this[onImage$] = onImage;
-    this[onChunk$] = onChunk;
-    this[onError$] = onError;
-    if (!(onImage != null)) dart.assertFailed(null, I[0], 162, 15, "onImage != null");
-    ;
-  }).prototype = image_stream.ImageStreamListener.prototype;
-  dart.addTypeTests(image_stream.ImageStreamListener);
-  dart.addTypeCaches(image_stream.ImageStreamListener);
-  dart.setLibraryUri(image_stream.ImageStreamListener, I[1]);
-  dart.setFieldSignature(image_stream.ImageStreamListener, () => ({
-    __proto__: dart.getFields(image_stream.ImageStreamListener.__proto__),
-    onImage: dart.finalFieldType(dart.fnType(dart.void, [image_stream.ImageInfo, core.bool])),
-    onChunk: dart.finalFieldType(dart.nullable(dart.fnType(dart.void, [image_stream.ImageChunkEvent]))),
-    onError: dart.finalFieldType(dart.nullable(dart.fnType(dart.void, [core.Object, dart.nullable(core.StackTrace)])))
-  }));
-  dart.defineExtensionMethods(image_stream.ImageStreamListener, ['_equals']);
-  dart.defineExtensionAccessors(image_stream.ImageStreamListener, ['hashCode']);
-  var cumulativeBytesLoaded$ = dart.privateName(image_stream, "ImageChunkEvent.cumulativeBytesLoaded");
-  var expectedTotalBytes$ = dart.privateName(image_stream, "ImageChunkEvent.expectedTotalBytes");
-  const Object_Diagnosticable$36 = class Object_Diagnosticable extends core.Object {};
-  (Object_Diagnosticable$36.new = function() {
-  }).prototype = Object_Diagnosticable$36.prototype;
-  dart.applyMixin(Object_Diagnosticable$36, diagnostics.Diagnosticable);
-  image_stream.ImageChunkEvent = class ImageChunkEvent extends Object_Diagnosticable$36 {
-    get cumulativeBytesLoaded() {
-      return this[cumulativeBytesLoaded$];
-    }
-    set cumulativeBytesLoaded(value) {
-      super.cumulativeBytesLoaded = value;
-    }
-    get expectedTotalBytes() {
-      return this[expectedTotalBytes$];
-    }
-    set expectedTotalBytes(value) {
-      super.expectedTotalBytes = value;
-    }
-    debugFillProperties(properties) {
-      if (properties == null) dart.nullFailed(I[0], 275, 56, "properties");
-      super.debugFillProperties(properties);
-      properties.add(new diagnostics.IntProperty.new("cumulativeBytesLoaded", this.cumulativeBytesLoaded));
-      properties.add(new diagnostics.IntProperty.new("expectedTotalBytes", this.expectedTotalBytes));
-    }
-  };
-  (image_stream.ImageChunkEvent.new = function(opts) {
-    let cumulativeBytesLoaded = opts && 'cumulativeBytesLoaded' in opts ? opts.cumulativeBytesLoaded : null;
-    if (cumulativeBytesLoaded == null) dart.nullFailed(I[0], 253, 19, "cumulativeBytesLoaded");
-    let expectedTotalBytes = opts && 'expectedTotalBytes' in opts ? opts.expectedTotalBytes : null;
-    this[cumulativeBytesLoaded$] = cumulativeBytesLoaded;
-    this[expectedTotalBytes$] = expectedTotalBytes;
-    if (!(dart.notNull(cumulativeBytesLoaded) >= 0)) dart.assertFailed(null, I[0], 255, 15, "cumulativeBytesLoaded >= 0");
-    if (!(expectedTotalBytes == null || dart.notNull(expectedTotalBytes) >= 0)) dart.assertFailed(null, I[0], 256, 15, "expectedTotalBytes == null || expectedTotalBytes >= 0");
-    ;
-  }).prototype = image_stream.ImageChunkEvent.prototype;
-  dart.addTypeTests(image_stream.ImageChunkEvent);
-  dart.addTypeCaches(image_stream.ImageChunkEvent);
-  dart.setLibraryUri(image_stream.ImageChunkEvent, I[1]);
-  dart.setFieldSignature(image_stream.ImageChunkEvent, () => ({
-    __proto__: dart.getFields(image_stream.ImageChunkEvent.__proto__),
-    cumulativeBytesLoaded: dart.finalFieldType(core.int),
-    expectedTotalBytes: dart.finalFieldType(dart.nullable(core.int))
-  }));
-  var _completer$ = dart.privateName(image_stream, "_completer");
-  var _listeners = dart.privateName(image_stream, "_listeners");
-  const Object_Diagnosticable$36$ = class Object_Diagnosticable extends core.Object {};
-  (Object_Diagnosticable$36$.new = function() {
-  }).prototype = Object_Diagnosticable$36$.prototype;
-  dart.applyMixin(Object_Diagnosticable$36$, diagnostics.Diagnosticable);
-  image_stream.ImageStream = class ImageStream extends Object_Diagnosticable$36$ {
-    get completer() {
-      return this[_completer$];
-    }
-    setCompleter(value) {
-      if (value == null) dart.nullFailed(I[0], 325, 42, "value");
-      if (!(this[_completer$] == null)) dart.assertFailed(null, I[0], 326, 12, "_completer == null");
-      this[_completer$] = value;
-      if (this[_listeners] != null) {
-        let initialListeners = dart.nullCheck(this[_listeners]);
-        this[_listeners] = null;
-        initialListeners[$forEach](dart.bind(dart.nullCheck(this[_completer$]), 'addListener'));
-      }
-    }
-    addListener(listener) {
-      if (listener == null) dart.nullFailed(I[0], 356, 40, "listener");
-      if (this[_completer$] != null) return dart.nullCheck(this[_completer$]).addListener(listener);
-      this[_listeners] == null ? this[_listeners] = T.JSArrayOfImageStreamListener().of([]) : null;
-      dart.nullCheck(this[_listeners])[$add](listener);
-    }
-    removeListener(listener) {
-      if (listener == null) dart.nullFailed(I[0], 367, 43, "listener");
-      if (this[_completer$] != null) return dart.nullCheck(this[_completer$]).removeListener(listener);
-      if (!(this[_listeners] != null)) dart.assertFailed(null, I[0], 370, 12, "_listeners != null");
-      for (let i = 0; i < dart.notNull(dart.nullCheck(this[_listeners])[$length]); i = i + 1) {
-        if (dart.equals(dart.nullCheck(this[_listeners])[$_get](i), listener)) {
-          dart.nullCheck(this[_listeners])[$removeAt](i);
-          break;
-        }
-      }
-    }
-    get key() {
+    static of(context) {
       let t0;
-      t0 = this[_completer$];
-      return t0 == null ? this : t0;
+      if (context == null) dart.nullFailed(I[0], 107, 37, "context");
+      let scope = context.dependOnInheritedWidgetOfExactType(form._FormScope);
+      t0 = scope;
+      return t0 == null ? null : t0[_formState];
     }
-    debugFillProperties(properties) {
-      let t0, t0$, t0$0, t0$1;
-      if (properties == null) dart.nullFailed(I[0], 393, 56, "properties");
-      super.debugFillProperties(properties);
-      properties.add(new (T.ObjectFlagPropertyOfImageStreamCompleter()).new("completer", this[_completer$], {ifPresent: (t0 = this[_completer$], t0 == null ? null : t0.toStringShort()), ifNull: "unresolved"}));
-      properties.add(new (T.ObjectFlagPropertyOfListOfImageStreamListener()).new("listeners", this[_listeners], {ifPresent: dart.str((t0$ = this[_listeners], t0$ == null ? null : t0$[$length])) + " listener" + ((t0$0 = this[_listeners], t0$0 == null ? null : t0$0[$length]) === 1 ? "" : "s"), ifNull: "no listeners", level: this[_completer$] != null ? diagnostics.DiagnosticLevel.hidden : diagnostics.DiagnosticLevel.info}));
-      t0$1 = this[_completer$];
-      t0$1 == null ? null : t0$1.debugFillProperties(properties);
+    createState() {
+      return new form.FormState.new();
     }
   };
-  (image_stream.ImageStream.new = function() {
-    this[_completer$] = null;
-    this[_listeners] = null;
-    ;
-  }).prototype = image_stream.ImageStream.prototype;
-  dart.addTypeTests(image_stream.ImageStream);
-  dart.addTypeCaches(image_stream.ImageStream);
-  dart.setMethodSignature(image_stream.ImageStream, () => ({
-    __proto__: dart.getMethods(image_stream.ImageStream.__proto__),
-    setCompleter: dart.fnType(dart.void, [image_stream.ImageStreamCompleter]),
-    addListener: dart.fnType(dart.void, [image_stream.ImageStreamListener]),
-    removeListener: dart.fnType(dart.void, [image_stream.ImageStreamListener])
-  }));
-  dart.setGetterSignature(image_stream.ImageStream, () => ({
-    __proto__: dart.getGetters(image_stream.ImageStream.__proto__),
-    completer: dart.nullable(image_stream.ImageStreamCompleter),
-    key: core.Object
-  }));
-  dart.setLibraryUri(image_stream.ImageStream, I[1]);
-  dart.setFieldSignature(image_stream.ImageStream, () => ({
-    __proto__: dart.getFields(image_stream.ImageStream.__proto__),
-    [_completer$]: dart.fieldType(dart.nullable(image_stream.ImageStreamCompleter)),
-    [_listeners]: dart.fieldType(dart.nullable(core.List$(image_stream.ImageStreamListener)))
-  }));
-  var _keepAliveHandles = dart.privateName(image_stream, "_keepAliveHandles");
-  var _disposed = dart.privateName(image_stream, "_disposed");
-  var _maybeDispose = dart.privateName(image_stream, "_maybeDispose");
-  image_stream.ImageStreamCompleterHandle = class ImageStreamCompleterHandle extends core.Object {
-    dispose() {
-      let t0;
-      if (!(this[_completer$] != null)) dart.assertFailed(null, I[0], 433, 12, "_completer != null");
-      if (!(dart.notNull(dart.nullCheck(this[_completer$])[_keepAliveHandles]) > 0)) dart.assertFailed(null, I[0], 434, 12, "_completer!._keepAliveHandles > 0");
-      if (!!dart.test(dart.nullCheck(this[_completer$])[_disposed])) dart.assertFailed(null, I[0], 435, 12, "!_completer!._disposed");
-      t0 = dart.nullCheck(this[_completer$]);
-      t0[_keepAliveHandles] = dart.notNull(t0[_keepAliveHandles]) - 1;
-      dart.nullCheck(this[_completer$])[_maybeDispose]();
-      this[_completer$] = null;
-    }
-  };
-  (image_stream.ImageStreamCompleterHandle.__ = function(_completer) {
+  (form.Form.new = function(opts) {
     let t0;
-    if (_completer == null) dart.nullFailed(I[0], 422, 58, "_completer");
-    this[_completer$] = _completer;
-    t0 = dart.nullCheck(this[_completer$]);
-    t0[_keepAliveHandles] = dart.notNull(t0[_keepAliveHandles]) + 1;
-  }).prototype = image_stream.ImageStreamCompleterHandle.prototype;
-  dart.addTypeTests(image_stream.ImageStreamCompleterHandle);
-  dart.addTypeCaches(image_stream.ImageStreamCompleterHandle);
-  dart.setMethodSignature(image_stream.ImageStreamCompleterHandle, () => ({
-    __proto__: dart.getMethods(image_stream.ImageStreamCompleterHandle.__proto__),
-    dispose: dart.fnType(dart.void, [])
+    let key = opts && 'key' in opts ? opts.key : null;
+    let child = opts && 'child' in opts ? opts.child : null;
+    if (child == null) dart.nullFailed(I[0], 78, 19, "child");
+    let autovalidate = opts && 'autovalidate' in opts ? opts.autovalidate : false;
+    if (autovalidate == null) dart.nullFailed(I[0], 84, 10, "autovalidate");
+    let onWillPop = opts && 'onWillPop' in opts ? opts.onWillPop : null;
+    let onChanged = opts && 'onChanged' in opts ? opts.onChanged : null;
+    let autovalidateMode = opts && 'autovalidateMode' in opts ? opts.autovalidateMode : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[child$] = child;
+    this[autovalidate$] = autovalidate;
+    this[onWillPop$] = onWillPop;
+    this[onChanged$] = onChanged;
+    if (!(child != null)) dart.assertFailed(null, I[0], 88, 15, "child != null");
+    if (!(autovalidate != null)) dart.assertFailed(null, I[0], 89, 15, "autovalidate != null");
+    if (!(autovalidate === false || autovalidate === true && autovalidateMode == null)) dart.assertFailed("autovalidate and autovalidateMode should not be used together.", I[0], 91, 10, "autovalidate == false ||\r\n         autovalidate == true && autovalidateMode == null");
+    this[autovalidateMode$] = (t0 = autovalidateMode, t0 == null ? dart.test(autovalidate) ? form.AutovalidateMode.always : form.AutovalidateMode.disabled : t0);
+    form.Form.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = form.Form.prototype;
+  dart.addTypeTests(form.Form);
+  dart.addTypeCaches(form.Form);
+  dart.setMethodSignature(form.Form, () => ({
+    __proto__: dart.getMethods(form.Form.__proto__),
+    createState: dart.fnType(form.FormState, [])
   }));
-  dart.setLibraryUri(image_stream.ImageStreamCompleterHandle, I[1]);
-  dart.setFieldSignature(image_stream.ImageStreamCompleterHandle, () => ({
-    __proto__: dart.getFields(image_stream.ImageStreamCompleterHandle.__proto__),
-    [_completer$]: dart.fieldType(dart.nullable(image_stream.ImageStreamCompleter))
+  dart.setLibraryUri(form.Form, I[1]);
+  dart.setFieldSignature(form.Form, () => ({
+    __proto__: dart.getFields(form.Form.__proto__),
+    child: dart.finalFieldType(framework.Widget),
+    onWillPop: dart.finalFieldType(dart.nullable(dart.fnType(async.Future$(core.bool), []))),
+    onChanged: dart.finalFieldType(dart.nullable(dart.fnType(dart.void, []))),
+    autovalidateMode: dart.finalFieldType(form.AutovalidateMode),
+    autovalidate: dart.finalFieldType(core.bool)
   }));
-  var debugLabel = dart.privateName(image_stream, "ImageStreamCompleter.debugLabel");
-  var _currentImage = dart.privateName(image_stream, "_currentImage");
-  var _currentError = dart.privateName(image_stream, "_currentError");
-  var _hadAtLeastOneListener = dart.privateName(image_stream, "_hadAtLeastOneListener");
-  var _onLastListenerRemovedCallbacks = dart.privateName(image_stream, "_onLastListenerRemovedCallbacks");
-  var _checkDisposed = dart.privateName(image_stream, "_checkDisposed");
-  const Object_Diagnosticable$36$0 = class Object_Diagnosticable extends core.Object {};
-  (Object_Diagnosticable$36$0.new = function() {
-  }).prototype = Object_Diagnosticable$36$0.prototype;
-  dart.applyMixin(Object_Diagnosticable$36$0, diagnostics.Diagnosticable);
-  image_stream.ImageStreamCompleter = class ImageStreamCompleter extends Object_Diagnosticable$36$0 {
-    get debugLabel() {
-      return this[debugLabel];
+  var _generation = dart.privateName(form, "_generation");
+  var _hasInteractedByUser = dart.privateName(form, "_hasInteractedByUser");
+  var _fields = dart.privateName(form, "_fields");
+  var _forceRebuild = dart.privateName(form, "_forceRebuild");
+  var _fieldDidChange = dart.privateName(form, "_fieldDidChange");
+  var _register = dart.privateName(form, "_register");
+  var _unregister = dart.privateName(form, "_unregister");
+  var _validate = dart.privateName(form, "_validate");
+  var _name$ = dart.privateName(form, "_name");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  form.FormState = class FormState extends framework.State$(form.Form) {
+    [_fieldDidChange]() {
+      if (this.widget.onChanged != null) dart.nullCheck(this.widget.onChanged)();
+      this[_hasInteractedByUser] = this[_fields][$any](dart.fn(field => {
+        if (field == null) dart.nullFailed(I[0], 175, 39, "field");
+        return field[_hasInteractedByUser];
+      }, T$.FormFieldStateTobool()));
+      this[_forceRebuild]();
     }
-    set debugLabel(value) {
-      this[debugLabel] = value;
+    [_forceRebuild]() {
+      this.setState(dart.fn(() => {
+        this[_generation] = dart.notNull(this[_generation]) + 1;
+      }, T$.VoidTovoid()));
     }
-    get hasListeners() {
-      return this[_listeners][$isNotEmpty];
+    [_register](field) {
+      if (field == null) dart.nullFailed(I[0], 185, 42, "field");
+      this[_fields].add(field);
     }
-    addListener(listener) {
-      let t2, t1, t0;
-      if (listener == null) dart.nullFailed(I[0], 489, 40, "listener");
-      this[_checkDisposed]();
-      this[_hadAtLeastOneListener] = true;
-      this[_listeners][$add](listener);
-      if (this[_currentImage] != null) {
-        try {
-          t0 = listener;
-          t1 = dart.nullCheck(this[_currentImage]).clone();
-          t2 = true;
-          t0.onImage(t1, t2);
-        } catch (e) {
-          let exception = dart.getThrown(e);
-          let stack = dart.stackTrace(e);
-          if (core.Object.is(exception)) {
-            this.reportError({context: new assertions.ErrorDescription.new("by a synchronously-called image listener"), exception: exception, stack: stack});
-          } else
-            throw e;
-        }
-      }
-      if (this[_currentError] != null && listener.onError != null) {
-        try {
-          dart.nullCheck(listener.onError)(dart.nullCheck(this[_currentError]).exception, dart.nullCheck(this[_currentError]).stack);
-        } catch (e$) {
-          let exception = dart.getThrown(e$);
-          let stack = dart.stackTrace(e$);
-          if (core.Object.is(exception)) {
-            assertions.FlutterError.reportError(new assertions.FlutterErrorDetails.new({exception: exception, library: "image resource service", context: new assertions.ErrorDescription.new("by a synchronously-called image error listener"), stack: stack}));
-          } else
-            throw e$;
-        }
-      }
+    [_unregister](field) {
+      if (field == null) dart.nullFailed(I[0], 189, 44, "field");
+      this[_fields].remove(field);
     }
-    keepAlive() {
-      this[_checkDisposed]();
-      return new image_stream.ImageStreamCompleterHandle.__(this);
-    }
-    removeListener(listener) {
-      if (listener == null) dart.nullFailed(I[0], 541, 43, "listener");
-      this[_checkDisposed]();
-      for (let i = 0; i < dart.notNull(this[_listeners][$length]); i = i + 1) {
-        if (dart.equals(this[_listeners][$_get](i), listener)) {
-          this[_listeners][$removeAt](i);
+    build(context) {
+      if (context == null) dart.nullFailed(I[0], 194, 29, "context");
+      switch (this.widget.autovalidateMode) {
+        case C[0] || CT.C0:
+        {
+          this[_validate]();
           break;
         }
-      }
-      if (dart.test(this[_listeners][$isEmpty])) {
-        let callbacks = this[_onLastListenerRemovedCallbacks][$toList]();
-        for (let callback of callbacks) {
-          callback();
-        }
-        this[_onLastListenerRemovedCallbacks][$clear]();
-        this[_maybeDispose]();
-      }
-    }
-    [_maybeDispose]() {
-      let t2;
-      if (!dart.test(this[_hadAtLeastOneListener]) || dart.test(this[_disposed]) || dart.test(this[_listeners][$isNotEmpty]) || this[_keepAliveHandles] !== 0) {
-        return;
-      }
-      t2 = this[_currentImage];
-      t2 == null ? null : t2.dispose();
-      this[_currentImage] = null;
-      this[_disposed] = true;
-    }
-    [_checkDisposed]() {
-      if (dart.test(this[_disposed])) {
-        dart.throw(new core.StateError.new("Stream has been disposed.\n" + "An ImageStream is considered disposed once at least one listener has " + "been added and subsequently all listeners have been removed and no " + "handles are outstanding from the keepAlive method.\n" + "To resolve this error, maintain at least one listener on the stream, " + "or create an ImageStreamCompleterHandle from the keepAlive " + "method, or create a new stream for the image."));
-      }
-    }
-    addOnLastListenerRemovedCallback(callback) {
-      if (callback == null) dart.nullFailed(I[0], 590, 54, "callback");
-      if (!(callback != null)) dart.assertFailed(null, I[0], 591, 12, "callback != null");
-      this[_checkDisposed]();
-      this[_onLastListenerRemovedCallbacks][$add](callback);
-    }
-    removeOnLastListenerRemovedCallback(callback) {
-      if (callback == null) dart.nullFailed(I[0], 598, 57, "callback");
-      if (!(callback != null)) dart.assertFailed(null, I[0], 599, 12, "callback != null");
-      this[_checkDisposed]();
-      this[_onLastListenerRemovedCallbacks][$remove](callback);
-    }
-    setImage(image) {
-      let t2, t4, t3, t2$;
-      if (image == null) dart.nullFailed(I[0], 606, 27, "image");
-      this[_checkDisposed]();
-      t2 = this[_currentImage];
-      t2 == null ? null : t2.dispose();
-      this[_currentImage] = image;
-      if (dart.test(this[_listeners][$isEmpty])) return;
-      let localListeners = T.ListOfImageStreamListener().from(this[_listeners]);
-      for (let listener of localListeners) {
-        try {
-          t2$ = listener;
-          t3 = image.clone();
-          t4 = false;
-          t2$.onImage(t3, t4);
-        } catch (e) {
-          let exception = dart.getThrown(e);
-          let stack = dart.stackTrace(e);
-          if (core.Object.is(exception)) {
-            this.reportError({context: new assertions.ErrorDescription.new("by an image listener"), exception: exception, stack: stack});
-          } else
-            throw e;
-        }
-      }
-    }
-    reportError(opts) {
-      let context = opts && 'context' in opts ? opts.context : null;
-      let exception = opts && 'exception' in opts ? opts.exception : null;
-      if (exception == null) dart.nullFailed(I[0], 660, 21, "exception");
-      let stack = opts && 'stack' in opts ? opts.stack : null;
-      let informationCollector = opts && 'informationCollector' in opts ? opts.informationCollector : null;
-      let silent = opts && 'silent' in opts ? opts.silent : false;
-      if (silent == null) dart.nullFailed(I[0], 663, 10, "silent");
-      this[_currentError] = new assertions.FlutterErrorDetails.new({exception: exception, stack: stack, library: "image resource service", context: context, informationCollector: informationCollector, silent: silent});
-      let localErrorListeners = this[_listeners][$map](T.ObjectAndStackTraceNToNvoid(), dart.fn(listener => {
-        if (listener == null) dart.nullFailed(I[0], 676, 56, "listener");
-        return listener.onError;
-      }, T.ImageStreamListenerToFn()))[$whereType](T.ObjectAndStackTraceNTovoid())[$toList]();
-      if (dart.test(localErrorListeners[$isEmpty])) {
-        assertions.FlutterError.reportError(dart.nullCheck(this[_currentError]));
-      } else {
-        for (let errorListener of localErrorListeners) {
-          try {
-            errorListener(exception, stack);
-          } catch (e) {
-            let exception = dart.getThrown(e);
-            let stack = dart.stackTrace(e);
-            if (core.Object.is(exception)) {
-              assertions.FlutterError.reportError(new assertions.FlutterErrorDetails.new({context: new assertions.ErrorDescription.new("when reporting an error to an image listener"), library: "image resource service", exception: exception, stack: stack}));
-            } else
-              throw e;
+        case C[1] || CT.C1:
+        {
+          if (dart.test(this[_hasInteractedByUser])) {
+            this[_validate]();
           }
+          break;
+        }
+        case C[2] || CT.C2:
+        {
+          break;
+        }
+        default:
+        {
+          dart.throw(new _internal.ReachabilityError.new("`null` encountered as case in a switch expression with a non-nullable enum type."));
         }
       }
+      return new will_pop_scope.WillPopScope.new({onWillPop: this.widget.onWillPop, child: new form._FormScope.new({formState: this, generation: this[_generation], child: this.widget.child, $creationLocationd_0dea112b090073317d4: C[3] || CT.C3}), $creationLocationd_0dea112b090073317d4: C[8] || CT.C8});
     }
-    reportImageChunkEvent(event) {
-      if (event == null) dart.nullFailed(I[0], 704, 46, "event");
-      this[_checkDisposed]();
-      if (dart.test(this.hasListeners)) {
-        let localListeners = this[_listeners][$map](T.ImageChunkEventToNvoid(), dart.fn(listener => {
-          if (listener == null) dart.nullFailed(I[0], 709, 58, "listener");
-          return listener.onChunk;
-        }, T.ImageStreamListenerToFn$1()))[$whereType](T.ImageChunkEventTovoid())[$toList]();
-        for (let listener of localListeners) {
-          listener(event);
-        }
-      }
+    save() {
+      for (let field of this[_fields])
+        field.save();
     }
-    debugFillProperties(description) {
-      if (description == null) dart.nullFailed(I[0], 721, 56, "description");
-      super.debugFillProperties(description);
-      description.add(new (T.DiagnosticsPropertyOfImageInfo()).new("current", this[_currentImage], {ifNull: "unresolved", showName: false}));
-      description.add(new (T.ObjectFlagPropertyOfListOfImageStreamListener()).new("listeners", this[_listeners], {ifPresent: dart.str(this[_listeners][$length]) + " listener" + (this[_listeners][$length] === 1 ? "" : "s")}));
-      description.add(new diagnostics.FlagProperty.new("disposed", {value: this[_disposed], ifTrue: "<disposed>"}));
+    reset() {
+      for (let field of this[_fields])
+        field.reset();
+      this[_hasInteractedByUser] = false;
+      this[_fieldDidChange]();
+    }
+    validate() {
+      this[_hasInteractedByUser] = true;
+      this[_forceRebuild]();
+      return this[_validate]();
+    }
+    [_validate]() {
+      let hasError = false;
+      for (let field of this[_fields])
+        hasError = !dart.test(field.validate()) || hasError;
+      return !hasError;
     }
   };
-  (image_stream.ImageStreamCompleter.new = function() {
-    this[_listeners] = T.JSArrayOfImageStreamListener().of([]);
-    this[_currentImage] = null;
-    this[_currentError] = null;
-    this[debugLabel] = null;
-    this[_hadAtLeastOneListener] = false;
-    this[_keepAliveHandles] = 0;
-    this[_disposed] = false;
-    this[_onLastListenerRemovedCallbacks] = T.JSArrayOfVoidTovoid().of([]);
+  (form.FormState.new = function() {
+    this[_generation] = 0;
+    this[_hasInteractedByUser] = false;
+    this[_fields] = T$.LinkedHashSetOfFormFieldState().new();
+    form.FormState.__proto__.new.call(this);
     ;
-  }).prototype = image_stream.ImageStreamCompleter.prototype;
-  dart.addTypeTests(image_stream.ImageStreamCompleter);
-  dart.addTypeCaches(image_stream.ImageStreamCompleter);
-  dart.setMethodSignature(image_stream.ImageStreamCompleter, () => ({
-    __proto__: dart.getMethods(image_stream.ImageStreamCompleter.__proto__),
-    addListener: dart.fnType(dart.void, [image_stream.ImageStreamListener]),
-    keepAlive: dart.fnType(image_stream.ImageStreamCompleterHandle, []),
-    removeListener: dart.fnType(dart.void, [image_stream.ImageStreamListener]),
-    [_maybeDispose]: dart.fnType(dart.void, []),
-    [_checkDisposed]: dart.fnType(dart.void, []),
-    addOnLastListenerRemovedCallback: dart.fnType(dart.void, [dart.fnType(dart.void, [])]),
-    removeOnLastListenerRemovedCallback: dart.fnType(dart.void, [dart.fnType(dart.void, [])]),
-    setImage: dart.fnType(dart.void, [image_stream.ImageInfo]),
-    reportError: dart.fnType(dart.void, [], {context: dart.nullable(diagnostics.DiagnosticsNode), informationCollector: dart.nullable(dart.fnType(core.Iterable$(diagnostics.DiagnosticsNode), [])), silent: core.bool, stack: dart.nullable(core.StackTrace)}, {exception: core.Object}),
-    reportImageChunkEvent: dart.fnType(dart.void, [image_stream.ImageChunkEvent])
+  }).prototype = form.FormState.prototype;
+  dart.addTypeTests(form.FormState);
+  dart.addTypeCaches(form.FormState);
+  dart.setMethodSignature(form.FormState, () => ({
+    __proto__: dart.getMethods(form.FormState.__proto__),
+    [_fieldDidChange]: dart.fnType(dart.void, []),
+    [_forceRebuild]: dart.fnType(dart.void, []),
+    [_register]: dart.fnType(dart.void, [form.FormFieldState]),
+    [_unregister]: dart.fnType(dart.void, [form.FormFieldState]),
+    build: dart.fnType(framework.Widget, [framework.BuildContext]),
+    save: dart.fnType(dart.void, []),
+    reset: dart.fnType(dart.void, []),
+    validate: dart.fnType(core.bool, []),
+    [_validate]: dart.fnType(core.bool, [])
   }));
-  dart.setGetterSignature(image_stream.ImageStreamCompleter, () => ({
-    __proto__: dart.getGetters(image_stream.ImageStreamCompleter.__proto__),
-    hasListeners: core.bool
+  dart.setLibraryUri(form.FormState, I[1]);
+  dart.setFieldSignature(form.FormState, () => ({
+    __proto__: dart.getFields(form.FormState.__proto__),
+    [_generation]: dart.fieldType(core.int),
+    [_hasInteractedByUser]: dart.fieldType(core.bool),
+    [_fields]: dart.finalFieldType(core.Set$(form.FormFieldState))
   }));
-  dart.setLibraryUri(image_stream.ImageStreamCompleter, I[1]);
-  dart.setFieldSignature(image_stream.ImageStreamCompleter, () => ({
-    __proto__: dart.getFields(image_stream.ImageStreamCompleter.__proto__),
-    [_listeners]: dart.finalFieldType(core.List$(image_stream.ImageStreamListener)),
-    [_currentImage]: dart.fieldType(dart.nullable(image_stream.ImageInfo)),
-    [_currentError]: dart.fieldType(dart.nullable(assertions.FlutterErrorDetails)),
-    debugLabel: dart.fieldType(dart.nullable(core.String)),
-    [_hadAtLeastOneListener]: dart.fieldType(core.bool),
-    [_keepAliveHandles]: dart.fieldType(core.int),
-    [_disposed]: dart.fieldType(core.bool),
-    [_onLastListenerRemovedCallbacks]: dart.finalFieldType(core.List$(dart.fnType(dart.void, [])))
-  }));
-  image_stream.OneFrameImageStreamCompleter = class OneFrameImageStreamCompleter extends image_stream.ImageStreamCompleter {};
-  (image_stream.OneFrameImageStreamCompleter.new = function(image, opts) {
-    if (image == null) dart.nullFailed(I[0], 750, 50, "image");
-    let informationCollector = opts && 'informationCollector' in opts ? opts.informationCollector : null;
-    if (!(image != null)) dart.assertFailed(null, I[0], 751, 16, "image != null");
-    image_stream.OneFrameImageStreamCompleter.__proto__.new.call(this);
-    image.then(dart.void, dart.bind(this, 'setImage'), {onError: dart.fn((error, stack) => {
-        if (error == null) dart.nullFailed(I[0], 752, 49, "error");
-        if (stack == null) dart.nullFailed(I[0], 752, 67, "stack");
-        this.reportError({context: new assertions.ErrorDescription.new("resolving a single-frame image stream"), exception: error, stack: stack, informationCollector: informationCollector, silent: true});
-      }, T.ObjectAndStackTraceToNull())});
-  }).prototype = image_stream.OneFrameImageStreamCompleter.prototype;
-  dart.addTypeTests(image_stream.OneFrameImageStreamCompleter);
-  dart.addTypeCaches(image_stream.OneFrameImageStreamCompleter);
-  dart.setLibraryUri(image_stream.OneFrameImageStreamCompleter, I[1]);
-  var _codec = dart.privateName(image_stream, "_codec");
-  var _nextFrame = dart.privateName(image_stream, "_nextFrame");
-  var __MultiFrameImageStreamCompleter__shownTimestamp = dart.privateName(image_stream, "_#MultiFrameImageStreamCompleter#_shownTimestamp");
-  var __MultiFrameImageStreamCompleter__shownTimestamp_isSet = dart.privateName(image_stream, "_#MultiFrameImageStreamCompleter#_shownTimestamp#isSet");
-  var _frameDuration = dart.privateName(image_stream, "_frameDuration");
-  var _framesEmitted = dart.privateName(image_stream, "_framesEmitted");
-  var _timer = dart.privateName(image_stream, "_timer");
-  var _frameCallbackScheduled = dart.privateName(image_stream, "_frameCallbackScheduled");
-  var _informationCollector = dart.privateName(image_stream, "_informationCollector");
-  var _scale = dart.privateName(image_stream, "_scale");
-  var _handleCodecReady = dart.privateName(image_stream, "_handleCodecReady");
-  var _shownTimestamp = dart.privateName(image_stream, "_shownTimestamp");
-  var _decodeNextFrameAndSchedule = dart.privateName(image_stream, "_decodeNextFrameAndSchedule");
-  var _isFirstFrame = dart.privateName(image_stream, "_isFirstFrame");
-  var _hasFrameDurationPassed = dart.privateName(image_stream, "_hasFrameDurationPassed");
-  var _emitFrame = dart.privateName(image_stream, "_emitFrame");
-  var _scheduleAppFrame = dart.privateName(image_stream, "_scheduleAppFrame");
-  var _handleAppFrame = dart.privateName(image_stream, "_handleAppFrame");
-  image_stream.MultiFrameImageStreamCompleter = class MultiFrameImageStreamCompleter extends image_stream.ImageStreamCompleter {
-    get [_shownTimestamp]() {
-      let t4;
-      return dart.test(this[__MultiFrameImageStreamCompleter__shownTimestamp_isSet]) ? (t4 = this[__MultiFrameImageStreamCompleter__shownTimestamp], t4) : dart.throw(new _internal.LateError.fieldNI("_shownTimestamp"));
+  var _formState$ = dart.privateName(form, "_FormScope._formState");
+  var _generation$ = dart.privateName(form, "_FormScope._generation");
+  form._FormScope = class _FormScope extends framework.InheritedWidget {
+    get [_formState]() {
+      return this[_formState$];
     }
-    set [_shownTimestamp](t4) {
-      if (t4 == null) dart.nullFailed(I[0], 853, 17, "null");
-      this[__MultiFrameImageStreamCompleter__shownTimestamp_isSet] = true;
-      this[__MultiFrameImageStreamCompleter__shownTimestamp] = t4;
+    set [_formState](value) {
+      super[_formState] = value;
     }
-    [_handleCodecReady](codec) {
-      if (codec == null) dart.nullFailed(I[0], 863, 35, "codec");
-      this[_codec] = codec;
-      if (!(this[_codec] != null)) dart.assertFailed(null, I[0], 865, 12, "_codec != null");
-      if (dart.test(this.hasListeners)) {
-        this[_decodeNextFrameAndSchedule]();
-      }
+    get [_generation]() {
+      return this[_generation$];
     }
-    [_handleAppFrame](timestamp) {
-      if (timestamp == null) dart.nullFailed(I[0], 872, 33, "timestamp");
-      this[_frameCallbackScheduled] = false;
-      if (!dart.test(this.hasListeners)) return;
-      if (!(this[_nextFrame] != null)) dart.assertFailed(null, I[0], 876, 12, "_nextFrame != null");
-      if (dart.test(this[_isFirstFrame]()) || dart.test(this[_hasFrameDurationPassed](timestamp))) {
-        this[_emitFrame](new image_stream.ImageInfo.new({image: dart.nullCheck(this[_nextFrame]).image.clone(), scale: this[_scale], debugLabel: this.debugLabel}));
-        this[_shownTimestamp] = timestamp;
-        this[_frameDuration] = dart.nullCheck(this[_nextFrame]).duration;
-        dart.nullCheck(this[_nextFrame]).image.dispose();
-        this[_nextFrame] = null;
-        let completedCycles = (dart.notNull(this[_framesEmitted]) / dart.notNull(dart.nullCheck(this[_codec]).frameCount))[$truncate]();
-        if (dart.nullCheck(this[_codec]).repetitionCount === -1 || completedCycles <= dart.notNull(dart.nullCheck(this[_codec]).repetitionCount)) {
-          this[_decodeNextFrameAndSchedule]();
-        }
-        return;
-      }
-      let delay = dart.nullCheck(this[_frameDuration])['-'](timestamp['-'](this[_shownTimestamp]));
-      this[_timer] = async.Timer.new(delay['*'](binding.timeDilation), dart.fn(() => {
-        this[_scheduleAppFrame]();
-      }, T.VoidTovoid()));
+    set [_generation](value) {
+      super[_generation] = value;
     }
-    [_isFirstFrame]() {
-      return this[_frameDuration] == null;
+    get form() {
+      return this[_formState].widget;
     }
-    [_hasFrameDurationPassed](timestamp) {
-      if (timestamp == null) dart.nullFailed(I[0], 903, 41, "timestamp");
-      return timestamp['-'](this[_shownTimestamp])['>='](dart.nullCheck(this[_frameDuration]));
-    }
-    [_decodeNextFrameAndSchedule]() {
-      return async.async(dart.void, (function* _decodeNextFrameAndSchedule() {
-        let t5;
-        t5 = this[_nextFrame];
-        t5 == null ? null : t5.image.dispose();
-        this[_nextFrame] = null;
-        try {
-          this[_nextFrame] = (yield dart.nullCheck(this[_codec]).getNextFrame());
-        } catch (e) {
-          let exception = dart.getThrown(e);
-          let stack = dart.stackTrace(e);
-          if (core.Object.is(exception)) {
-            this.reportError({context: new assertions.ErrorDescription.new("resolving an image frame"), exception: exception, stack: stack, informationCollector: this[_informationCollector], silent: true});
-            return;
-          } else
-            throw e;
-        }
-        if (dart.nullCheck(this[_codec]).frameCount === 1) {
-          if (!dart.test(this.hasListeners)) {
-            return;
-          }
-          this[_emitFrame](new image_stream.ImageInfo.new({image: dart.nullCheck(this[_nextFrame]).image.clone(), scale: this[_scale], debugLabel: this.debugLabel}));
-          dart.nullCheck(this[_nextFrame]).image.dispose();
-          this[_nextFrame] = null;
-          return;
-        }
-        this[_scheduleAppFrame]();
-      }).bind(this));
-    }
-    [_scheduleAppFrame]() {
-      if (dart.test(this[_frameCallbackScheduled])) {
-        return;
-      }
-      this[_frameCallbackScheduled] = true;
-      dart.nullCheck(binding.SchedulerBinding.instance).scheduleFrameCallback(dart.bind(this, _handleAppFrame));
-    }
-    [_emitFrame](imageInfo) {
-      if (imageInfo == null) dart.nullFailed(I[0], 953, 29, "imageInfo");
-      this.setImage(imageInfo);
-      this[_framesEmitted] = dart.notNull(this[_framesEmitted]) + 1;
-    }
-    addListener(listener) {
-      if (listener == null) dart.nullFailed(I[0], 959, 40, "listener");
-      if (!dart.test(this.hasListeners) && this[_codec] != null) this[_decodeNextFrameAndSchedule]();
-      super.addListener(listener);
-    }
-    removeListener(listener) {
-      let t6;
-      if (listener == null) dart.nullFailed(I[0], 966, 43, "listener");
-      super.removeListener(listener);
-      if (!dart.test(this.hasListeners)) {
-        t6 = this[_timer];
-        t6 == null ? null : t6.cancel();
-        this[_timer] = null;
-      }
+    updateShouldNotify(old) {
+      form._FormScope.as(old);
+      if (old == null) dart.nullFailed(I[0], 276, 38, "old");
+      return this[_generation] != old[_generation];
     }
   };
-  (image_stream.MultiFrameImageStreamCompleter.new = function(opts) {
-    let codec = opts && 'codec' in opts ? opts.codec : null;
-    if (codec == null) dart.nullFailed(I[0], 815, 31, "codec");
-    let scale = opts && 'scale' in opts ? opts.scale : null;
-    if (scale == null) dart.nullFailed(I[0], 816, 21, "scale");
-    let debugLabel = opts && 'debugLabel' in opts ? opts.debugLabel : null;
-    let chunkEvents = opts && 'chunkEvents' in opts ? opts.chunkEvents : null;
-    let informationCollector = opts && 'informationCollector' in opts ? opts.informationCollector : null;
-    this[_codec] = null;
-    this[_nextFrame] = null;
-    this[__MultiFrameImageStreamCompleter__shownTimestamp] = null;
-    this[__MultiFrameImageStreamCompleter__shownTimestamp_isSet] = false;
-    this[_frameDuration] = null;
-    this[_framesEmitted] = 0;
-    this[_timer] = null;
-    this[_frameCallbackScheduled] = false;
-    if (!(codec != null)) dart.assertFailed(null, I[0], 820, 15, "codec != null");
-    this[_informationCollector] = informationCollector;
-    this[_scale] = scale;
-    image_stream.MultiFrameImageStreamCompleter.__proto__.new.call(this);
-    this.debugLabel = debugLabel;
-    codec.then(dart.void, dart.bind(this, _handleCodecReady), {onError: dart.fn((error, stack) => {
-        if (error == null) dart.nullFailed(I[0], 824, 58, "error");
-        if (stack == null) dart.nullFailed(I[0], 824, 76, "stack");
-        this.reportError({context: new assertions.ErrorDescription.new("resolving an image codec"), exception: error, stack: stack, informationCollector: informationCollector, silent: true});
-      }, T.ObjectAndStackTraceToNull())});
-    if (chunkEvents != null) {
-      chunkEvents.listen(dart.bind(this, 'reportImageChunkEvent'), {onError: dart.fn((error, stack) => {
-          if (error == null) dart.nullFailed(I[0], 835, 26, "error");
-          if (stack == null) dart.nullFailed(I[0], 835, 44, "stack");
-          this.reportError({context: new assertions.ErrorDescription.new("loading an image"), exception: error, stack: stack, informationCollector: informationCollector, silent: true});
-        }, T.ObjectAndStackTraceToNull())});
+  (form._FormScope.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let child = opts && 'child' in opts ? opts.child : null;
+    if (child == null) dart.nullFailed(I[0], 259, 21, "child");
+    let formState = opts && 'formState' in opts ? opts.formState : null;
+    if (formState == null) dart.nullFailed(I[0], 260, 24, "formState");
+    let generation = opts && 'generation' in opts ? opts.generation : null;
+    if (generation == null) dart.nullFailed(I[0], 261, 18, "generation");
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[_formState$] = formState;
+    this[_generation$] = generation;
+    form._FormScope.__proto__.new.call(this, {key: key, child: child, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = form._FormScope.prototype;
+  dart.addTypeTests(form._FormScope);
+  dart.addTypeCaches(form._FormScope);
+  dart.setMethodSignature(form._FormScope, () => ({
+    __proto__: dart.getMethods(form._FormScope.__proto__),
+    updateShouldNotify: dart.fnType(core.bool, [dart.nullable(core.Object)])
+  }));
+  dart.setGetterSignature(form._FormScope, () => ({
+    __proto__: dart.getGetters(form._FormScope.__proto__),
+    form: form.Form
+  }));
+  dart.setLibraryUri(form._FormScope, I[1]);
+  dart.setFieldSignature(form._FormScope, () => ({
+    __proto__: dart.getFields(form._FormScope.__proto__),
+    [_formState]: dart.finalFieldType(form.FormState),
+    [_generation]: dart.finalFieldType(core.int)
+  }));
+  var onSaved$ = dart.privateName(form, "FormField.onSaved");
+  var validator$ = dart.privateName(form, "FormField.validator");
+  var builder$ = dart.privateName(form, "FormField.builder");
+  var initialValue$ = dart.privateName(form, "FormField.initialValue");
+  var enabled$ = dart.privateName(form, "FormField.enabled");
+  var autovalidateMode$0 = dart.privateName(form, "FormField.autovalidateMode");
+  var autovalidate$0 = dart.privateName(form, "FormField.autovalidate");
+  const _is_FormField_default = Symbol('_is_FormField_default');
+  form.FormField$ = dart.generic(T => {
+    var FormFieldStateOfT = () => (FormFieldStateOfT = dart.constFn(form.FormFieldState$(T)))();
+    class FormField extends framework.StatefulWidget {
+      get onSaved() {
+        return this[onSaved$];
+      }
+      set onSaved(value) {
+        super.onSaved = value;
+      }
+      get validator() {
+        return this[validator$];
+      }
+      set validator(value) {
+        super.validator = value;
+      }
+      get builder() {
+        return this[builder$];
+      }
+      set builder(value) {
+        super.builder = value;
+      }
+      get initialValue() {
+        return this[initialValue$];
+      }
+      set initialValue(value) {
+        super.initialValue = value;
+      }
+      get enabled() {
+        return this[enabled$];
+      }
+      set enabled(value) {
+        super.enabled = value;
+      }
+      get autovalidateMode() {
+        return this[autovalidateMode$0];
+      }
+      set autovalidateMode(value) {
+        super.autovalidateMode = value;
+      }
+      get autovalidate() {
+        return this[autovalidate$0];
+      }
+      set autovalidate(value) {
+        super.autovalidate = value;
+      }
+      createState() {
+        return new (FormFieldStateOfT()).new();
+      }
     }
-  }).prototype = image_stream.MultiFrameImageStreamCompleter.prototype;
-  dart.addTypeTests(image_stream.MultiFrameImageStreamCompleter);
-  dart.addTypeCaches(image_stream.MultiFrameImageStreamCompleter);
-  dart.setMethodSignature(image_stream.MultiFrameImageStreamCompleter, () => ({
-    __proto__: dart.getMethods(image_stream.MultiFrameImageStreamCompleter.__proto__),
-    [_handleCodecReady]: dart.fnType(dart.void, [ui.Codec]),
-    [_handleAppFrame]: dart.fnType(dart.void, [core.Duration]),
-    [_isFirstFrame]: dart.fnType(core.bool, []),
-    [_hasFrameDurationPassed]: dart.fnType(core.bool, [core.Duration]),
-    [_decodeNextFrameAndSchedule]: dart.fnType(async.Future$(dart.void), []),
-    [_scheduleAppFrame]: dart.fnType(dart.void, []),
-    [_emitFrame]: dart.fnType(dart.void, [image_stream.ImageInfo])
+    (FormField.new = function(opts) {
+      let t0;
+      let key = opts && 'key' in opts ? opts.key : null;
+      let builder = opts && 'builder' in opts ? opts.builder : null;
+      if (builder == null) dart.nullFailed(I[0], 324, 19, "builder");
+      let onSaved = opts && 'onSaved' in opts ? opts.onSaved : null;
+      let validator = opts && 'validator' in opts ? opts.validator : null;
+      let initialValue = opts && 'initialValue' in opts ? opts.initialValue : null;
+      let autovalidate = opts && 'autovalidate' in opts ? opts.autovalidate : false;
+      if (autovalidate == null) dart.nullFailed(I[0], 333, 10, "autovalidate");
+      let enabled = opts && 'enabled' in opts ? opts.enabled : true;
+      if (enabled == null) dart.nullFailed(I[0], 334, 10, "enabled");
+      let autovalidateMode = opts && 'autovalidateMode' in opts ? opts.autovalidateMode : null;
+      let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+      this[builder$] = builder;
+      this[onSaved$] = onSaved;
+      this[validator$] = validator;
+      this[initialValue$] = initialValue;
+      this[autovalidate$0] = autovalidate;
+      this[enabled$] = enabled;
+      if (!(builder != null)) dart.assertFailed(null, I[0], 336, 15, "builder != null");
+      if (!(autovalidate === false || autovalidate === true && autovalidateMode == null)) dart.assertFailed("autovalidate and autovalidateMode should not be used together.", I[0], 338, 10, "autovalidate == false ||\r\n         autovalidate == true && autovalidateMode == null");
+      this[autovalidateMode$0] = (t0 = autovalidateMode, t0 == null ? dart.test(autovalidate) ? form.AutovalidateMode.always : form.AutovalidateMode.disabled : t0);
+      FormField.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+      ;
+    }).prototype = FormField.prototype;
+    dart.addTypeTests(FormField);
+    FormField.prototype[_is_FormField_default] = true;
+    dart.addTypeCaches(FormField);
+    dart.setMethodSignature(FormField, () => ({
+      __proto__: dart.getMethods(FormField.__proto__),
+      createState: dart.fnType(form.FormFieldState$(T), [])
+    }));
+    dart.setLibraryUri(FormField, I[1]);
+    dart.setFieldSignature(FormField, () => ({
+      __proto__: dart.getFields(FormField.__proto__),
+      onSaved: dart.finalFieldType(dart.nullable(dart.fnType(dart.void, [dart.nullable(T)]))),
+      validator: dart.finalFieldType(dart.nullable(dart.fnType(dart.nullable(core.String), [dart.nullable(T)]))),
+      builder: dart.finalFieldType(dart.fnType(framework.Widget, [form.FormFieldState$(T)])),
+      initialValue: dart.finalFieldType(dart.nullable(T)),
+      enabled: dart.finalFieldType(core.bool),
+      autovalidateMode: dart.finalFieldType(form.AutovalidateMode),
+      autovalidate: dart.finalFieldType(core.bool)
+    }));
+    return FormField;
+  });
+  form.FormField = form.FormField$();
+  dart.addTypeTests(form.FormField, _is_FormField_default);
+  var _value = dart.privateName(form, "_value");
+  var _errorText = dart.privateName(form, "_errorText");
+  const _is_FormFieldState_default = Symbol('_is_FormFieldState_default');
+  form.FormFieldState$ = dart.generic(T => {
+    var TN = () => (TN = dart.constFn(dart.nullable(T)))();
+    var TNToStringN = () => (TNToStringN = dart.constFn(dart.fnType(T$.StringN(), [TN()])))();
+    var TNToNStringN = () => (TNToNStringN = dart.constFn(dart.nullable(TNToStringN())))();
+    var TNTovoid = () => (TNTovoid = dart.constFn(dart.fnType(dart.void, [TN()])))();
+    var TNToNvoid = () => (TNToNvoid = dart.constFn(dart.nullable(TNTovoid())))();
+    var FormFieldStateOfT = () => (FormFieldStateOfT = dart.constFn(form.FormFieldState$(T)))();
+    var FormFieldStateOfTToWidget = () => (FormFieldStateOfTToWidget = dart.constFn(dart.fnType(framework.Widget, [FormFieldStateOfT()])))();
+    class FormFieldState extends framework.State$(form.FormField$(T)) {
+      get value() {
+        return this[_value];
+      }
+      get errorText() {
+        return this[_errorText];
+      }
+      get hasError() {
+        return this[_errorText] != null;
+      }
+      get isValid() {
+        let t0;
+        return (t0 = TNToNStringN().as(this.widget.validator), t0 == null ? null : t0(this[_value])) == null;
+      }
+      save() {
+        if (TNToNvoid().as(this.widget.onSaved) != null) dart.nullCheck(TNToNvoid().as(this.widget.onSaved))(this.value);
+      }
+      reset() {
+        let t0;
+        this.setState(dart.fn(() => {
+          this[_value] = this.widget.initialValue;
+          this[_hasInteractedByUser] = false;
+          this[_errorText] = null;
+        }, T$.VoidTovoid()));
+        t0 = form.Form.of(this.context);
+        t0 == null ? null : t0[_fieldDidChange]();
+      }
+      validate() {
+        this.setState(dart.fn(() => {
+          this[_validate]();
+        }, T$.VoidTovoid()));
+        return !dart.test(this.hasError);
+      }
+      [_validate]() {
+        if (TNToNStringN().as(this.widget.validator) != null) this[_errorText] = dart.nullCheck(TNToNStringN().as(this.widget.validator))(this[_value]);
+      }
+      didChange(value) {
+        let t0;
+        TN().as(value);
+        this.setState(dart.fn(() => {
+          this[_value] = value;
+          this[_hasInteractedByUser] = true;
+        }, T$.VoidTovoid()));
+        t0 = form.Form.of(this.context);
+        t0 == null ? null : t0[_fieldDidChange]();
+      }
+      setValue(value) {
+        TN().as(value);
+        this[_value] = value;
+      }
+      initState() {
+        super.initState();
+        this[_value] = this.widget.initialValue;
+      }
+      deactivate() {
+        let t0;
+        t0 = form.Form.of(this.context);
+        t0 == null ? null : t0[_unregister](this);
+        super.deactivate();
+      }
+      build(context) {
+        let t0, t0$;
+        if (context == null) dart.nullFailed(I[0], 510, 29, "context");
+        if (dart.test(this.widget.enabled)) {
+          switch (this.widget.autovalidateMode) {
+            case C[0] || CT.C0:
+            {
+              this[_validate]();
+              break;
+            }
+            case C[1] || CT.C1:
+            {
+              if (dart.test(this[_hasInteractedByUser])) {
+                this[_validate]();
+              }
+              break;
+            }
+            case C[2] || CT.C2:
+            {
+              break;
+            }
+            default:
+            {
+              dart.throw(new _internal.ReachabilityError.new("`null` encountered as case in a switch expression with a non-nullable enum type."));
+            }
+          }
+        }
+        t0 = form.Form.of(context);
+        t0 == null ? null : t0[_register](this);
+        t0$ = this.widget;
+        return FormFieldStateOfTToWidget().as(t0$.builder)(this);
+      }
+    }
+    (FormFieldState.new = function() {
+      this[_value] = null;
+      this[_errorText] = null;
+      this[_hasInteractedByUser] = false;
+      FormFieldState.__proto__.new.call(this);
+      ;
+    }).prototype = FormFieldState.prototype;
+    dart.addTypeTests(FormFieldState);
+    FormFieldState.prototype[_is_FormFieldState_default] = true;
+    dart.addTypeCaches(FormFieldState);
+    dart.setMethodSignature(FormFieldState, () => ({
+      __proto__: dart.getMethods(FormFieldState.__proto__),
+      save: dart.fnType(dart.void, []),
+      reset: dart.fnType(dart.void, []),
+      validate: dart.fnType(core.bool, []),
+      [_validate]: dart.fnType(dart.void, []),
+      didChange: dart.fnType(dart.void, [dart.nullable(core.Object)]),
+      setValue: dart.fnType(dart.void, [dart.nullable(core.Object)]),
+      build: dart.fnType(framework.Widget, [framework.BuildContext])
+    }));
+    dart.setGetterSignature(FormFieldState, () => ({
+      __proto__: dart.getGetters(FormFieldState.__proto__),
+      value: dart.nullable(T),
+      errorText: dart.nullable(core.String),
+      hasError: core.bool,
+      isValid: core.bool
+    }));
+    dart.setLibraryUri(FormFieldState, I[1]);
+    dart.setFieldSignature(FormFieldState, () => ({
+      __proto__: dart.getFields(FormFieldState.__proto__),
+      [_value]: dart.fieldType(dart.nullable(T)),
+      [_errorText]: dart.fieldType(dart.nullable(core.String)),
+      [_hasInteractedByUser]: dart.fieldType(core.bool)
+    }));
+    return FormFieldState;
+  });
+  form.FormFieldState = form.FormFieldState$();
+  dart.addTypeTests(form.FormFieldState, _is_FormFieldState_default);
+  form.AutovalidateMode = class AutovalidateMode extends core.Object {
+    toString() {
+      return this[_name$];
+    }
+  };
+  (form.AutovalidateMode.new = function(index, _name) {
+    if (index == null) dart.nullFailed(I[0], 531, 6, "index");
+    if (_name == null) dart.nullFailed(I[0], 531, 6, "_name");
+    this.index = index;
+    this[_name$] = _name;
+    ;
+  }).prototype = form.AutovalidateMode.prototype;
+  dart.addTypeTests(form.AutovalidateMode);
+  dart.addTypeCaches(form.AutovalidateMode);
+  dart.setLibraryUri(form.AutovalidateMode, I[1]);
+  dart.setFieldSignature(form.AutovalidateMode, () => ({
+    __proto__: dart.getFields(form.AutovalidateMode.__proto__),
+    index: dart.finalFieldType(core.int),
+    [_name$]: dart.finalFieldType(core.String)
   }));
-  dart.setGetterSignature(image_stream.MultiFrameImageStreamCompleter, () => ({
-    __proto__: dart.getGetters(image_stream.MultiFrameImageStreamCompleter.__proto__),
-    [_shownTimestamp]: core.Duration
-  }));
-  dart.setSetterSignature(image_stream.MultiFrameImageStreamCompleter, () => ({
-    __proto__: dart.getSetters(image_stream.MultiFrameImageStreamCompleter.__proto__),
-    [_shownTimestamp]: core.Duration
-  }));
-  dart.setLibraryUri(image_stream.MultiFrameImageStreamCompleter, I[1]);
-  dart.setFieldSignature(image_stream.MultiFrameImageStreamCompleter, () => ({
-    __proto__: dart.getFields(image_stream.MultiFrameImageStreamCompleter.__proto__),
-    [_codec]: dart.fieldType(dart.nullable(ui.Codec)),
-    [_scale]: dart.finalFieldType(core.double),
-    [_informationCollector]: dart.finalFieldType(dart.nullable(dart.fnType(core.Iterable$(diagnostics.DiagnosticsNode), []))),
-    [_nextFrame]: dart.fieldType(dart.nullable(ui.FrameInfo)),
-    [__MultiFrameImageStreamCompleter__shownTimestamp]: dart.fieldType(dart.nullable(core.Duration)),
-    [__MultiFrameImageStreamCompleter__shownTimestamp_isSet]: dart.fieldType(core.bool),
-    [_frameDuration]: dart.fieldType(dart.nullable(core.Duration)),
-    [_framesEmitted]: dart.fieldType(core.int),
-    [_timer]: dart.fieldType(dart.nullable(async.Timer)),
-    [_frameCallbackScheduled]: dart.fieldType(core.bool)
-  }));
-  dart.trackLibraries("packages/flutter/src/painting/image_stream.dart", {
-    "package:flutter/src/painting/image_stream.dart": image_stream
+  dart.defineExtensionMethods(form.AutovalidateMode, ['toString']);
+  form.AutovalidateMode.disabled = C[2] || CT.C2;
+  form.AutovalidateMode.always = C[0] || CT.C0;
+  form.AutovalidateMode.onUserInteraction = C[1] || CT.C1;
+  form.AutovalidateMode.values = C[12] || CT.C12;
+  dart.trackLibraries("packages/flutter/src/widgets/form.dart", {
+    "package:flutter/src/widgets/form.dart": form
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["image_stream.dart"],"names":[],"mappings":"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","file":"../../../../../../packages/flutter/src/painting/image_stream.dart.lib.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["form.dart"],"names":[],"mappings":"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","file":"../../../../../../packages/flutter/src/widgets/form.dart.lib.js"}');
   // Exports:
   return {
-    src__painting__image_stream: image_stream
+    src__widgets__form: form
   };
 }));
 
-//# sourceMappingURL=image_stream.dart.lib.js.map
+//# sourceMappingURL=form.dart.lib.js.map

@@ -33,18 +33,6 @@ class RestaurantList extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  // Column(
-                  //   children: [
-                  //     CircleAvatar(
-                  //       backgroundColor: Colors.transparent,
-                  //       radius: 40,
-                  //       child: Image.asset(
-                  //         "img/RestaurantLogo.jpg",
-                  //         fit: BoxFit.fill,
-                  //       ),
-                  //     ),
-                  //   ],
-                  // ),
                   avatar,
                   SizedBox(
                     width: 15,

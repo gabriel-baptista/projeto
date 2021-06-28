@@ -1,14 +1,36 @@
-define(['dart_sdk', 'packages/flutter/src/rendering/sliver.dart', 'packages/flutter/src/rendering/sliver_multi_box_adaptor.dart'], (function load__packages__flutter__src__rendering__sliver_list_dart(dart_sdk, packages__flutter__src__rendering__sliver$46dart, packages__flutter__src__rendering__sliver_multi_box_adaptor$46dart) {
+define(['dart_sdk', 'packages/flutter/src/material/circle_avatar.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/flutter/src/material/icons.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/painting/_network_image_web.dart', 'packages/flutter/src/material/card.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/flutter/src/painting/placeholder_span.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/flutter/src/material/colors.dart', 'packages/projeto/models/modelRestaurant.dart'], (function load__packages__projeto__widgets__restaurant_list_dart(dart_sdk, packages__flutter__src__material__circle_avatar$46dart, packages__flutter__src__widgets__icon$46dart, packages__flutter__src__material__icons$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__painting___network_image_web$46dart, packages__flutter__src__material__card$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__rendering__flex$46dart, packages__flutter__src__painting__placeholder_span$46dart, packages__flutter__src__painting__strut_style$46dart, packages__flutter__src__material__colors$46dart, packages__projeto__models__modelRestaurant$46dart) {
   'use strict';
   const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
   const dart = dart_sdk.dart;
   const dartx = dart_sdk.dartx;
-  const sliver = packages__flutter__src__rendering__sliver$46dart.src__rendering__sliver;
-  const sliver_multi_box_adaptor = packages__flutter__src__rendering__sliver_multi_box_adaptor$46dart.src__rendering__sliver_multi_box_adaptor;
-  var sliver_list = Object.create(dart.library);
+  const circle_avatar = packages__flutter__src__material__circle_avatar$46dart.src__material__circle_avatar;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  const icons = packages__flutter__src__material__icons$46dart.src__material__icons;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const navigator = packages__flutter__src__widgets__widget_span$46dart.src__widgets__navigator;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const _network_image_web = packages__flutter__src__painting___network_image_web$46dart.src__painting___network_image_web;
+  const card = packages__flutter__src__material__card$46dart.src__material__card;
+  const ink_well = packages__flutter__src__material__icon_button$46dart.src__material__ink_well;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const text_span = packages__flutter__src__painting__placeholder_span$46dart.src__painting__text_span;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const modelRestaurant = packages__projeto__models__modelRestaurant$46dart.models__modelRestaurant;
+  var restaurant_list = Object.create(dart.library);
+  var $isEmpty = dartx.isEmpty;
   dart._checkModuleNullSafetyMode(false);
   var T = {
-    VoidTobool: () => (T.VoidTobool = dart.constFn(dart.fnType(core.bool, [])))()
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    ObjectL: () => (T.ObjectL = dart.constFn(dart.legacy(core.Object)))(),
+    VoidToNull: () => (T.VoidToNull = dart.constFn(dart.fnType(core.Null, [])))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))()
   };
   var T$Eval = Object.assign({
     _: () => T$Eval
@@ -22,194 +44,552 @@ define(['dart_sdk', 'packages/flutter/src/rendering/sliver.dart', 'packages/flut
   const CT = Object.create({
     _: () => (C, CT)
   });
-  var C = [];
-  var I = [
-    "file:///C:/flutter/packages/flutter/lib/src/rendering/sliver_list.dart",
-    "package:flutter/src/rendering/sliver_list.dart"
-  ];
-  sliver_list.RenderSliverList = class RenderSliverList extends sliver_multi_box_adaptor.RenderSliverMultiBoxAdaptor {
-    performLayout() {
-      let constraints = this.constraints;
-      this.childManager.didStartLayout();
-      this.childManager.setDidUnderflow(false);
-      let scrollOffset = dart.notNull(constraints.scrollOffset) + dart.notNull(constraints.cacheOrigin);
-      if (!(scrollOffset >= 0.0)) dart.assertFailed(null, I[0], 52, 12, "scrollOffset >= 0.0");
-      let remainingExtent = constraints.remainingCacheExtent;
-      if (!(dart.notNull(remainingExtent) >= 0.0)) dart.assertFailed(null, I[0], 54, 12, "remainingExtent >= 0.0");
-      let targetEndScrollOffset = scrollOffset + dart.notNull(remainingExtent);
-      let childConstraints = constraints.asBoxConstraints();
-      let leadingGarbage = 0;
-      let trailingGarbage = 0;
-      let reachedEnd = false;
-      if (this.firstChild == null) {
-        if (!dart.test(this.addInitialChild())) {
-          this.geometry = sliver.SliverGeometry.zero;
-          this.childManager.didFinishLayout();
-          return;
-        }
-      }
-      let leadingChildWithLayout = null;
-      let trailingChildWithLayout = null;
-      let earliestUsefulChild = this.firstChild;
-      if (this.childScrollOffset(dart.nullCheck(this.firstChild)) == null) {
-        let leadingChildrenWithoutLayoutOffset = 0;
-        while (earliestUsefulChild != null && this.childScrollOffset(earliestUsefulChild) == null) {
-          earliestUsefulChild = this.childAfter(earliestUsefulChild);
-          leadingChildrenWithoutLayoutOffset = leadingChildrenWithoutLayoutOffset + 1;
-        }
-        this.collectGarbage(leadingChildrenWithoutLayoutOffset, 0);
-        if (this.firstChild == null) {
-          if (!dart.test(this.addInitialChild())) {
-            this.geometry = sliver.SliverGeometry.zero;
-            this.childManager.didFinishLayout();
-            return;
-          }
-        }
-      }
-      earliestUsefulChild = this.firstChild;
-      for (let earliestScrollOffset = dart.nullCheck(this.childScrollOffset(dart.nullCheck(earliestUsefulChild))); earliestScrollOffset > scrollOffset; earliestScrollOffset = dart.nullCheck(this.childScrollOffset(earliestUsefulChild))) {
-        earliestUsefulChild = this.insertAndLayoutLeadingChild(childConstraints, {parentUsesSize: true});
-        if (earliestUsefulChild == null) {
-          let childParentData = sliver_multi_box_adaptor.SliverMultiBoxAdaptorParentData.as(dart.nullCheck(dart.nullCheck(this.firstChild).parentData));
-          childParentData.layoutOffset = 0.0;
-          if (scrollOffset === 0.0) {
-            dart.nullCheck(this.firstChild).layout(childConstraints, {parentUsesSize: true});
-            earliestUsefulChild = this.firstChild;
-            leadingChildWithLayout = earliestUsefulChild;
-            trailingChildWithLayout == null ? trailingChildWithLayout = earliestUsefulChild : null;
-            break;
-          } else {
-            this.geometry = new sliver.SliverGeometry.new({scrollOffsetCorrection: -scrollOffset});
-            return;
-          }
-        }
-        let firstChildScrollOffset = earliestScrollOffset - dart.notNull(this.paintExtentOf(dart.nullCheck(this.firstChild)));
-        if (firstChildScrollOffset < -1e-10) {
-          this.geometry = new sliver.SliverGeometry.new({scrollOffsetCorrection: -firstChildScrollOffset});
-          let childParentData = sliver_multi_box_adaptor.SliverMultiBoxAdaptorParentData.as(dart.nullCheck(dart.nullCheck(this.firstChild).parentData));
-          childParentData.layoutOffset = 0.0;
-          return;
-        }
-        let childParentData = sliver_multi_box_adaptor.SliverMultiBoxAdaptorParentData.as(dart.nullCheck(earliestUsefulChild.parentData));
-        childParentData.layoutOffset = firstChildScrollOffset;
-        if (!dart.equals(earliestUsefulChild, this.firstChild)) dart.assertFailed(null, I[0], 168, 14, "earliestUsefulChild == firstChild");
-        leadingChildWithLayout = earliestUsefulChild;
-        trailingChildWithLayout == null ? trailingChildWithLayout = earliestUsefulChild : null;
-      }
-      if (!(dart.nullCheck(this.childScrollOffset(dart.nullCheck(this.firstChild))) > -1e-10)) dart.assertFailed(null, I[0], 173, 12, "childScrollOffset(firstChild!)! > -precisionErrorTolerance");
-      if (scrollOffset < 1e-10) {
-        while (dart.notNull(this.indexOf(dart.nullCheck(this.firstChild))) > 0) {
-          let earliestScrollOffset = dart.nullCheck(this.childScrollOffset(dart.nullCheck(this.firstChild)));
-          earliestUsefulChild = this.insertAndLayoutLeadingChild(childConstraints, {parentUsesSize: true});
-          if (!(earliestUsefulChild != null)) dart.assertFailed(null, I[0], 186, 16, "earliestUsefulChild != null");
-          let firstChildScrollOffset = earliestScrollOffset - dart.notNull(this.paintExtentOf(dart.nullCheck(this.firstChild)));
-          let childParentData = sliver_multi_box_adaptor.SliverMultiBoxAdaptorParentData.as(dart.nullCheck(dart.nullCheck(this.firstChild).parentData));
-          childParentData.layoutOffset = 0.0;
-          if (firstChildScrollOffset < -1e-10) {
-            this.geometry = new sliver.SliverGeometry.new({scrollOffsetCorrection: -firstChildScrollOffset});
-            return;
-          }
-        }
-      }
-      if (!dart.equals(earliestUsefulChild, this.firstChild)) dart.assertFailed(null, I[0], 208, 12, "earliestUsefulChild == firstChild");
-      if (!(dart.nullCheck(this.childScrollOffset(dart.nullCheck(earliestUsefulChild))) <= scrollOffset)) dart.assertFailed(null, I[0], 209, 12, "childScrollOffset(earliestUsefulChild!)! <= scrollOffset");
-      if (leadingChildWithLayout == null) {
-        dart.nullCheck(earliestUsefulChild).layout(childConstraints, {parentUsesSize: true});
-        leadingChildWithLayout = earliestUsefulChild;
-        trailingChildWithLayout = earliestUsefulChild;
-      }
-      let inLayoutRange = true;
-      let child = earliestUsefulChild;
-      let index = this.indexOf(dart.nullCheck(child));
-      let endScrollOffset = dart.nullCheck(this.childScrollOffset(child)) + dart.notNull(this.paintExtentOf(child));
-      const advance = () => {
-        if (!(child != null)) dart.assertFailed(null, I[0], 229, 14, "child != null");
-        if (dart.equals(child, trailingChildWithLayout)) inLayoutRange = false;
-        child = this.childAfter(dart.nullCheck(child));
-        if (child == null) inLayoutRange = false;
-        index = dart.notNull(index) + 1;
-        if (!inLayoutRange) {
-          if (child == null || this.indexOf(dart.nullCheck(child)) != index) {
-            child = this.insertAndLayoutChild(childConstraints, {after: trailingChildWithLayout, parentUsesSize: true});
-            if (child == null) {
-              return false;
-            }
-          } else {
-            dart.nullCheck(child).layout(childConstraints, {parentUsesSize: true});
-          }
-          trailingChildWithLayout = child;
-        }
-        if (!(child != null)) dart.assertFailed(null, I[0], 253, 14, "child != null");
-        let childParentData = sliver_multi_box_adaptor.SliverMultiBoxAdaptorParentData.as(dart.nullCheck(dart.nullCheck(child).parentData));
-        childParentData.layoutOffset = endScrollOffset;
-        if (!(childParentData.index == index)) dart.assertFailed(null, I[0], 256, 14, "childParentData.index == index");
-        endScrollOffset = dart.nullCheck(this.childScrollOffset(dart.nullCheck(child))) + dart.notNull(this.paintExtentOf(dart.nullCheck(child)));
-        return true;
-      };
-      dart.fn(advance, T.VoidTobool());
-      while (endScrollOffset < scrollOffset) {
-        leadingGarbage = leadingGarbage + 1;
-        if (!dart.test(advance())) {
-          if (!(leadingGarbage === this.childCount)) dart.assertFailed(null, I[0], 265, 16, "leadingGarbage == childCount");
-          if (!(child == null)) dart.assertFailed(null, I[0], 266, 16, "child == null");
-          this.collectGarbage(leadingGarbage - 1, 0);
-          if (!dart.equals(this.firstChild, this.lastChild)) dart.assertFailed(null, I[0], 269, 16, "firstChild == lastChild");
-          let extent = dart.nullCheck(this.childScrollOffset(dart.nullCheck(this.lastChild))) + dart.notNull(this.paintExtentOf(dart.nullCheck(this.lastChild)));
-          this.geometry = new sliver.SliverGeometry.new({scrollExtent: extent, paintExtent: 0.0, maxPaintExtent: extent});
-          return;
-        }
-      }
-      while (endScrollOffset < targetEndScrollOffset) {
-        if (!dart.test(advance())) {
-          reachedEnd = true;
-          break;
-        }
-      }
-      if (child != null) {
-        child = this.childAfter(dart.nullCheck(child));
-        while (child != null) {
-          trailingGarbage = trailingGarbage + 1;
-          child = this.childAfter(dart.nullCheck(child));
-        }
-      }
-      this.collectGarbage(leadingGarbage, trailingGarbage);
-      if (!dart.test(this.debugAssertChildListIsNonEmptyAndContiguous())) dart.assertFailed(null, I[0], 302, 12, "debugAssertChildListIsNonEmptyAndContiguous()");
-      let estimatedMaxScrollOffset = null;
-      if (reachedEnd) {
-        estimatedMaxScrollOffset = endScrollOffset;
-      } else {
-        estimatedMaxScrollOffset = this.childManager.estimateMaxScrollOffset(constraints, {firstIndex: this.indexOf(dart.nullCheck(this.firstChild)), lastIndex: this.indexOf(dart.nullCheck(this.lastChild)), leadingScrollOffset: this.childScrollOffset(dart.nullCheck(this.firstChild)), trailingScrollOffset: endScrollOffset});
-        if (!(dart.notNull(estimatedMaxScrollOffset) >= endScrollOffset - dart.nullCheck(this.childScrollOffset(dart.nullCheck(this.firstChild))))) dart.assertFailed(null, I[0], 314, 14, "estimatedMaxScrollOffset >= endScrollOffset - childScrollOffset(firstChild!)!");
-      }
-      let paintExtent = this.calculatePaintOffset(constraints, {from: dart.nullCheck(this.childScrollOffset(dart.nullCheck(this.firstChild))), to: endScrollOffset});
-      let cacheExtent = this.calculateCacheOffset(constraints, {from: dart.nullCheck(this.childScrollOffset(dart.nullCheck(this.firstChild))), to: endScrollOffset});
-      let targetEndScrollOffsetForPaint = dart.notNull(constraints.scrollOffset) + dart.notNull(constraints.remainingPaintExtent);
-      this.geometry = new sliver.SliverGeometry.new({scrollExtent: estimatedMaxScrollOffset, paintExtent: paintExtent, cacheExtent: cacheExtent, maxPaintExtent: estimatedMaxScrollOffset, hasVisualOverflow: endScrollOffset > targetEndScrollOffsetForPaint || dart.notNull(constraints.scrollOffset) > 0.0});
-      if (estimatedMaxScrollOffset === endScrollOffset) this.childManager.setDidUnderflow(true);
-      this.childManager.didFinishLayout();
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 25,
+        [_Location_line]: 15,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 14,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 14,
+        [_Location_file]: null
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "radius",
+        [_Location_column]: 17,
+        [_Location_line]: 17,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5, C[6] || CT.C6], T._LocationL());
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 13,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundImage",
+        [_Location_column]: 17,
+        [_Location_line]: 20,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "radius",
+        [_Location_column]: 17,
+        [_Location_line]: 23,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.constList([C[9] || CT.C9, C[10] || CT.C10], T._LocationL());
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[8] || CT.C8,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 19,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 15,
+        [EdgeInsets_right]: 15,
+        [EdgeInsets_top]: 15,
+        [EdgeInsets_left]: 15
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 21,
+        [_Location_line]: 38,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.constList([C[14] || CT.C14], T._LocationL());
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[13] || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "textSpan",
+        [_Location_column]: 29,
+        [_Location_line]: 46,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.constList([C[17] || CT.C17], T._LocationL());
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[16] || CT.C16,
+        [_Location_name]: null,
+        [_Location_column]: 32,
+        [_Location_line]: 45,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 25,
+        [_Location_line]: 44,
+        [_Location_file]: null
+      });
+    },
+    get C19() {
+      return C[19] = dart.constList([C[20] || CT.C20], T._LocationL());
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[19] || CT.C19,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 43,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 25,
+        [_Location_line]: 58,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.constList([C[23] || CT.C23], T._LocationL());
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[22] || CT.C22,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 57,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 40,
+        [_Location_line]: 64,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 29,
+        [_Location_line]: 65,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.constList([C[26] || CT.C26, C[27] || CT.C27], T._LocationL());
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[25] || CT.C25,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 62,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 25,
+        [_Location_line]: 61,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.constList([C[30] || CT.C30], T._LocationL());
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[29] || CT.C29,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 60,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 25,
+        [_Location_line]: 72,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.constList([C[33] || CT.C33], T._LocationL());
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[32] || CT.C32,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 71,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 40,
+        [_Location_line]: 78,
+        [_Location_file]: null
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 29,
+        [_Location_line]: 79,
+        [_Location_file]: null
+      });
+    },
+    get C35() {
+      return C[35] = dart.constList([C[36] || CT.C36, C[37] || CT.C37], T._LocationL());
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[35] || CT.C35,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 76,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 25,
+        [_Location_line]: 75,
+        [_Location_file]: null
+      });
+    },
+    get C39() {
+      return C[39] = dart.constList([C[40] || CT.C40], T._LocationL());
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[39] || CT.C39,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 74,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "crossAxisAlignment",
+        [_Location_column]: 21,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 21,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.constList([C[43] || CT.C43, C[44] || CT.C44], T._LocationL());
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[42] || CT.C42,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 40,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 17,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C46() {
+      return C[46] = dart.constList([C[47] || CT.C47], T._LocationL());
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[46] || CT.C46,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 34,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C49() {
+      return C[49] = dart.constList([C[50] || CT.C50], T._LocationL());
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[49] || CT.C49,
+        [_Location_name]: null,
+        [_Location_column]: 18,
+        [_Location_line]: 32,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 11,
+        [_Location_line]: 31,
+        [_Location_file]: null
+      });
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 11,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C52() {
+      return C[52] = dart.constList([C[53] || CT.C53, C[54] || CT.C54], T._LocationL());
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[52] || CT.C52,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 30,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C57() {
+      return C[57] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 9,
+        [_Location_line]: 27,
+        [_Location_file]: null
+      });
+    },
+    get C58() {
+      return C[58] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C56() {
+      return C[56] = dart.constList([C[57] || CT.C57, C[58] || CT.C58], T._LocationL());
+    },
+    get C55() {
+      return C[55] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[56] || CT.C56,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 26,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    },
+    get C61() {
+      return C[61] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C60() {
+      return C[60] = dart.constList([C[61] || CT.C61], T._LocationL());
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[60] || CT.C60,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 25,
+        [_Location_file]: "file:///C:/Testes/projeto/lib/widgets/restaurant_list.dart"
+      });
+    }
+  }, false);
+  var C = Array(62).fill(void 0);
+  var I = ["package:projeto/widgets/restaurant_list.dart"];
+  var restaurant$ = dart.privateName(restaurant_list, "RestaurantList.restaurant");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  var EdgeInsets_bottom = dart.privateName(edge_insets, "EdgeInsets.bottom");
+  var EdgeInsets_right = dart.privateName(edge_insets, "EdgeInsets.right");
+  var EdgeInsets_top = dart.privateName(edge_insets, "EdgeInsets.top");
+  var EdgeInsets_left = dart.privateName(edge_insets, "EdgeInsets.left");
+  restaurant_list.RestaurantList = class RestaurantList extends framework.StatelessWidget {
+    get restaurant() {
+      return this[restaurant$];
+    }
+    set restaurant(value) {
+      super.restaurant = value;
+    }
+    build(context) {
+      let avatar = this.restaurant.imgRestaurant == null || this.restaurant.imgRestaurant[$isEmpty] ? new circle_avatar.CircleAvatar.new({child: new icon.Icon.new(icons.Icons.fastfood_rounded, {$creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), radius: 35.0, $creationLocationd_0dea112b090073317d4: C[3] || CT.C3}) : new circle_avatar.CircleAvatar.new({backgroundImage: new _network_image_web.NetworkImage.new(this.restaurant.imgRestaurant), radius: 35.0, $creationLocationd_0dea112b090073317d4: C[7] || CT.C7});
+      return new card.Card.new({child: new ink_well.InkWell.new({onTap: dart.fn(() => {
+            navigator.Navigator.of(context).pushNamed(T.ObjectL(), "/menuFood");
+          }, T.VoidToNull()), child: new basic.Padding.new({padding: C[11] || CT.C11, child: new basic.Column.new({children: T.JSArrayOfWidgetL().of([new basic.Row.new({children: T.JSArrayOfWidgetL().of([avatar, new basic.SizedBox.new({width: 15.0, $creationLocationd_0dea112b090073317d4: C[12] || CT.C12}), new basic.Column.new({crossAxisAlignment: flex.CrossAxisAlignment.start, children: T.JSArrayOfWidgetL().of([new basic.Row.new({children: T.JSArrayOfWidgetL().of([new text.Text.rich(new text_span.TextSpan.new({text: this.restaurant.nameRestaurant, style: new text_style.TextStyle.new({fontWeight: ui.FontWeight.bold, fontSize: 20.0})}), {$creationLocationd_0dea112b090073317d4: C[15] || CT.C15})]), $creationLocationd_0dea112b090073317d4: C[18] || CT.C18}), new basic.SizedBox.new({height: 5.0, $creationLocationd_0dea112b090073317d4: C[21] || CT.C21}), new basic.Row.new({children: T.JSArrayOfWidgetL().of([new text.Text.new(this.restaurant.descriptionRestaurant, {style: new text_style.TextStyle.new({fontSize: 12.0}), $creationLocationd_0dea112b090073317d4: C[24] || CT.C24})]), $creationLocationd_0dea112b090073317d4: C[28] || CT.C28}), new basic.SizedBox.new({height: 10.0, $creationLocationd_0dea112b090073317d4: C[31] || CT.C31}), new basic.Row.new({children: T.JSArrayOfWidgetL().of([new text.Text.new(this.restaurant.enderecoRestaurant, {style: new text_style.TextStyle.new({fontSize: 12.0, color: colors.Colors.grey.shade600}), $creationLocationd_0dea112b090073317d4: C[34] || CT.C34})]), $creationLocationd_0dea112b090073317d4: C[38] || CT.C38})]), $creationLocationd_0dea112b090073317d4: C[41] || CT.C41})]), $creationLocationd_0dea112b090073317d4: C[45] || CT.C45})]), $creationLocationd_0dea112b090073317d4: C[48] || CT.C48}), $creationLocationd_0dea112b090073317d4: C[51] || CT.C51}), $creationLocationd_0dea112b090073317d4: C[55] || CT.C55}), $creationLocationd_0dea112b090073317d4: C[59] || CT.C59});
     }
   };
-  (sliver_list.RenderSliverList.new = function(opts) {
-    let childManager = opts && 'childManager' in opts ? opts.childManager : null;
-    if (childManager == null) dart.nullFailed(I[0], 42, 42, "childManager");
-    sliver_list.RenderSliverList.__proto__.new.call(this, {childManager: childManager});
+  (restaurant_list.RestaurantList.new = function(restaurant, opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[restaurant$] = restaurant;
+    restaurant_list.RestaurantList.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
     ;
-  }).prototype = sliver_list.RenderSliverList.prototype;
-  dart.addTypeTests(sliver_list.RenderSliverList);
-  dart.addTypeCaches(sliver_list.RenderSliverList);
-  dart.setMethodSignature(sliver_list.RenderSliverList, () => ({
-    __proto__: dart.getMethods(sliver_list.RenderSliverList.__proto__),
-    performLayout: dart.fnType(dart.void, [])
+  }).prototype = restaurant_list.RestaurantList.prototype;
+  dart.addTypeTests(restaurant_list.RestaurantList);
+  dart.addTypeCaches(restaurant_list.RestaurantList);
+  dart.setMethodSignature(restaurant_list.RestaurantList, () => ({
+    __proto__: dart.getMethods(restaurant_list.RestaurantList.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
   }));
-  dart.setLibraryUri(sliver_list.RenderSliverList, I[1]);
-  dart.trackLibraries("packages/flutter/src/rendering/sliver_list.dart", {
-    "package:flutter/src/rendering/sliver_list.dart": sliver_list
+  dart.setLibraryUri(restaurant_list.RestaurantList, I[0]);
+  dart.setFieldSignature(restaurant_list.RestaurantList, () => ({
+    __proto__: dart.getFields(restaurant_list.RestaurantList.__proto__),
+    restaurant: dart.finalFieldType(dart.legacy(modelRestaurant.ModelRestaurant))
+  }));
+  dart.trackLibraries("packages/projeto/widgets/restaurant_list.dart", {
+    "package:projeto/widgets/restaurant_list.dart": restaurant_list
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["sliver_list.dart"],"names":[],"mappings":"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","file":"../../../../../../packages/flutter/src/rendering/sliver_list.dart.lib.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["restaurant_list.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAKwB;;;;;;UAII;AAClB,mBACF,AAAW,AAAc,AAAQ,yCAAG,AAAW,AAAc,0CACvD,2CACS,kBACC,gGAEA,gEAEV,qDACmB,wCACf,AAAW,wCAEL;AAEpB,YAAO,2BACE,iCACE;AACuC,YAAlC,AAAY,uBAAT,OAAO,yBAAY;qCAE3B,wDAEE,gCACK,yBACR,6BACY,yBACR,MAAM,EACN,+BACS,iEAET,0CACyC,yCAC7B,yBACR,6BACY,yBACH,mBACH,kCAEQ,AAAW,uCACV,0CACkB,8BACb,mIAMpB,gCACU,gEAEV,6BACY,yBACR,kBAEE,AAAW,+CACJ,wCACK,gIAKlB,gCACU,iEAEV,6BACY,yBACR,kBAEE,AAAW,4CACJ,wCACK,aACI,AAAK;IA4H/C;;iDAtM0B;;;AAApB;;EAA+B","file":"../../../../packages/projeto/widgets/restaurant_list.dart.lib.js"}');
   // Exports:
   return {
-    src__rendering__sliver_list: sliver_list
+    widgets__restaurant_list: restaurant_list
   };
 }));
 
-//# sourceMappingURL=sliver_list.dart.lib.js.map
+//# sourceMappingURL=restaurant_list.dart.lib.js.map

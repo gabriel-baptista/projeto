@@ -1,3 +1,5 @@
+// faz a listagem de cada usuario na tela de perfil de usuario
+
 import 'package:flutter/material.dart';
 import 'package:projeto/models/user.dart';
 
@@ -49,21 +51,6 @@ class UserTile extends StatelessWidget {
                     children: [
                       Spacer(),
                       avatar,
-                      // CircleAvatar(
-                      // backgroundColor: Colors.transparent,
-                      // radius: 70,
-                      // child: Icon(
-                      //   Icons.fastfood_rounded,
-                      // size: 40,
-                      // ),
-                      // child: ClipOval(
-                      // child: Image.asset(
-                      //   // "img/user_photo.jpeg",
-                      //   "img/robsday.jpg",
-                      //   fit: BoxFit.fill,
-                      // ),
-                      // ),
-                      // ),
                       Spacer(),
                     ],
                   ),

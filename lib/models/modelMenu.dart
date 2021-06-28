@@ -1,3 +1,5 @@
+// armazena os dados de cada prato criado pelo restaurante
+
 import 'package:flutter/material.dart';
 
 class ModelMenu {
